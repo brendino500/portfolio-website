@@ -1,4 +1,4 @@
-// #2C3950 - background color
+// #152031 - background color
 // #859BAC - text color
 // #4ecdc4
 // #37908d
@@ -9,10 +9,10 @@
 // font-family: 'Bitter', serif;    Primary font
 // 
 
-$background-color: #2C3950;
+$background-color: #152031;
 $font-family: 'Bitter', serif;
 
-main {
+main, body {
   background-color: $background-color;
   font-family: $font-family;
 }
