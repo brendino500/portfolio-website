@@ -2,7 +2,7 @@ import React from 'react'
 import ColorTheme from '../ColorTheme'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { AppBar, Toolbar, Typography, Button, ThemeProvider, IconButton, MenuIcon} from '@material-ui/core'
+import { AppBar, Toolbar, Typography, Button, ThemeProvider } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
