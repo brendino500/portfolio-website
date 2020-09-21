@@ -1,4 +1,5 @@
 import React from 'react'
+import { Parallax, ParallaxLayer } from 'react-spring/addons'
 
 class HomeParrallax extends React.Component {
   render() {
