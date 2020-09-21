@@ -5,3 +5,14 @@
 // #cd4eaf
 // #90377a
 // #cdb34e
+
+// font-family: 'Bitter', serif;    Primary font
+// 
+
+$background-color: #2C3950;
+$font-family: 'Bitter', serif;
+
+main {
+  background-color: $background-color;
+  font-family: $font-family;
+}
