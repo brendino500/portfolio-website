@@ -1,12 +1,32 @@
 import React from 'react'
 // import { Parallax, ParallaxLayer } from 'react-spring/addons'
+import About from '../About'
+import Contact from '../Contact'
 
-class HomeParrallax extends React.Component {
-  render() {
-    return (
-      <h1>Home Page</h1>
-    )
+import { makeStyles } from '@material-ui/core/styles'
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
+import { IconButton } from '@material-ui/core'
+
+const useStyles = makeStyles((theme) => ({
+  margin: {
+    margin: theme.spacing(1)
   }
-}
+}))
 
-export default HomeParrallax
+export default function HomeParallax() {
+  const classes = useStyles()
+
+    return (
+      <>
+        <h1>Home Page</h1>
+        <IconButton>
+          <ArrowUpwardIcon 
+            fontSize="large"
+            aria-label="sticky-up"
+            className={classes.margin}
+            />
+        </IconButton>
+      </>
+
+    )
+}

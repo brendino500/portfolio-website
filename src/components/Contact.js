@@ -8,24 +8,24 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: 'wrap',
     justifyContent: 'center'
   },
-  // '& > *': {
-  //     margin: theme.spacing(1),
-  //     width: theme.spacing(16),
-  //     height: theme.spacing(16)
-  // },
   button: {
-    fontFamily: 'Bitter',
-    color: '#4ecdc4',
+    fontFamily: 'Cormorant Garamond',
+    color: '#323E47',
     fontSize: '30px'
   },
   title: {
     flexGrow: 1,
     fontSize: '30px',
-    fontFamily: 'Bitter'
+    fontFamily: 'Cormorant Garamond'
   },
   paper: {
     backgroundColor: '#152031',
-    height: '50%'
+    height: '50%',
+    opacity: '0'
+  },
+  form: {
+    fontFamily: 'Nunito',
+    color: '#00928E'
   }
 }))
 
@@ -35,7 +35,7 @@ function Contact() {
     return (
       <ThemeProvider theme={ColorTheme}>
         <div className={classes.root}>
-          <Paper elevation={3}>
+          <Paper elevation={20}>
           <Container maxWidth="lg">
             <Typography varient="h1" className={classes.title}>
               Wanna get in touch? Fill out the form below.
@@ -46,6 +46,7 @@ function Contact() {
                   required
                   id="standard-required"
                   label="Name"
+                  margin="normal"
                   fullWidth
                 />
                 <br />
@@ -53,22 +54,35 @@ function Contact() {
                   required
                   id="standard-required"
                   label="Email"
+                  margin="normal"
                   fullWidth
                 />
                 <br />
                 <TextField
-                  id="standard-textarea-required"
-                  label="Please write to me?"
+                  required
+                  id="standard-required"
+                  label="Subject"
+                  margin="normal"
+                  fullWidth
+                />
+                <br />
+                <TextField
+                  id="standard-required"
+                  label="Please write to me? *"
                   multiline
+                  margin="normal"
                   rows={5}
                   fullWidth
+                  style={{
+                    fontFamily: 'Nunito'
+                  }}
                 />
                 <Button className={classes.button}
                   fullWidth
-                  
                 >
                   Say Hello!
                 </Button>
+                <br />
               </div>
             </form>
           </Container>

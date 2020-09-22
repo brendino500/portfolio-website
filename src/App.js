@@ -1,10 +1,10 @@
 import React from 'react'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-
 import HomeParallax from './components/homeParallax/HomeParallax'
 import Navbar from './components/Navbar'
 import About from './components/About'
 import Contact from './components/Contact'
+
 
 function App() {
   return (

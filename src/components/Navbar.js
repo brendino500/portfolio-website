@@ -13,15 +13,15 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Bitter',
-    color: '#859BAC',
+    fontFamily: 'Cormorant Garamond',
+    color: '#C8CFDB',
     fontSize: '25px',
     letterSpacing: '2px'
   },
   button: {
-    fontFamily: 'Bitter',
+    fontFamily: 'Cormorant Garamond',
     fontSize: '17px',
-    color: '#859BAC'
+    color: '#C8CFDB'
   }
 }))
 

@@ -1,18 +1,18 @@
-// #152031 - background color
-// #859BAC - text color
-// #4ecdc4
-// #37908d
-// #cd4eaf
-// #90377a
-// #cdb34e
+// #323E47 - background color
+// #C8CFDB - text color
+// #3E535B
+// #A1A4A7
+// #00928E
+
 
 // font-family: 'Bitter', serif;    Primary font
 // 
 
-$background-color: #152031;
-$font-family: 'Bitter', serif;
+$background-color: #323E47;
+$font-family-main: 'Cormorant Garamond', serif;
+$font-family-secondary: 'Nunito', sans-serif;
 
 main, body {
   background-color: $background-color;
-  font-family: $font-family;
+  font-family: $font-family-main;
 }

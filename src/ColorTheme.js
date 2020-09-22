@@ -3,13 +3,13 @@ import { createMuiTheme } from '@material-ui/core/styles'
 export default createMuiTheme({
   palette: {
     primary: {
-      main: '#4ecdc4'
+      main: '#A1A4A7'
     },
     secondary: {
-      main: '#cdb34e'
+      main: '#00928E'
     },
     typography: {
-      fontFamily: '\'Bitter\', serif',
+      fontFamily: '\'Cormorant Garamond\', serif',
       textTransform: 'none',
       h1: {
         fontSize: 20
@@ -24,7 +24,7 @@ export default createMuiTheme({
     overrides: {
       MuiTypography: {
         text: {
-          fontFamily: 'Libre Baskerville'
+          fontFamily: 'Cormorant Garamond'
         }
       }
     }
