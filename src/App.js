@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <main>
-        <Navbar />
+        {/* <Navbar /> */}
         <Switch>
           <Route exact path="/" component={HomeParallax} />
           <Route path="/about" component={About} />

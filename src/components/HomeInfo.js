@@ -9,8 +9,8 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Cormorant Garamond',
-    color: '#C8CFDB',
+    fontFamily: 'Neuton',
+    color: '#d3c9c0',
     fontSize: '45px',
     letterSpacing: '2px'
   }

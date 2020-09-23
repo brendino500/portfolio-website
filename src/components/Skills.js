@@ -10,10 +10,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Cormorant Garamond',
-    fontSize: '38px',
-    letterSpacing: '3px',
-    color: '#C8CFDB'
+    fontFamily: 'Neuton',
+    fontSize: '42px',
+    letterSpacing: '10px',
+    color: '#d3c9c0',
+    textAlign: 'center'
   }
 }))
 
@@ -22,7 +23,7 @@ function Skills() {
 
   return (
     <ThemeProvider theme={ColorTheme}>
-    <Container>
+    <Container className={classes.root}>
       <Typography 
         varient="h1"
         className={classes.title}

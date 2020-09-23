@@ -1,14 +1,15 @@
 import React from 'react'
-import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
+import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 import About from '../About'
 import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
 import ProjectTetris from '../ProjectTetris'
 
+import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import { IconButton, Typography } from '@material-ui/core'
+import { IconButton, Typography, Button, Toolbar, AppBar } from '@material-ui/core'
 
 let parallax = null
 
@@ -17,9 +18,22 @@ const useStyles = makeStyles((theme) => ({
     margin: theme.spacing(1)
   },
   text: {
-    fontfamily: 'Cormorant Garamond',
-    color: '#e2e3e4',
+    fontfamily: 'Neuton',
+    color: '#d3c9c0',
     fontSize: '15px'
+  },
+  title: {
+    flexGrow: 1,
+    fontFamily: 'Neuton',
+    color: '#d3c9c0',
+    fontSize: '25px',
+    letterSpacing: '4px'
+  },
+  button: {
+    fontFamily: 'Neuton',
+    fontSize: '17px',
+    color: '#d3c9c0',
+    letterSpacing: '4px'
   }
 }))
 
@@ -29,6 +43,35 @@ export default function HomeParallax() {
     return (
       <>
         <Parallax pages={5} ref={ref => (parallax = ref)}>
+
+          <div className={classes.root} >
+            <AppBar 
+            position="static"
+            style={{
+              background: 'transparent',
+              boxShadow: 'none'
+            }}>
+              <Toolbar>
+                <Typography 
+                  variant="h6" 
+                  className={classes.title}
+                  onClick={() => parallax.scrollTo(0)}
+                  >
+                  BRENDA TY
+                </Typography>
+
+                  <Button 
+                  className={classes.button}
+                  onClick={() => parallax.scrollTo(3)}
+                  >
+                    Projects
+                  </Button>
+                <Button className={classes.button}>Experience</Button>
+                <Button className={classes.button}>About</Button>
+                <Button className={classes.button}>Contact</Button>
+              </Toolbar>
+            </AppBar>
+          </div>
 
           <ParallaxLayer offset={0.3} speed={1.6} style={{ pointerEvents: 'none' }}>
             <HomeInfo />
@@ -64,7 +107,7 @@ export default function HomeParallax() {
             <i className="devicon-python-plain" style={{ display: 'block', marginLeft: '75%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.6} speed={2.2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={1.8} speed={2.2} style={{ pointerEvents: 'none' }}>
             <i className="devicon-django-plain" style={{ display: 'block', marginLeft: '90%' }}></i>
           </ParallaxLayer>
 
@@ -92,7 +135,7 @@ export default function HomeParallax() {
             <i className="devicon-postgresql-plain" style={{ display: 'block', marginLeft: '30%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.1} speed={1.7} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={1.7} speed={1.7} style={{ pointerEvents: 'none' }}>
             <i className="devicon-slack-plain" style={{ display: 'block', marginLeft: '20%' }}></i>
           </ParallaxLayer>
 
@@ -112,9 +155,9 @@ export default function HomeParallax() {
             <i className="devicon-express-original" style={{ display: 'block', marginLeft: '57%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1.5} speed={6} style={{ pointerEvents: 'none', marginLeft: '3%' }}>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFMUlEQVRoge2ZW2gUZxTH/2fGXE2yYkm1d7Wmrd0ibGZ3U7D41kKFXrBkmmjS1HqjSH1QQd8S3wwUHwpRjPGSaHbTCVhQacE+FKRKzHyTLciWmqAUBJsarA21bJPszOlDsrLZ7O7M7MVSyO9lYef75vufOfOdc+Z8wCKLLPL/RwgxbhiG8l+tf17TXu89F7qby1xp7ncFM+uGYZxjZiqgNlv6+sNHzWnzJoiedzrntKbV9p4PawCwJOl/YuYWIcQmIcQHfr//x4KrTRYxMFAvxflbZqxwM6+vf6CRp8wuEGqB+QYAAIhoORFdNQzjm9u3b6uqqpqFEg0AHR0d0qq6145TnHcCcOzt05pWK0+bXczcmDxLSjeYmYmZN69Zs0bXdd2Xt+o5zoZC3tVrX71GzLvgQnxf/0CjPGVGATSmXlvggRR8RHRDCHHU4/G019XVTbnUDAA4ceJESXlVzT6YOAxCmdv5zKxlMjetB1IoAXBwcnLSMAzjTbeL94bDvvLKmhtgHMlFvB12HkjGy8zXdF3vqays3O/1eh9lG6xpWkVsymyHiQMgyHnqzIgTD8wbT0S7YrHYTV3X38406Gz/1xtjM+ZPIBwEiiCeMUFEKuDOA8msIqIrQohB0zQ/b2hoeAAAZ86cWSYvKe9ktlxFGJcMmmXyns9UdQKwN8BE9ifYKMvyRiHEFz+Pjv7DFh1jwC4hWXDv+dmnLtGeT7Y2DSb/nfVGzBwAELG59QoAGlt0EfbioxZog63YhQyaZbI3VTxgY0AgEIgAaABwCEBOIXSOGTA6J//wKNtamobcTm5raVYTr0wqtnvA7/fPAOgcHh6+LElSDwB3oZQRwRJsb2tutvNkTjh+F4PBYFRRlA1EtBtA1hA6RwyEQxVlcqBY4gGXUYiILADdkUjkimma3QAyhFK+ClPa2dbWNJq/xIUk6qK2lmY1pzDq8/l+BfCOEKIRwHEAT81eoT+ZcLBtS9NJIuKCKU4itRp1H86S8Pv9g5ZlvcHMFwBcsGakdZ9uberOJr6joyOnNRPfAHN1UW3i/1wT2WOCweA4gI+cjD0bCnnJoh63a6Q+9WTyNsAJRa9Gieh9AL/lpTIDxa5GJQBQFOVSaWmpl5m7C3VjTdMqes+Fj8CEDkLWjyJOKs7c8nhDrV+//mEgENhdCG+4rEYHyZpel65McMKCPaAoyqWRkZEhy7K63N7MZTV6V2Le3tq65Xu36ySTdhPX19dPAHDl0r5Q6D2n1SgxesrL5P2qqjrJ6FkpWBR64dnnLt4bv494PJ5tWNQC7djW6rygs8sbeSWyZKqrlmLt6hexfJkn3eWcqtFEFyPbmILmAVmW8czKp1FTU417479jenomp2rUTd4oSiJbWlmBl1e/hL8e/f3dg4n7H6qqOu10bm847EMcp8DwOfkoLVomlojgqa5611NdNaTr+va5j6OMuOliMGNCkmgPUMA9kIVEc+zI2NhY2tchn7xRsM6BEMJJ+Rwloh2KogwBSXmDkHPeKJgBhmFsZuYuACtthppE9FX01q0f2KJjyDNvFLR3E4lElsXj8U4isn2i0V/GnNxyNm9kCb1FaT6NjIxstCzrJIBXMirLbsAMGEcnH3ra9+7dlLUbUrTTmOvXr1eUlpa2AziANBszowEu80bRj5N0XfcR0SlgfkmdxoAYCIcrSuQv3RyqPJHzMCFECYB9AA4Ds5l1vgG5dzGe6IHe8PCwN9EcmzUg0cX4OOcuxpNIZI8JBoPRO3fuvMXM++Cwi7HIIkXmX3d+RS2G+4aCAAAAAElFTkSuQmCC" alt="materialUI" />
-          </ParallaxLayer>
+          {/* <ParallaxLayer offset={1.7} speed={9} style={{ pointerEvents: 'none' }}>
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFH0lEQVRoge2ZX0xTdxTHv+e2vYAu6tyAPSxxLy6yEhwIVaciNYoZyxTruE97UzQL2cPQRN/AN0gWHpagEfFpbwVLwcUJLLagsrYw2YCGZL64+FAcG+ucgNDbe/YgdV0pvfe2ty5L+Lw0aX9/zvn9Od/T8wPWWWed/z+Tfu/MtO/urv9q/u/c7vf6e1yP0+krrHwWyhQdnfB5v2ZmMtA2VfrdrjYFyiQR3tba55bTmT/gdjmBfxwAACLCp1P+od+Cvnv7Dbc0gds3bpQNul0zBHyRYEdKBnpddeYccxBAHQCYV7UgbGWShycDQz3Tj55IkiRFDbMaQHNzs7B3584rJKBez27fcjrzzaK5HfzC8BhJPWcGgdmxY1vBaHB0qDRTo2Pc7uu2fvB+yX0iPgMdxieuejyrdyAOAkoVhf1Tfk9bztbFpu3ba5bSsBtjV69a5grzG6HgEoAc3QMwnGv9pOXsWRh0YXFuww8/+Tx79M492NtdOldY4AfQgnSMVyHlDsRDgJWI7k8FvJ00z+esdvuzVO1HnM68Z6K5iRnnATZlbmpyNN/+WHtmnOENNDnp8x5Zq1F/743KZ6L5RwAXABhvPGEWBAnQsQPxMPAOCANTfm+XCfJnRbsP/w4Anp6eLbKgtDJTPYBs6UmXvCQ31EjSLKDuQBQpVpCBOhnmygm/9/NQKPw8AuUymNQESYH+nX+x6kBD9XFHV/zXKQcSBKpgYFxl6EICnASlD1BV0yAJvE/d2lV0yUuyNdF4QMUBa8XB8WXTa7sZdBFAWiF0hQiAVlnM3XXk2Emf3s7VtQ4pdmQSUb0D5eXlEQCtwcCdbxQWOgHoDKU0ThQ9deT4J2o7mRaaz6LVdihYbDu4j5nOAkgZQldYBHAxvBypyJbxgM4oREQKgI7x7z0DZhN1gLFWKB0WFNQfdjh+ztzE1cTyoupah5RWGC3da38EoHrC760j4AqAN1Z+CjPThera2mtExIZZHMdAr6sOQDsY+UCaOhCjZHdVVzDguaso1A4GLKLcYP9ImknVp7m5WX8IxdrZaEYOAIDVZp8BcFJL29t93VZBETr1zpG46vFk7IAWsp6NEuEYgFDaFqYg29moAADFtqqbvGyyEqHDqIFHnM68AberhVkYBTjlnyJmfpmc6eXlhSo5cOCPYlvVWSN2Q2c22mViKkqWJmhh1R0otlXdfPBg2CdGlHa9g+nMRh8z4dTR445BvfPEk/QSl5VVzgL6trTf7f5YazZKxJ3mpeg5uyRpUfSUGBaFtr6+se/p03lEo0qqZkES+LSehE5NNwxzIDfXghxxM57+tYCFhVWJawRAmyzmNtXUaC8MaNENQ3WABMLmzRuRlyci/OcConIU6WSjenQjK0Imihbkv7kJz5ci3z56Eq6VJGlZa9/B3u7SOTZdVwu9MdLKS7RARMjLFT/csa3Ap6U4lq5uZM2BGHHFsZaHD28lPQ6Z6IZhlYNJv1c1fWYgyMynd+6x+wBjdMM4BwJDDjC3A3hLpWmUga9CobCHoFyGeiEgpW4YWrsZH/dssUSolRmqKxoKzWkZUlU3slJ8mggMVQrM1xh4d602Kg5o1o2svcaMjIzkbTItNTHoPJJczLUd0KcbWX9OCo4OlUYVvk7Av0JjEgcWAVwKL8tf6nlUeSXvYWNjYxYxOt9I4JfKmuBA2lWMV/qgFwzcscaKYysOZFzFyLqQxWO1HQpO//LrfgYawXBZLHLR0RMnOrJVgllnHQ38DRvESaAnBAyzAAAAAElFTkSuQmCC" alt="material-ui" className="materialUI" style={{ display: 'block', marginLeft: '3%' }}/>
+          </ParallaxLayer> */}
 
           <ParallaxLayer offset={3} speed={5} style={{ pointerEvents: 'none' }}>
             <About />
@@ -138,13 +181,15 @@ export default function HomeParallax() {
 
         </Parallax>
 
-        <IconButton>
+        
+
+        {/* <IconButton>
           <ArrowUpwardIcon 
             fontSize="large"
             aria-label="sticky-up"
             className={classes.margin}
             />
-        </IconButton>
+        </IconButton> */}
       </>
     )
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import tetris_screenshot from '../../src/assets/tetris_screenshot.png'
 import { Container, Box, Grid, Typography } from '@material-ui/core'
 
 export default function ProjectTetris() {
@@ -11,7 +12,7 @@ export default function ProjectTetris() {
         justify="center"
         alignItems="center"
       >
-        <img src="portfolio-website/assets/tetris_screenshot.png" alt="tetris" />
+        <img src={tetris_screenshot} alt="tetris" />
           <Grid
             container
             direction="column"

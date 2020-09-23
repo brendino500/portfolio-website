@@ -13,15 +13,15 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Cormorant Garamond',
-    color: '#C8CFDB',
+    fontFamily: 'Neuton',
+    color: '#d3c9c0',
     fontSize: '25px',
     letterSpacing: '2px'
   },
   button: {
-    fontFamily: 'Cormorant Garamond',
+    fontFamily: 'Neuton',
     fontSize: '17px',
-    color: '#C8CFDB'
+    color: '#d3c9c0'
   }
 }))
 
@@ -56,3 +56,7 @@ function Navbar() {
 
 export default Navbar
 
+
+{/* <ParallaxLayer offset={4} speed={0.5}>
+<span onClick={() => parallax.scrollTo(1)}>Go skills</span>
+</ParallaxLayer> */}
