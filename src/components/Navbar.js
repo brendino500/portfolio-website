@@ -25,6 +25,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
+
 function Navbar() {
   const classes = useStyles()
 
@@ -54,3 +55,4 @@ function Navbar() {
 }
 
 export default Navbar
+

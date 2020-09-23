@@ -10,8 +10,8 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontFamily: 'Cormorant Garamond',
-    color: '#323E47',
-    fontSize: '30px'
+    color: 'hotpink',
+    fontSize: '50px'
   },
   title: {
     flexGrow: 1,

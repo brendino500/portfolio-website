@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontFamily: 'Cormorant Garamond',
     fontSize: '38px',
-    letterSpacing: '2px',
+    letterSpacing: '3px',
     color: '#C8CFDB'
   }
 }))
@@ -27,7 +27,7 @@ function Skills() {
         varient="h1"
         className={classes.title}
       >
-        Skills
+        SKILLS
       </Typography>
     </Container>
     </ThemeProvider>
