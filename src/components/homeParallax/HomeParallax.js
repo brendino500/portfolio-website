@@ -5,11 +5,12 @@ import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
 import ProjectTetris from '../ProjectTetris'
+import APPerture from '../APPerture'
+import tetris_screenshot from '../../assets/tetris_screenshot.png'
 
-import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import { IconButton, Typography, Button, Toolbar, AppBar } from '@material-ui/core'
+import { IconButton, Button, Toolbar, AppBar, Typography } from '@material-ui/core'
 
 let parallax = null
 
@@ -27,7 +28,14 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Neuton',
     color: '#d3c9c0',
     fontSize: '25px',
-    letterSpacing: '4px'
+    letterSpacing: '4px',
+  },
+  projectTitle: {
+    flexGrow: 1,
+    fontFamily: 'Neuton',
+    color: '#d3c9c0',
+    fontSize: '40px',
+    letterSpacing: '12px'
   },
   button: {
     fontFamily: 'Neuton',
@@ -52,23 +60,38 @@ export default function HomeParallax() {
               boxShadow: 'none'
             }}>
               <Toolbar>
-                <Typography 
+                <span 
                   variant="h6" 
                   className={classes.title}
                   onClick={() => parallax.scrollTo(0)}
                   >
                   BRENDA TY
-                </Typography>
+                </span>
 
                   <Button 
                   className={classes.button}
-                  onClick={() => parallax.scrollTo(3)}
+                  onClick={() => parallax.scrollTo(2)}
                   >
                     Projects
                   </Button>
-                <Button className={classes.button}>Experience</Button>
-                <Button className={classes.button}>About</Button>
-                <Button className={classes.button}>Contact</Button>
+                <Button 
+                  className={classes.button}
+                  onClick={() => parallax.scrollTo(3)}
+                >
+                  Experience
+                </Button>
+                <Button 
+                  className={classes.button}
+                  onClick={() => parallax.scrollTo(4)}
+                >
+                  About
+                </Button>
+                <Button 
+                  className={classes.button}
+                  onClick={() => parallax.scrollTo(4.5)}
+                >
+                  Contact
+                </Button>
               </Toolbar>
             </AppBar>
           </div>
@@ -165,6 +188,22 @@ export default function HomeParallax() {
 
           <ParallaxLayer offset={2} speed={3} style={{ pointerEvents: 'none' }}>
             <ProjectTetris />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2} speed={4} style={{ pointerEvents: 'none' }}>
+              <Typography className={classes.projectTitle} style={{ display: 'block', marginLeft: '30%' }}>
+                TETRIS
+              </Typography>
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2.8} speed={3} style={{ pointerEvents: 'none' }}>
+            <APPerture />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2.8} speed={4} style={{ pointerEvents: 'none' }}>
+              <Typography className={classes.projectTitle} style={{ display: 'block', marginLeft: '30%' }}>
+                APPerture
+              </Typography>
           </ParallaxLayer>
 
           <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
