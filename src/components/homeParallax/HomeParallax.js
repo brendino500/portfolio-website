@@ -2,6 +2,7 @@ import React from 'react'
 import {Parallax, ParallaxLayer} from 'react-spring/renderprops-addons'
 import About from '../About'
 import Contact from '../Contact'
+import ProjectTetris from '../ProjectTetris'
 
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
@@ -25,9 +26,17 @@ export default function HomeParallax() {
           <ParallaxLayer offset={2} speed={1} style={{ backgroundColor: '#87BCDE' }} >
           <img src="https://images.unsplash.com/photo-1600195076446-435ebd85d816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80" alt="image" />
           </ParallaxLayer> */}
+          <ParallaxLayer offset={0} speed={4} style={{ pointerEvents: 'none' }}>
+            <About />
+          </ParallaxLayer>
+          <ParallaxLayer offset={0.9} speed={3} style={{ pointerEvents: 'none' }}>
+            <ProjectTetris />
+          </ParallaxLayer>
           <ParallaxLayer offset={1} speed={1} style={{ pointerEvents: 'none' }}>
-          {/* <img src='https://images.unsplash.com/photo-1600195076446-435ebd85d816?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80' style={{ width: '15%', marginLeft: '70%' }} /> */}
             <Contact />
+          </ParallaxLayer>
+          <ParallaxLayer offset={1} speed={2} style={{ pointerEvents: 'none' }}>
+            <img src="../../../assets/photo_for_website.jpg" alt="profile-photo"/>
           </ParallaxLayer>
           <ParallaxLayer offset={0} speed={0.5}>
             <span onClick={() => parallax.scrollTo(1)}>Layers can contain anything</span>
