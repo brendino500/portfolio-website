@@ -2,7 +2,7 @@ import React from 'react'
 import ColorTheme from '../ColorTheme'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, ThemeProvider, Container } from '@material-ui/core'
+import { Typography, ThemeProvider, Container, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -49,13 +49,17 @@ function About() {
             Hey, I'm Brenda Ty, a frontend developer living in London. 
         </Typography>
         <br />
-        <Typography 
-          varient="subtitle1" 
-          color="primary"
-          className={classes.text}
-        >
-            After teaching a student the piano, I couldn't find any fun and informative resources to learn music theory for adults. I then 
-        </Typography>
+        <Grid 
+          maxWidth="md">
+          <Typography 
+            varient="subtitle1" 
+            color="primary"
+            className={classes.text}
+          >
+            As a classical musician who turned into a professional barista, I took the Software Engineering Immersive course at General Assembly as I wanted to learn a new skill and merge my creativeness with coding.
+          </Typography>
+        <br />
+          </Grid>
       </Container>
     </ThemeProvider>
 

@@ -26,7 +26,7 @@ function HomeInfo() {
       </Typography>
       <br/>
       <Typography className={classes.title}>
-      A frontend developer.
+      A frontend developer, piano player, 
       </Typography>
     </Container>
   )
