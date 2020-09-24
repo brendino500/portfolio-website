@@ -52,7 +52,13 @@ function APPerture() {
                 Paired Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
-                Instagram X Unsplashed
+                Instagram x Unsplash
+              </Typography>
+              <Typography className={classes.text}>
+                For this project, we really wanted to push ourselves with Material UI (we really had to prove our styling was better than in our Reactathon project...) and learning Material UI was such a rewarding experience. We also implemented some sexy parallax.
+              </Typography>
+              <Typography className={classes.text}>
+                We made our own Python Django API using REST Framework and Postgres Database. Users can register, sign in, create a profile, follow other users and upload their own photos. 
               </Typography>
             </CardContent>
             <Grid container justify="space-between">

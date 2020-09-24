@@ -40,37 +40,36 @@ function APPerture() {
   const classes = useStyles()
 
   return (
-
-          <Card className={classes.root}>
-            <CardContent>
-              <Typography className={classes.title}>
-                Nalu
-              </Typography>
-              <Typography className={classes.subtitle}>
-                Group Project • 7 Days
-              </Typography>
-              <Typography className={classes.text}>
-                Surfing website
-              </Typography>
-            </CardContent>
-            <Grid container justify="space-between">
-              <Grid>
-                <GitHubIcon className="github-link" fontSize="large" />
-                <LinkIcon className="github-link" fontSize="large"/>
-              </Grid>
-              <Grid>
-                <i className="devicon-javascript-plain project-icon"></i>
-                <i className="devicon-html5-plain project-icon"></i>
-                <i className="devicon-css3-plain project-icon"></i>
-                <i className="devicon-sass-original project-icon"></i>
-                <i className="devicon-mongodb-plain-wordmark project-icon"></i>
-                <i className="devicon-express-original project-icon"></i>
-                <i className="devicon-npm-original-wordmark project-icon"></i>
-                <i className="devicon-react-original project-icon"></i>
-                <i className="devicon-nodejs-plain project-icon"></i>
-              </Grid>
-            </Grid>
-          </Card>
+    <Card className={classes.root}>
+      <CardContent>
+        <Typography className={classes.title}>
+          Nalu
+        </Typography>
+        <Typography className={classes.subtitle}>
+          Group Project • 7 Days
+        </Typography>
+        <Typography className={classes.text}>
+          'Nalu' is a social website for the surfing community. Users can add a surf location, rate and comment on other users surf locations. For each surf location, we pulled from two weather APIs- one for the local weather and one for the marine weather.
+        </Typography>
+      </CardContent>
+      <Grid container justify="space-between">
+        <Grid>
+          <GitHubIcon className="github-link" fontSize="large" />
+          <LinkIcon className="github-link" fontSize="large"/>
+        </Grid>
+        <Grid>
+          <i className="devicon-javascript-plain project-icon"></i>
+          <i className="devicon-html5-plain project-icon"></i>
+          <i className="devicon-css3-plain project-icon"></i>
+          <i className="devicon-sass-original project-icon"></i>
+          <i className="devicon-mongodb-plain-wordmark project-icon"></i>
+          <i className="devicon-express-original project-icon"></i>
+          <i className="devicon-npm-original-wordmark project-icon"></i>
+          <i className="devicon-react-original project-icon"></i>
+          <i className="devicon-nodejs-plain project-icon"></i>
+        </Grid>
+      </Grid>
+    </Card>
 
   )
 }
