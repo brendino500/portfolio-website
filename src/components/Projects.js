@@ -1,5 +1,5 @@
 import React from 'react'
-import ProjectTetris from './ProjectTetris'
+import Tetris from './Tetris'
 import APPerture from './APPerture'
 import Nalu from './Nalu'
 import Reactathon from './Reactathon'
@@ -18,7 +18,10 @@ const useStyles = makeStyles((theme) => ({
     color: '#d3c9c0',
     fontSize: '20px',
     letterSpacing: '1px'
-  }
+  },
+  // control: {
+  //   padding: theme.spacing(7)
+  // }
 }))
 
 function Projects() {
@@ -28,9 +31,12 @@ function Projects() {
     <Container maxWidth="lg">
       <Box>
         <Grid
-          spacing={2}
+          spacing={9}
           direction="row"
           alignContent="space around"
+          // container
+          // justify="center"
+          // spacing={classes.control.padding}
         >
           <Grid>
             <APPerture />
@@ -42,7 +48,7 @@ function Projects() {
             <Reactathon />
           </Grid>
           <Grid>
-            <ProjectTetris />
+            <Tetris />
           </Grid>
         </Grid>
       </Box>

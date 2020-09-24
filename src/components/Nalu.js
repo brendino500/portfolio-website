@@ -13,16 +13,22 @@ const useStyles = makeStyles((theme) => ({
     padding: 20
   },
   title: {
-    fontSize: 40,
+    fontSize: 50,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
     letterSpacing: 5
+  },
+  subtitle: {
+    fontSize: 25,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    letterSpacing: 2
   },
   text: {
     flexGrow: 1,
     fontFamily: 'Work Sans',
     color: '#d3c9c0',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 1
   }
 }))
@@ -37,6 +43,9 @@ function APPerture() {
             <CardContent>
               <Typography className={classes.title}>
                 Nalu
+              </Typography>
+              <Typography className={classes.subtitle}>
+                Group Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
                 Surfing website
@@ -53,6 +62,7 @@ function APPerture() {
                 <i className="devicon-css3-plain project-icon"></i>
                 <i className="devicon-sass-original project-icon"></i>
                 <i className="devicon-mongodb-plain-wordmark project-icon"></i>
+                <i className="devicon-express-original project-icon"></i>
                 <i className="devicon-npm-original-wordmark project-icon"></i>
                 <i className="devicon-react-original project-icon"></i>
                 <i className="devicon-nodejs-plain project-icon"></i>

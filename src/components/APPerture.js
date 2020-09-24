@@ -14,16 +14,22 @@ const useStyles = makeStyles((theme) => ({
     padding: 20
   },
   title: {
-    fontSize: 40,
+    fontSize: 50,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
     letterSpacing: 5
+  },
+  subtitle: {
+    fontSize: 25,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    letterSpacing: 2
   },
   text: {
     flexGrow: 1,
     fontFamily: 'Work Sans',
     color: '#d3c9c0',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 1
   }
 }))
@@ -38,6 +44,9 @@ function APPerture() {
             <CardContent>
               <Typography className={classes.title}>
                 APPerture
+              </Typography>
+              <Typography className={classes.subtitle}>
+                Paired Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
                 Instagram X Unsplashed

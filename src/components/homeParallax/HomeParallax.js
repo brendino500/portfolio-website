@@ -5,7 +5,7 @@ import About from '../About'
 import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
-import ProjectTetris from '../ProjectTetris'
+import Tetris from '../Tetris'
 import APPerture from '../APPerture'
 import Projects from '../Projects'
 import tetris_screenshot from '../../assets/tetris_screenshot.png'
@@ -193,7 +193,7 @@ export default function HomeParallax() {
           </ParallaxLayer>
 
           {/* <ParallaxLayer offset={2} speed={3} style={{ pointerEvents: 'none' }}>
-            <ProjectTetris />
+            <Tetris />
           </ParallaxLayer>
 
           <ParallaxLayer offset={2} speed={4} style={{ pointerEvents: 'none' }}>

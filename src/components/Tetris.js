@@ -13,21 +13,27 @@ const useStyles = makeStyles((theme) => ({
     padding: 20
   },
   title: {
-    fontSize: 40,
+    fontSize: 50,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
     letterSpacing: 5
+  },
+  subtitle: {
+    fontSize: 25,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    letterSpacing: 2
   },
   text: {
     flexGrow: 1,
     fontFamily: 'Work Sans',
     color: '#d3c9c0',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 1
   }
 }))
 
-function ProjectTetris() {
+function Tetris() {
   const classes = useStyles()
 
   return (
@@ -37,6 +43,9 @@ function ProjectTetris() {
             <CardContent>
               <Typography className={classes.title}>
                 Tetris
+              </Typography>
+              <Typography className={classes.subtitle}>
+                Solo Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
                 This is my first ever deployed project using only HTML, CSS and JavaScript. This was built in a week. I'm pretty sure it's not buggy (...lol) and the music is worth a listen!
@@ -59,4 +68,4 @@ function ProjectTetris() {
   )
 }
 
-export default ProjectTetris
+export default Tetris

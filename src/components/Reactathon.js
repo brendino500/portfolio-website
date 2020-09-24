@@ -15,16 +15,22 @@ const useStyles = makeStyles((theme) => ({
     padding: 20
   },
   title: {
-    fontSize: 40,
+    fontSize: 50,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
     letterSpacing: 5
+  },
+  subtitle: {
+    fontSize: 25,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    letterSpacing: 2
   },
   text: {
     flexGrow: 1,
     fontFamily: 'Work Sans',
     color: '#d3c9c0',
-    fontSize: 20,
+    fontSize: 18,
     letterSpacing: 1
   }
 }))
@@ -38,10 +44,13 @@ function APPerture() {
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title}>
-                48h Reactathon
+                Weather x TfL
+              </Typography>
+              <Typography className={classes.subtitle}>
+                Paired Project • 48 Hours
               </Typography>
               <Typography className={classes.text}>
-                Weather site
+                Out of the whole of General Assembly, this was, by far, the most fun project! I was paried with a crazy French man and we've had the most intense coding relationship since. We wanted to create an app with geolocation (if the user accepted) could create a homepage of the local time and weather. The other pages were linked to the current London Tube line services, the TfL Bike Points as well as the Air Quality Index in London.
               </Typography>
             </CardContent>
             <Grid container justify="space-between">

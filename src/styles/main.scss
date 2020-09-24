@@ -10,6 +10,8 @@
 $background-color: #323E47;
 $font-family-main: 'Neuton', serif;
 $font-family-secondary: 'Work Sans', sans-serif;
+$font-family-third: 'Libre Baskerville', serif;
+
 
 main, body {
   background-color: $background-color;
@@ -17,4 +19,4 @@ main, body {
 }
 
 @import './icons'; 
-@import './projectTetris';
+@import './Tetris';
