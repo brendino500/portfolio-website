@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Container, Box, Grid, Typography, Card, CardContent, CardActions } from '@material-ui/core'
+import { Grid, Typography, Card, CardContent } from '@material-ui/core'
 import LinkIcon from '@material-ui/icons/Link'
 import GitHubIcon from '@material-ui/icons/GitHub'
 

@@ -5,14 +5,11 @@ import About from '../About'
 import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
-import Tetris from '../Tetris'
-import APPerture from '../APPerture'
 import Projects from '../Projects'
-import tetris_screenshot from '../../assets/tetris_screenshot.png'
 
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import { IconButton, Button, Toolbar, AppBar, Typography } from '@material-ui/core'
+import { IconButton, Button, Toolbar, AppBar } from '@material-ui/core'
 
 let parallax = null
 
