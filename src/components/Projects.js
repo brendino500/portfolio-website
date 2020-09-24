@@ -1,4 +1,6 @@
 import React from 'react'
+import ProjectTetris from './ProjectTetris'
+
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Typography, Grid } from '@material-ui/core'
@@ -16,31 +18,17 @@ const useStyles = makeStyles((theme) => ({
   }
 }))
 
-function Nalu() {
+function Projects() {
   const classes = useStyles()
 
   return (
     <Container maxWidth="md">
       <Box>
-        <Grid
-          container
-          direction="row"
-          justify="center"
-          alignItems="center"
-        >
-          <br />
-          <Typography className={classes.text}>
-            NALU
-          </Typography>
-          <br />
-          <Typography className={classes.text}>
-            Full stack project with 4 people completed in 7 days. 
-          </Typography>
-        </Grid>
+        <h1>Add all projects</h1>
+
       </Box>
-      <h1>NALU</h1>
     </Container>
   )
 }
 
-export default Nalu
+export default Projects

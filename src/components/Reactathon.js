@@ -41,3 +41,5 @@ function Reactathon() {
     </Container>
   )
 }
+
+export default Reactathon
