@@ -6,6 +6,7 @@ import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
 import Projects from '../Projects'
+import photo_for_website from '../../assets/photo_for_website.jpg'
 
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
@@ -209,12 +210,12 @@ export default function HomeParallax() {
               </Typography>
           </ParallaxLayer> */}
 
-          <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
+          {/* <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
             <Contact />
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
-          <ParallaxLayer offset={3} speed={2} style={{ pointerEvents: 'none' }}>
-            <img src="../../../assets/photo_for_website.jpg" alt="profile"/>
+          <ParallaxLayer offset={3.15} speed={2} style={{ pointerEvents: 'none' }}>
+            <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 
           <ParallaxLayer offset={4} speed={0.5}>

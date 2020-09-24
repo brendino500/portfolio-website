@@ -8,22 +8,32 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1
   },
+  container: {
+    maxWidth: 800
+  },
   title: {
     flexGrow: 1,
-    fontFamily: 'Cormorant Garamond',
-    fontSize: '45px',
-    letterSpacing: '2px'
-  },
-  header: {
     fontFamily: 'Neuton',
-    fontSize: '25px',
-    fontWeight: 'bold',
-    letterSpacing: '1px'
+    fontSize: '42px',
+    letterSpacing: '10px',
+    color: '#d3c9c0',
+    textAlign: 'center',
+    marginBottom: 25
+  },
+  subtitle: {
+    fontSize: 25,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    letterSpacing: 2,
+    marginTop: 10,
+    marginBottom:10
   },
   text: {
-    fontFamily: 'Neuton',
-    fontSize: '22px',
-    letterSpacing: '1px'
+    flexGrow: 1,
+    fontFamily: 'Work Sans',
+    color: '#d3c9c0',
+    fontSize: 20,
+    letterSpacing: 2
   }
 }))
 
@@ -32,19 +42,12 @@ function About() {
 
   return (
     <ThemeProvider theme={ColorTheme}>
-      <Container>
-        <Typography 
-          varient="h1" 
-          color="primary"
-          className={classes.title}
-        >
-            About
+      <Container className={classes.container}>
+        <Typography className={classes.title}>
+          ABOUT
         </Typography>
         <br />
-        <Typography 
-          varient="subtitle1" 
-          color="primary"
-          className={classes.title}
+        <Typography className={classes.subtitle}
         >
             Hey, I'm Brenda Ty, a frontend developer living in London. 
         </Typography>
@@ -53,7 +56,6 @@ function About() {
           maxWidth="md">
           <Typography 
             varient="subtitle1" 
-            color="primary"
             className={classes.text}
           >
             As a classical musician who turned into a professional barista, I took the Software Engineering Immersive course at General Assembly as I wanted to learn a new skill and merge my creativeness with coding.

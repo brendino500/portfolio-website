@@ -23,6 +23,15 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     direction: 'row',
     alignContent: 'space around'
+  },
+  title: {
+    flexGrow: 1,
+    fontFamily: 'Neuton',
+    fontSize: '42px',
+    letterSpacing: '10px',
+    color: '#d3c9c0',
+    textAlign: 'center',
+    marginBottom: 25
   }
 }))
 
@@ -32,11 +41,11 @@ function Projects() {
   return (
     <Container maxWidth="md">
       <Box>
-        <Grid
-          // spacing={9}
-          // direction="row"
-          // alignContent="space around"
-        >
+        <Grid>
+          <Typography className={classes.title}>
+            PROJECTS
+          </Typography>
+          <br />
           <APPerture />
           <br />
           <Nalu />
