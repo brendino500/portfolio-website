@@ -50,6 +50,11 @@ function APPerture() {
                 <i className="devicon-javascript-plain project-icon"></i>
                 <i className="devicon-html5-plain project-icon"></i>
                 <i className="devicon-css3-plain project-icon"></i>
+                <i className="devicon-sass-original project-icon"></i>
+                <i className="devicon-python-plain project-icon"></i>
+                <i className="devicon-django-plain project-icon"></i>
+                <i className="devicon-postgresql-plain project-icon"></i>
+                <i className="devicon-react-original project-icon"></i>
               </Grid>
             </Grid>
           </Card>
