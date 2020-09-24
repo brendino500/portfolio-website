@@ -32,12 +32,6 @@ function ProjectTetris() {
   return (
     <Container maxWidth="md">
       <Box>
-        {/* <Grid
-        container
-        direction="column"
-        justify="center"
-        alignItems="center"
-        > */}
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title}>
