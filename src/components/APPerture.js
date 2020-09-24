@@ -23,7 +23,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 25,
     fontFamily: 'Libre Baskerville',
     color: '#d3c9c0',
-    letterSpacing: 2
+    letterSpacing: 2,
+    marginTop: 10,
+    marginBottom:10
   },
   text: {
     flexGrow: 1,
