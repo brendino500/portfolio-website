@@ -52,7 +52,7 @@ function About() {
         <Typography 
           varient="subtitle1" 
           color="primary"
-          className={classes.title}
+          className={classes.text}
         >
             After teaching a student the piano, I couldn't find any fun and informative resources to learn music theory for adults. I then 
         </Typography>

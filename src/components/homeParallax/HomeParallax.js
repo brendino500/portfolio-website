@@ -1,5 +1,6 @@
 import React from 'react'
 import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
+// import Navbar from '../Navbar'
 import About from '../About'
 import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
@@ -51,7 +52,7 @@ export default function HomeParallax() {
     return (
       <>
         <Parallax pages={5} ref={ref => (parallax = ref)}>
-
+          
           <div className={classes.root} >
             <AppBar 
             position="static"
