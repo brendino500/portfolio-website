@@ -1,4 +1,5 @@
 import React from 'react'
+import materialUI from '../assets/materialUI.png'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Box, Grid, Typography, Card, CardContent, CardActions } from '@material-ui/core'
@@ -16,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 40,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
+    letterSpacing: 5
   },
   text: {
     flexGrow: 1,
@@ -54,7 +56,10 @@ function APPerture() {
                 <i className="devicon-python-plain project-icon"></i>
                 <i className="devicon-django-plain project-icon"></i>
                 <i className="devicon-postgresql-plain project-icon"></i>
+                <i className="devicon-npm-original-wordmark project-icon"></i>
                 <i className="devicon-react-original project-icon"></i>
+                <i className="devicon-nodejs-plain project-icon"></i>
+                <img src={materialUI} alt="materialui" className="materialIcon"/>
               </Grid>
             </Grid>
           </Card>

@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 40,
     fontFamily: 'Neuton',
     color: '#d3c9c0',
+    letterSpacing: 5
   },
   text: {
     flexGrow: 1,
