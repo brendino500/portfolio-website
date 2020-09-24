@@ -9,6 +9,7 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     minWidth: 300,
+    maxWidth: 800,
     backgroundColor: '#394651',
     padding: 20
   },
@@ -39,8 +40,7 @@ function APPerture() {
   const classes = useStyles()
 
   return (
-    <Container maxWidth="md">
-      <Box>
+
           <Card className={classes.root}>
             <CardContent>
               <Typography className={classes.title}>
@@ -71,8 +71,7 @@ function APPerture() {
               </Grid>
             </Grid>
           </Card>
-      </Box>
-    </Container>
+
   )
 }
 

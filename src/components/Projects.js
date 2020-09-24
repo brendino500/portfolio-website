@@ -10,7 +10,7 @@ import { Container, Typography, Grid, Box } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   text: {
     flexGrow: 1,
@@ -19,37 +19,31 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '20px',
     letterSpacing: '1px'
   },
-  // control: {
-  //   padding: theme.spacing(7)
-  // }
+  box: {
+    display: 'flex',
+    direction: 'row',
+    alignContent: 'space around'
+  }
 }))
 
 function Projects() {
   const classes = useStyles()
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="md">
       <Box>
         <Grid
-          spacing={9}
-          direction="row"
-          alignContent="space around"
-          // container
-          // justify="center"
-          // spacing={classes.control.padding}
+          // spacing={9}
+          // direction="row"
+          // alignContent="space around"
         >
-          <Grid>
-            <APPerture />
-          </Grid>
-          <Grid>
-            <Nalu />
-          </Grid>
-          <Grid>
-            <Reactathon />
-          </Grid>
-          <Grid>
-            <Tetris />
-          </Grid>
+          <APPerture />
+          <br />
+          <Nalu />
+          <br />
+          <Reactathon />
+          <br />
+          <Tetris />
         </Grid>
       </Box>
     </Container>
