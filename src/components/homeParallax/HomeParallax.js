@@ -7,6 +7,7 @@ import Contact from '../Contact'
 import Skills from '../Skills'
 import ProjectTetris from '../ProjectTetris'
 import APPerture from '../APPerture'
+import Projects from '../Projects'
 import tetris_screenshot from '../../assets/tetris_screenshot.png'
 
 import { makeStyles } from '@material-ui/core/styles'
@@ -52,7 +53,7 @@ export default function HomeParallax() {
     return (
       <>
         <Parallax pages={5} ref={ref => (parallax = ref)}>
-          
+
           <div className={classes.root} >
             <AppBar 
             position="static"
@@ -187,7 +188,11 @@ export default function HomeParallax() {
             <About />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={3} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={2} speed={5} style={{ pointerEvents: 'none' }}>
+            <Projects />
+          </ParallaxLayer>
+
+          {/* <ParallaxLayer offset={2} speed={3} style={{ pointerEvents: 'none' }}>
             <ProjectTetris />
           </ParallaxLayer>
 
@@ -205,7 +210,7 @@ export default function HomeParallax() {
               <Typography className={classes.projectTitle} style={{ display: 'block', marginLeft: '30%' }}>
                 APPerture
               </Typography>
-          </ParallaxLayer>
+          </ParallaxLayer> */}
 
           <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
             <Contact />
