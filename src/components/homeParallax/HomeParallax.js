@@ -226,10 +226,6 @@ export default function HomeParallax() {
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5} speed={0.5}>
-            <span onClick={() => parallax.scrollTo(1)}>Go skills</span>
-          </ParallaxLayer>
-
         </Parallax>
 
         <IconButton className={classes.margin}>
