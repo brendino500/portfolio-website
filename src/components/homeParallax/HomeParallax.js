@@ -19,7 +19,9 @@ const useStyles = makeStyles((theme) => ({
   margin: {
     margin: theme.spacing(1),
     color: '#d3c9c0',
-    position: 'absolute'
+    position: 'absolute',
+    bottom: -15,
+    left: -15
   },
   text: {
     fontfamily: 'Neuton',
@@ -234,9 +236,10 @@ export default function HomeParallax() {
           <ArrowUpwardIcon 
             fontSize="large"
             aria-label="sticky-up"
-            onClick={() => parallax.scrollTo(1)}
+            onClick={() => parallax.scrollTo(0)}
             />
         </IconButton>
+
       </>
     )
 }
