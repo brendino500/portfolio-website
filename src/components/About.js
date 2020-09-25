@@ -81,7 +81,8 @@ function About() {
             <ul className={classes.list}>TypeScript</ul>
             <ul className={classes.list}>Jest</ul>
             <ul className={classes.list}>Chopin Nocturne in D♭ major, Op. 27 No. 2</ul>
-            <ul className={classes.list}><s>Filipino</s></ul>
+            <ul className={classes.list}>Korean</ul>
+            <ul className={classes.list}><s>Korean</s></ul>
             <ul className={classes.list}>Cello</ul>
           <br />
           <Typography className={classes.text}>
@@ -89,7 +90,7 @@ function About() {
           </Typography>
           <br />
           <Typography className={classes.text}>
-            When I'm not coding you'll find me brewing a tasty filter coffee, {<s>not</s>} trying to spend all my money on plants or 
+            When I'm not coding you'll find me brewing a tasty filter coffee, taking photos, or {<s>not</s>} fighting the urge to spend all my money on plants.
           </Typography>
           </Grid>
       </Container>
