@@ -1,5 +1,4 @@
 import React from 'react'
-import ColorTheme from '../ColorTheme'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, ThemeProvider, Container, GridList, CardContent, GridListTile, Card } from '@material-ui/core'
@@ -51,19 +50,9 @@ function Experience() {
 
   return (
     <div className={classes.root}>
-    <Container maxWidth="lg">
-      <GridList cellHeight={400} className={classes.gridList}>
-      <GridListTile cols={2} style={{ height: 'auto' }}>
-        <Card className={classes.card}>
-          <CardContent>
-            <Typography className={classes.title}>
-              General Assembly
-            </Typography>
-          </CardContent>
-        </Card>
-      </GridListTile>
-      </GridList>
-    </Container>
+      <Container maxWidth="lg">
+
+      </Container>
     </div>
   )
 }

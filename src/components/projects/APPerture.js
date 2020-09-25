@@ -1,5 +1,5 @@
 import React from 'react'
-import materialUI from '../assets/materialUI.png'
+import materialUI from '../../assets/materialUI.png'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Typography, Card, CardContent } from '@material-ui/core'

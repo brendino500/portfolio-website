@@ -4,7 +4,6 @@ import APPerture from './APPerture'
 import Nalu from './Nalu'
 import Reactathon from './Reactathon'
 
-
 import { makeStyles } from '@material-ui/core/styles'
 import { Container, Typography, Grid, Box } from '@material-ui/core'
 
