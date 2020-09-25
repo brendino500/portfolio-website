@@ -110,7 +110,7 @@ export default function HomeParallax() {
 
           <ParallaxLayer 
             offset={1} 
-            speed={1} 
+            speed={0.5} 
             style={{ 
               pointerEvents: 'none',
               backgroundSize: '10%' }}>
@@ -192,17 +192,8 @@ export default function HomeParallax() {
           </ParallaxLayer>
 
           <ParallaxLayer 
-            offset={4} 
-            speed={5}
-            style={{ 
-              pointerEvents: 'none',
-              maxHeight: '30%' }}>
-            <About />
-          </ParallaxLayer>
-
-          <ParallaxLayer 
             offset={2} 
-            speed={5} 
+            speed={4} 
             style={{ 
               pointerEvents: 'none',
               backgroundSize: '30%' }}>
@@ -218,11 +209,26 @@ export default function HomeParallax() {
             <Experience />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={5} speed={1} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={4} 
+            speed={4}
+            style={{ 
+              pointerEvents: 'none',
+              maxHeight: '30%' }}>
+            <About />
+          </ParallaxLayer>
+
+          <ParallaxLayer 
+            offset={5} 
+            speed={4.5} 
+            style={{ pointerEvents: 'none' }}>
             <Contact />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4.4} speed={2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={4.25} 
+            speed={2} 
+            style={{ pointerEvents: 'none' }}>
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 

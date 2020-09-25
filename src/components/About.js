@@ -65,7 +65,7 @@ function About() {
         <br />
         <Typography className={classes.subtitle}
         >
-            Hey, I'm Brenda Ty, a frontend developer living in London. 
+          Hey, I'm Brenda Ty, a frontend developer living in London. 
         </Typography>
         <br />
         <Grid 
