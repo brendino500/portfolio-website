@@ -41,7 +41,16 @@ function Craft() {
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title}>
-          
+          Craft London
+        </Typography>
+        <Typography className={classes.subtitle}>
+          June 2018 ~ May 2020
+        </Typography>
+        <Typography className={classes.text}>
+        Selecting seasonal green beans from different suppliers by cupping samples and holding cuppings with the cafe team. I roasted single origin espresso and filter for the cafe and two sister restaurants.
+        {<br />}
+        {<br />}
+        I also QC each roast by production cupping to develop and analyse the roasts further.
         </Typography>
       </CardContent>
     </Card>
