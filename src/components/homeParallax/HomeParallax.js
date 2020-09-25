@@ -17,7 +17,9 @@ let parallax = null
 
 const useStyles = makeStyles((theme) => ({
   margin: {
-    margin: theme.spacing(1)
+    margin: theme.spacing(1),
+    color: '#d3c9c0',
+    position: 'absolute'
   },
   text: {
     fontfamily: 'Neuton',
@@ -51,50 +53,51 @@ export default function HomeParallax() {
 
     return (
       <>
+
+        <div className={classes.root} >
+          <AppBar 
+          position="static"
+          style={{
+            background: 'transparent',
+            boxShadow: 'none'
+          }}>
+            <Toolbar>
+              <span 
+                className={classes.title}
+                onClick={() => parallax.scrollTo(0)}
+                >
+                BRENDA TY
+              </span>
+
+                <Button 
+                className={classes.button}
+                onClick={() => parallax.scrollTo(2)}
+                >
+                  Projects
+                </Button>
+              <Button 
+                className={classes.button}
+                onClick={() => parallax.scrollTo(3)}
+              >
+                Experience
+              </Button>
+              <Button 
+                className={classes.button}
+                onClick={() => parallax.scrollTo(4)}
+              >
+                About
+              </Button>
+              <Button 
+                className={classes.button}
+                onClick={() => parallax.scrollTo(5)}
+              >
+                Stalk
+              </Button>
+            </Toolbar>
+          </AppBar>
+        </div>
+
         <Parallax pages={6} ref={ref => (parallax = ref)}>
-
-          <div className={classes.root} >
-            <AppBar 
-            position="static"
-            style={{
-              background: 'transparent',
-              boxShadow: 'none'
-            }}>
-              <Toolbar>
-                <span 
-                  className={classes.title}
-                  onClick={() => parallax.scrollTo(0)}
-                  >
-                  BRENDA TY
-                </span>
-
-                  <Button 
-                  className={classes.button}
-                  onClick={() => parallax.scrollTo(2)}
-                  >
-                    Projects
-                  </Button>
-                <Button 
-                  className={classes.button}
-                  onClick={() => parallax.scrollTo(3)}
-                >
-                  Experience
-                </Button>
-                <Button 
-                  className={classes.button}
-                  onClick={() => parallax.scrollTo(4)}
-                >
-                  About
-                </Button>
-                <Button 
-                  className={classes.button}
-                  onClick={() => parallax.scrollTo(5)}
-                >
-                  Stalk
-                </Button>
-              </Toolbar>
-            </AppBar>
-          </div>
 
           <ParallaxLayer offset={0.3} speed={1.6}             
             style={{ 
@@ -213,9 +216,9 @@ export default function HomeParallax() {
             <Experience />
           </ParallaxLayer>
 
-          {/* <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={5} speed={1} style={{ pointerEvents: 'none' }}>
             <Contact />
-          </ParallaxLayer> */}
+          </ParallaxLayer>
 
           <ParallaxLayer offset={4.4} speed={2} style={{ pointerEvents: 'none' }}>
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
@@ -227,15 +230,13 @@ export default function HomeParallax() {
 
         </Parallax>
 
-        
-
-        {/* <IconButton>
+        <IconButton className={classes.margin}>
           <ArrowUpwardIcon 
             fontSize="large"
             aria-label="sticky-up"
-            className={classes.margin}
+            onClick={() => parallax.scrollTo(1)}
             />
-        </IconButton> */}
+        </IconButton>
       </>
     )
 }
