@@ -15,8 +15,8 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontFamily: 'Work Sans',
     color: '#d3c9c0',
-    fontSize: '20px',
-    letterSpacing: '1px'
+    fontSize: 20,
+    letterSpacing: 1
   },
   box: {
     display: 'flex',
@@ -26,8 +26,8 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontFamily: 'Neuton',
-    fontSize: '42px',
-    letterSpacing: '10px',
+    fontSize: 42,
+    letterSpacing: 10,
     color: '#d3c9c0',
     textAlign: 'center',
     marginBottom: 25

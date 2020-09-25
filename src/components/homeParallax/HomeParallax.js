@@ -51,7 +51,7 @@ export default function HomeParallax() {
 
     return (
       <>
-        <Parallax pages={5} ref={ref => (parallax = ref)}>
+        <Parallax pages={6} ref={ref => (parallax = ref)}>
 
           <div className={classes.root} >
             <AppBar 
@@ -62,7 +62,6 @@ export default function HomeParallax() {
             }}>
               <Toolbar>
                 <span 
-                  variant="h6" 
                   className={classes.title}
                   onClick={() => parallax.scrollTo(0)}
                   >
@@ -89,7 +88,7 @@ export default function HomeParallax() {
                 </Button>
                 <Button 
                   className={classes.button}
-                  onClick={() => parallax.scrollTo(4.5)}
+                  onClick={() => parallax.scrollTo(5)}
                 >
                   Stalk
                 </Button>
@@ -179,7 +178,7 @@ export default function HomeParallax() {
             <i className="devicon-express-original" style={{ display: 'block', marginLeft: '57%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3} speed={5} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={4} speed={5} style={{ pointerEvents: 'none' }}>
             <About />
           </ParallaxLayer>
 
@@ -187,7 +186,7 @@ export default function HomeParallax() {
             <Projects />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={5} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={3} speed={5} style={{ pointerEvents: 'none' }}>
             <Experience />
           </ParallaxLayer>
 
@@ -195,11 +194,11 @@ export default function HomeParallax() {
             <Contact />
           </ParallaxLayer> */}
 
-          <ParallaxLayer offset={3.25} speed={2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={4.25} speed={2} style={{ pointerEvents: 'none' }}>
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4} speed={0.5}>
+          <ParallaxLayer offset={5} speed={0.5}>
             <span onClick={() => parallax.scrollTo(1)}>Go skills</span>
           </ParallaxLayer>
 

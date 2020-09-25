@@ -5,16 +5,17 @@ import { Typography, ThemeProvider, Container, GridList, CardContent, GridListTi
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    display: 'flex',
-    flexWrap: 'wrap',
-    justifyContent: 'space-around',
-    overflow: 'hidden',
-    backgroundColor: '#394651'
+    flexGrow: 1
+    // display: 'flex',
+    // flexWrap: 'wrap',
+    // justifyContent: 'space-around',
+    // overflow: 'hidden',
+    // backgroundColor: '#394651'
   },
-  gridList: {
-    height: 500,
-    width: 350
-  },
+  // gridList: {
+  //   height: 500,
+  //   width: 350
+  // },
   card: {
     flexGrow: 1,
     minWidth: 200,
@@ -23,11 +24,14 @@ const useStyles = makeStyles((theme) => ({
     padding: 20
   },
   title: {
-    fontSize: 50,
+    flexGrow: 1,
     fontFamily: 'Neuton',
+    fontSize: 42,
+    letterSpacing: 10,
     color: '#d3c9c0',
-    letterSpacing: 5
-  },  
+    textAlign: 'center',
+    marginBottom: 25
+  },
   subtitle: {
     fontSize: 25,
     fontFamily: 'Libre Baskerville',
@@ -49,11 +53,13 @@ function Experience() {
   const classes = useStyles()
 
   return (
-    <div className={classes.root}>
+    // <div className={classes.root}>
       <Container maxWidth="lg">
-
+        <Typography className={classes.title}>
+          EXPERIENCE
+        </Typography>
       </Container>
-    </div>
+    // </div>
   )
 }
 
