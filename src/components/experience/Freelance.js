@@ -60,9 +60,9 @@ function Freelance() {
           {<br />}
         </Typography>
         <Typography className={classes.smallerText}>
-          Digital: Fuji XT-1, Fuji 35mm 1.4
+          Digital: Fuji XT-1, Fuji 35mm f1.4
           {<br />}
-          Analogue: Canon AV-1, Canon 50mm 1.2
+          Analogue: Canon AV-1, Canon 50mm f1.2
         </Typography>
       </CardContent>
     </Card>

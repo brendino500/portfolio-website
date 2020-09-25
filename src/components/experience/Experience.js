@@ -1,6 +1,7 @@
 import React from 'react'
 import GeneralAssembly from './GeneralAssembly'
 import Freelance from './Freelance'
+import Craft from './Craft'
 
 import { makeStyles } from '@material-ui/core/styles'
 import { Typography, Container, GridList, CardContent, GridListTile, Card } from '@material-ui/core'
@@ -63,6 +64,7 @@ function Experience() {
         <br />
         <GeneralAssembly />
         <Freelance />
+        <Craft />
       </Container>
     // </div>
   )
