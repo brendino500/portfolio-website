@@ -34,6 +34,22 @@ const useStyles = makeStyles((theme) => ({
     color: '#d3c9c0',
     fontSize: 20,
     letterSpacing: 2
+  },
+  listTitle: {
+    flexGrow: 1,
+    fontFamily: 'Libre Baskerville',
+    color: '#d3c9c0',
+    fontSize: 20,
+    letterSpacing: 2,
+    marginLeft: '20%'
+  },
+  list: {
+    flexGrow: 1,
+    fontFamily: 'Work Sans',
+    color: '#d3c9c0',
+    fontSize: 20,
+    letterSpacing: 2,
+    marginLeft: '20%'
   }
 }))
 
@@ -44,7 +60,7 @@ function About() {
     <ThemeProvider theme={ColorTheme}>
       <Container className={classes.container}>
         <Typography className={classes.title}>
-          ABOUT
+          WHO AM I?
         </Typography>
         <br />
         <Typography className={classes.subtitle}
@@ -54,13 +70,27 @@ function About() {
         <br />
         <Grid 
           maxWidth="md">
-          <Typography 
-            varient="subtitle1" 
-            className={classes.text}
+          <Typography className={classes.text}
           >
-            As a classical musician who turned into a professional barista, I took the Software Engineering Immersive course at General Assembly as I wanted to learn a new skill and merge my creativeness with coding.
+            As a classical musician who turned into a professional barista (yes, that is a thing!), I'm a recent graduate of General Assembly's Software Engineering Immersive course.
           </Typography>
-        <br />
+          <br />
+          <Typography className={classes.listTitle}>
+            I'm currently learning: 
+          </Typography>
+            <ul className={classes.list}>TypeScript</ul>
+            <ul className={classes.list}>Jest</ul>
+            <ul className={classes.list}>Chopin Nocturne in D♭ major, Op. 27 No. 2</ul>
+            <ul className={classes.list}><s>Filipino</s></ul>
+            <ul className={classes.list}>Cello</ul>
+          <br />
+          <Typography className={classes.text}>
+            I hope to continue my learning and bring my creativity into the workplace. 
+          </Typography>
+          <br />
+          <Typography className={classes.text}>
+            When I'm not coding you'll find me brewing a tasty filter coffee, {<s>not</s>} trying to spend all my money on plants or 
+          </Typography>
           </Grid>
       </Container>
     </ThemeProvider>

@@ -90,7 +90,7 @@ export default function HomeParallax() {
                   className={classes.button}
                   onClick={() => parallax.scrollTo(4.5)}
                 >
-                  Contact
+                  Stalk
                 </Button>
               </Toolbar>
             </AppBar>
@@ -178,10 +178,6 @@ export default function HomeParallax() {
             <i className="devicon-express-original" style={{ display: 'block', marginLeft: '57%' }}></i>
           </ParallaxLayer>
 
-          {/* <ParallaxLayer offset={1.7} speed={9} style={{ pointerEvents: 'none' }}>
-          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABmJLR0QA/wD/AP+gvaeTAAAFH0lEQVRoge2ZX0xTdxTHv+e2vYAu6tyAPSxxLy6yEhwIVaciNYoZyxTruE97UzQL2cPQRN/AN0gWHpagEfFpbwVLwcUJLLagsrYw2YCGZL64+FAcG+ucgNDbe/YgdV0pvfe2ty5L+Lw0aX9/zvn9Od/T8wPWWWed/z+Tfu/MtO/urv9q/u/c7vf6e1yP0+krrHwWyhQdnfB5v2ZmMtA2VfrdrjYFyiQR3tba55bTmT/gdjmBfxwAACLCp1P+od+Cvnv7Dbc0gds3bpQNul0zBHyRYEdKBnpddeYccxBAHQCYV7UgbGWShycDQz3Tj55IkiRFDbMaQHNzs7B3584rJKBez27fcjrzzaK5HfzC8BhJPWcGgdmxY1vBaHB0qDRTo2Pc7uu2fvB+yX0iPgMdxieuejyrdyAOAkoVhf1Tfk9bztbFpu3ba5bSsBtjV69a5grzG6HgEoAc3QMwnGv9pOXsWRh0YXFuww8/+Tx79M492NtdOldY4AfQgnSMVyHlDsRDgJWI7k8FvJ00z+esdvuzVO1HnM68Z6K5iRnnATZlbmpyNN/+WHtmnOENNDnp8x5Zq1F/743KZ6L5RwAXABhvPGEWBAnQsQPxMPAOCANTfm+XCfJnRbsP/w4Anp6eLbKgtDJTPYBs6UmXvCQ31EjSLKDuQBQpVpCBOhnmygm/9/NQKPw8AuUymNQESYH+nX+x6kBD9XFHV/zXKQcSBKpgYFxl6EICnASlD1BV0yAJvE/d2lV0yUuyNdF4QMUBa8XB8WXTa7sZdBFAWiF0hQiAVlnM3XXk2Emf3s7VtQ4pdmQSUb0D5eXlEQCtwcCdbxQWOgHoDKU0ThQ9deT4J2o7mRaaz6LVdihYbDu4j5nOAkgZQldYBHAxvBypyJbxgM4oREQKgI7x7z0DZhN1gLFWKB0WFNQfdjh+ztzE1cTyoupah5RWGC3da38EoHrC760j4AqAN1Z+CjPThera2mtExIZZHMdAr6sOQDsY+UCaOhCjZHdVVzDguaso1A4GLKLcYP9ImknVp7m5WX8IxdrZaEYOAIDVZp8BcFJL29t93VZBETr1zpG46vFk7IAWsp6NEuEYgFDaFqYg29moAADFtqqbvGyyEqHDqIFHnM68AberhVkYBTjlnyJmfpmc6eXlhSo5cOCPYlvVWSN2Q2c22mViKkqWJmhh1R0otlXdfPBg2CdGlHa9g+nMRh8z4dTR445BvfPEk/QSl5VVzgL6trTf7f5YazZKxJ3mpeg5uyRpUfSUGBaFtr6+se/p03lEo0qqZkES+LSehE5NNwxzIDfXghxxM57+tYCFhVWJawRAmyzmNtXUaC8MaNENQ3WABMLmzRuRlyci/OcConIU6WSjenQjK0Imihbkv7kJz5ci3z56Eq6VJGlZa9/B3u7SOTZdVwu9MdLKS7RARMjLFT/csa3Ap6U4lq5uZM2BGHHFsZaHD28lPQ6Z6IZhlYNJv1c1fWYgyMynd+6x+wBjdMM4BwJDDjC3A3hLpWmUga9CobCHoFyGeiEgpW4YWrsZH/dssUSolRmqKxoKzWkZUlU3slJ8mggMVQrM1xh4d602Kg5o1o2svcaMjIzkbTItNTHoPJJczLUd0KcbWX9OCo4OlUYVvk7Av0JjEgcWAVwKL8tf6nlUeSXvYWNjYxYxOt9I4JfKmuBA2lWMV/qgFwzcscaKYysOZFzFyLqQxWO1HQpO//LrfgYawXBZLHLR0RMnOrJVgllnHQ38DRvESaAnBAyzAAAAAElFTkSuQmCC" alt="material-ui" className="materialUI" style={{ display: 'block', marginLeft: '3%' }}/>
-          </ParallaxLayer> */}
-
           <ParallaxLayer offset={3} speed={5} style={{ pointerEvents: 'none' }}>
             <About />
           </ParallaxLayer>
@@ -190,31 +186,11 @@ export default function HomeParallax() {
             <Projects />
           </ParallaxLayer>
 
-          {/* <ParallaxLayer offset={2} speed={3} style={{ pointerEvents: 'none' }}>
-            <Tetris />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={2} speed={4} style={{ pointerEvents: 'none' }}>
-              <Typography className={classes.projectTitle} style={{ display: 'block', marginLeft: '30%' }}>
-                TETRIS
-              </Typography>
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={2.8} speed={3} style={{ pointerEvents: 'none' }}>
-            <APPerture />
-          </ParallaxLayer>
-
-          <ParallaxLayer offset={2.8} speed={4} style={{ pointerEvents: 'none' }}>
-              <Typography className={classes.projectTitle} style={{ display: 'block', marginLeft: '30%' }}>
-                APPerture
-              </Typography>
-          </ParallaxLayer> */}
-
           {/* <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>
             <Contact />
           </ParallaxLayer> */}
 
-          <ParallaxLayer offset={3.15} speed={2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={3.25} speed={2} style={{ pointerEvents: 'none' }}>
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 
