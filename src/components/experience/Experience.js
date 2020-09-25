@@ -1,7 +1,8 @@
 import React from 'react'
+import GeneralAssembly from './GeneralAssembly'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, ThemeProvider, Container, GridList, CardContent, GridListTile, Card } from '@material-ui/core'
+import { Typography, Container, GridList, CardContent, GridListTile, Card } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -58,6 +59,8 @@ function Experience() {
         <Typography className={classes.title}>
           EXPERIENCE
         </Typography>
+        <br />
+        <GeneralAssembly />
       </Container>
     // </div>
   )
