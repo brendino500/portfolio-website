@@ -6,6 +6,7 @@ import HomeInfo from '../HomeInfo'
 import Contact from '../Contact'
 import Skills from '../Skills'
 import Projects from '../Projects'
+import Experience from '../Experience'
 import photo_for_website from '../../assets/photo_for_website.jpg'
 
 import { makeStyles } from '@material-ui/core/styles'
@@ -184,6 +185,10 @@ export default function HomeParallax() {
 
           <ParallaxLayer offset={2} speed={5} style={{ pointerEvents: 'none' }}>
             <Projects />
+          </ParallaxLayer>
+
+          <ParallaxLayer offset={2} speed={5} style={{ pointerEvents: 'none' }}>
+            <Experience />
           </ParallaxLayer>
 
           {/* <ParallaxLayer offset={3.5} speed={1} style={{ pointerEvents: 'none' }}>

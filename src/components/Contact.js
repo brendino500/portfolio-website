@@ -19,9 +19,9 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: 'Cormorant Garamond'
   },
   paper: {
-    backgroundColor: '#152031',
+    color: '#152031',
     height: '50%',
-    opacity: '0'
+    opacity: '1'
   },
   form: {
     fontFamily: 'Nunito',
