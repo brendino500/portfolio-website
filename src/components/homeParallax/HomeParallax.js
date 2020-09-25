@@ -96,11 +96,19 @@ export default function HomeParallax() {
             </AppBar>
           </div>
 
-          <ParallaxLayer offset={0.3} speed={1.6} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={0.3} speed={1.6}             
+            style={{ 
+              pointerEvents: 'none',
+              backgroundSize: '10%' }}>
             <HomeInfo />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={1} speed={1} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={1} 
+            speed={1} 
+            style={{ 
+              pointerEvents: 'none',
+              backgroundSize: '10%' }}>
             <Skills /> 
           </ParallaxLayer>
 
@@ -178,15 +186,30 @@ export default function HomeParallax() {
             <i className="devicon-express-original" style={{ display: 'block', marginLeft: '57%' }}></i>
           </ParallaxLayer>
 
-          <ParallaxLayer offset={4} speed={5} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={4} 
+            speed={5}
+            style={{ 
+              pointerEvents: 'none',
+              maxHeight: '30%' }}>
             <About />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={2} speed={5} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={2} 
+            speed={5} 
+            style={{ 
+              pointerEvents: 'none',
+              backgroundSize: '30%' }}>
             <Projects />
           </ParallaxLayer>
 
-          <ParallaxLayer offset={3} speed={5} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer 
+            offset={3} 
+            speed={5}
+            style={{ 
+              pointerEvents: 'none',
+              backgroundSize: '30%' }}>
             <Experience />
           </ParallaxLayer>
 
