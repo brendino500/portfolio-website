@@ -217,7 +217,7 @@ export default function HomeParallax() {
             <Contact />
           </ParallaxLayer> */}
 
-          <ParallaxLayer offset={4.25} speed={2} style={{ pointerEvents: 'none' }}>
+          <ParallaxLayer offset={4.4} speed={2} style={{ pointerEvents: 'none' }}>
             <img src={photo_for_website} alt="profile" className="profile-photo" style={{ display: 'block', marginLeft: '10%' }}/>
           </ParallaxLayer>
 

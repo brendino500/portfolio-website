@@ -5,27 +5,14 @@ import Craft from './Craft'
 import Department from './Department'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Container, GridList, CardContent, GridListTile, Card } from '@material-ui/core'
+import { Typography, Container, GridList, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1
-    // display: 'flex',
-    // flexWrap: 'wrap',
-    // justifyContent: 'space-around',
-    // overflow: 'hidden',
-    // backgroundColor: '#394651'
   },
-  // gridList: {
-  //   height: 500,
-  //   width: 350
-  // },
-  card: {
-    flexGrow: 1,
-    minWidth: 200,
-    maxWidth: 500,
-    backgroundColor: '#394651',
-    padding: 20
+  tiles: {
+    margin: 5
   },
   title: {
     flexGrow: 1,
@@ -58,17 +45,20 @@ function Experience() {
 
   return (
     // <div className={classes.root}>
-      <Container maxWidth="lg">
+      <Container maxWidth="xl">
         <Typography className={classes.title}>
           EXPERIENCE
         </Typography>
         <br />
-        <GeneralAssembly />
-        <Freelance />
-        <Craft />
-        <Department />
+        <GridList cellHeight={500} >
+            <GeneralAssembly />
+            <Freelance />
+            <Craft />
+            <Department />
+        </GridList>
+
       </Container>
-    // </div>
+
   )
 }
 

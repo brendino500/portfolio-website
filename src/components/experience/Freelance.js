@@ -9,7 +9,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: '#394651',
     width: 500,
     height: 450,
-    padding: 30
+    padding: 30,
+    margin: 8
   },
   title: {
     fontSize: 35,

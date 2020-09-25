@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1
   },
   container: {
-    maxWidth: 800
+    maxWidth: 1000
   },
   title: {
     flexGrow: 1,
@@ -82,7 +82,7 @@ function About() {
             <ul className={classes.list}>Jest</ul>
             <ul className={classes.list}>Chopin Nocturne in D♭ major, Op. 27 No. 2</ul>
             <ul className={classes.list}>Korean</ul>
-            <ul className={classes.list}><s>Korean</s></ul>
+            <ul className={classes.list}><s>Buzzword</s></ul>
             <ul className={classes.list}>Cello</ul>
           <br />
           <Typography className={classes.text}>
