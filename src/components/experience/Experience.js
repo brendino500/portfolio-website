@@ -5,7 +5,7 @@ import Craft from './Craft'
 import Department from './Department'
 
 import { makeStyles } from '@material-ui/core/styles'
-import { Typography, Container, GridList, Grid } from '@material-ui/core'
+import { Typography, Container, GridList } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -44,21 +44,18 @@ function Experience() {
   const classes = useStyles()
 
   return (
-    // <div className={classes.root}>
-      <Container maxWidth="xl">
-        <Typography className={classes.title}>
-          EXPERIENCE
-        </Typography>
-        <br />
-        <GridList cellHeight={500} >
-            <GeneralAssembly />
-            <Freelance />
-            <Craft />
-            <Department />
-        </GridList>
-
-      </Container>
-
+    <Container maxWidth="xl">
+      <Typography className={classes.title}>
+        EXPERIENCE
+      </Typography>
+      <br />
+      <GridList cellHeight={500} >
+          <GeneralAssembly />
+          <Freelance />
+          <Craft />
+          <Department />
+      </GridList>
+    </Container>
   )
 }
 

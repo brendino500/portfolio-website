@@ -3,15 +3,15 @@ import { Parallax, ParallaxLayer } from 'react-spring/renderprops-addons'
 
 import About from '../About'
 import HomeInfo from '../HomeInfo'
-import Contact from '../Contact'
 import Skills from '../Skills'
 import Projects from '../projects/Projects'
 import Experience from '../experience/Experience'
+import Contact from '../Contact'
 import photo_for_website from '../../assets/photo_for_website.jpg'
 
 import { makeStyles } from '@material-ui/core/styles'
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward'
-import { IconButton, Button, Toolbar, AppBar, BottomNavigation } from '@material-ui/core'
+import { IconButton, Button, Toolbar, AppBar } from '@material-ui/core'
 
 let parallax = null
 

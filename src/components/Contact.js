@@ -4,7 +4,7 @@ import EmailIcon from '@material-ui/icons/Email'
 import LinkedInIcon from '@material-ui/icons/LinkedIn'
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { makeStyles } from '@material-ui/core/styles'
-import { Container, Typography, Grid, Box } from '@material-ui/core'
+import { Container, Typography } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
