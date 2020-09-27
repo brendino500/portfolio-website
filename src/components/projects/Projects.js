@@ -1,12 +1,12 @@
-import React from 'react'
-import Tetris from './Tetris'
-import APPerture from './APPerture'
-import Nalu from './Nalu'
-import Reactathon from './Reactathon'
-import hoverEffect from 'hover-effect'
+import React from "react";
+import Tetris from "./Tetris";
+import APPerture from "./APPerture";
+import Nalu from "./Nalu";
+import Reactathon from "./Reactathon";
+import hoverEffect from "hover-effect";
 
-import { makeStyles } from '@material-ui/core/styles'
-import { Container, Typography, Grid, Box } from '@material-ui/core'
+import { makeStyles } from "@material-ui/core/styles";
+import { Container, Typography, Grid, Box } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,37 +14,35 @@ const useStyles = makeStyles((theme) => ({
   },
   text: {
     flexGrow: 1,
-    fontFamily: 'Work Sans',
-    color: '#d3c9c0',
+    fontFamily: "Work Sans",
+    color: "#d3c9c0",
     fontSize: 20,
-    letterSpacing: 1
+    letterSpacing: 1,
   },
   box: {
-    display: 'flex',
-    direction: 'row',
-    alignContent: 'space around'
+    display: "flex",
+    direction: "row",
+    alignContent: "space around",
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Neuton',
+    fontFamily: "Neuton",
     fontSize: 42,
     letterSpacing: 10,
-    color: '#d3c9c0',
-    textAlign: 'center',
-    marginBottom: 25
-  }
-}))
+    color: "#d3c9c0",
+    textAlign: "center",
+    marginBottom: 25,
+  },
+}));
 
 function Projects() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Container maxWidth="md">
       <Box>
         <Grid>
-          <Typography className={classes.title}>
-            PROJECTS
-          </Typography>
+          <Typography className={classes.title}>PROJECTS</Typography>
           <br />
           <APPerture />
           <br />
@@ -56,7 +54,7 @@ function Projects() {
         </Grid>
       </Box>
     </Container>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

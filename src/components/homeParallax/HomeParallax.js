@@ -9,6 +9,7 @@ import Experience from "../experience/Experience";
 import Contact from "../Contact";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
+import jest_icon from "../../assets/jest_icon.png";
 
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
@@ -194,6 +195,15 @@ export default function HomeParallax() {
           />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={1.2} speed={2} style={{ pointerEvents: "none" }}>
+          <img
+            src={jest_icon}
+            alt="jestIcon"
+            style={{ display: "block", marginLeft: "3%" }}
+            className="jestIcon"
+          />
+        </ParallaxLayer>
+
         <ParallaxLayer
           offset={1.8}
           speed={2.2}
@@ -313,10 +323,10 @@ export default function HomeParallax() {
         <ParallaxLayer
           offset={2}
           speed={4}
-          style={{
-            pointerEvents: "none",
-            backgroundSize: "30%",
-          }}
+          // style={{
+          //   pointerEvents: "none",
+          //   backgroundSize: "30%",
+          // }}
         >
           <Projects />
         </ParallaxLayer>
