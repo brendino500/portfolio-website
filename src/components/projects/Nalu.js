@@ -1,61 +1,80 @@
-import React from 'react'
+import React from "react";
 
-import { makeStyles } from '@material-ui/core/styles'
-import { Grid, Typography, Card, CardContent } from '@material-ui/core'
-import LinkIcon from '@material-ui/icons/Link'
-import GitHubIcon from '@material-ui/icons/GitHub'
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  IconButton,
+} from "@material-ui/core";
+import LinkIcon from "@material-ui/icons/Link";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     minWidth: 300,
     maxWidth: 800,
-    backgroundColor: '#394651',
-    padding: 20
+    backgroundColor: "#394651",
+    padding: 20,
   },
   title: {
     fontSize: 50,
-    fontFamily: 'Neuton',
-    color: '#d3c9c0',
-    letterSpacing: 5
+    fontFamily: "Neuton",
+    color: "#d3c9c0",
+    letterSpacing: 5,
   },
   subtitle: {
     fontSize: 25,
-    fontFamily: 'Libre Baskerville',
-    color: '#d3c9c0',
+    fontFamily: "Libre Baskerville",
+    color: "#d3c9c0",
     letterSpacing: 2,
     marginTop: 10,
-    marginBottom:10
+    marginBottom: 10,
   },
   text: {
     flexGrow: 1,
-    fontFamily: 'Work Sans',
-    color: '#d3c9c0',
+    fontFamily: "Work Sans",
+    color: "#d3c9c0",
     fontSize: 18,
-    letterSpacing: 1
-  }
-}))
+    letterSpacing: 1,
+  },
+}));
 
 function APPerture() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title}>
-          Nalu
-        </Typography>
+        <Typography className={classes.title}>Nalu</Typography>
         <Typography className={classes.subtitle}>
           Group Project • 7 Days
         </Typography>
         <Typography className={classes.text}>
-          'Nalu' is a social website for the surfing community. Users can add a surf location, rate and comment on other users surf locations. For each surf location, we pulled from two weather APIs- one for the local weather and one for the marine weather.
+          'Nalu' is a social website for the surfing community. Users can add a
+          surf location, rate and comment on other users surf locations. For
+          each surf location, we pulled from two weather APIs- one for the local
+          weather and one for the marine weather.
         </Typography>
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-          <GitHubIcon className="github-link" fontSize="large" />
-          <LinkIcon className="github-link" fontSize="large"/>
+          <a
+            href="https://github.com/Zarathustrah/SEI-Project-3"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <GitHubIcon className="github-link" fontSize="large" />
+            </IconButton>
+          </a>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <IconButton>
+              <LinkIcon className="github-link" fontSize="large" />
+            </IconButton>
+          </a>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>
@@ -70,8 +89,7 @@ function APPerture() {
         </Grid>
       </Grid>
     </Card>
-
-  )
+  );
 }
 
-export default APPerture
+export default APPerture;

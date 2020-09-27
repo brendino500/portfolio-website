@@ -1,64 +1,88 @@
-import React from 'react'
+import React from "react";
 
-import { makeStyles } from '@material-ui/core/styles'
-import { Grid, Typography, Card, CardContent } from '@material-ui/core'
-import LinkIcon from '@material-ui/icons/Link'
-import GitHubIcon from '@material-ui/icons/GitHub'
-
-
+import { makeStyles } from "@material-ui/core/styles";
+import {
+  Grid,
+  Typography,
+  Card,
+  CardContent,
+  IconButton,
+  Icon,
+} from "@material-ui/core";
+import LinkIcon from "@material-ui/icons/Link";
+import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     minWidth: 300,
     maxWidth: 800,
-    backgroundColor: '#394651',
-    padding: 20
+    backgroundColor: "#394651",
+    padding: 20,
   },
   title: {
     fontSize: 50,
-    fontFamily: 'Neuton',
-    color: '#d3c9c0',
-    letterSpacing: 5
+    fontFamily: "Neuton",
+    color: "#d3c9c0",
+    letterSpacing: 5,
   },
   subtitle: {
     fontSize: 25,
-    fontFamily: 'Libre Baskerville',
-    color: '#d3c9c0',
+    fontFamily: "Libre Baskerville",
+    color: "#d3c9c0",
     letterSpacing: 2,
     marginTop: 10,
-    marginBottom:10
+    marginBottom: 10,
   },
   text: {
     flexGrow: 1,
-    fontFamily: 'Work Sans',
-    color: '#d3c9c0',
+    fontFamily: "Work Sans",
+    color: "#d3c9c0",
     fontSize: 18,
-    letterSpacing: 1
-  }
-}))
+    letterSpacing: 1,
+  },
+}));
 
 function APPerture() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
-
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title}>
-          Weather x TfL
-        </Typography>
+        <Typography className={classes.title}>Weather x TfL</Typography>
         <Typography className={classes.subtitle}>
           Paired Project • 48 Hours
         </Typography>
         <Typography className={classes.text}>
-          Out of the whole of General Assembly, this was, by far, the most fun project! I was paried with a crazy French man and we've had the most intense coding relationship since. We wanted to create an app with geolocation (if the user accepted) could create a homepage of the local time and weather. The other pages were linked to the current London Tube line services, the TfL Bike Points as well as the Air Quality Index in London.
+          Out of the whole of General Assembly, this was, by far, the most fun
+          project! I was paried with a crazy French man and we've had the most
+          intense coding relationship since. We wanted to create an app with
+          geolocation (if the user accepted) could create a homepage of the
+          local time and weather. The other pages were linked to the current
+          London Tube line services, the TfL Bike Points as well as the Air
+          Quality Index in London.
         </Typography>
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-            <GitHubIcon className="github-link" fontSize="large" />
-          <LinkIcon className="github-link" fontSize="large"/>
+          <a
+            href="https://github.com/brendino500/sei-project-2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <GitHubIcon className="github-link" fontSize="large" />
+            </IconButton>
+          </a>
+          <a
+            href="https://weather-bike-tube.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IconButton>
+              <LinkIcon className="github-link" fontSize="large" />
+            </IconButton>
+          </a>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>
@@ -71,7 +95,7 @@ function APPerture() {
         </Grid>
       </Grid>
     </Card>
-  )
+  );
 }
 
-export default APPerture
+export default APPerture;

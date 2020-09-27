@@ -69,14 +69,20 @@ function APPerture() {
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-          <a href="https://github.com/brendino500/APPerture" target="_blank">
+          <a
+            href="https://github.com/brendino500/APPerture"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <IconButton>
               <GitHubIcon className="github-link" fontSize="large" />
             </IconButton>
           </a>
-          <IconButton>
-            <LinkIcon className="github-link" fontSize="large" />
-          </IconButton>
+          <a href="#" target="_blank" rel="noopener noreferrer">
+            <IconButton>
+              <LinkIcon className="github-link" fontSize="large" />
+            </IconButton>
+          </a>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>
