@@ -42,6 +42,9 @@ const useStyles = makeStyles((theme) => ({
     padding: 10,
     color: "#d3c9c0",
   },
+  grid: {
+    marginTop: "10%",
+  },
 }));
 
 function Contact() {
@@ -59,6 +62,7 @@ function Contact() {
         direction="column"
         justify="space-evenly"
         alignItems="flex-start"
+        className={classes.grid}
       >
         <Grid
           container
@@ -107,7 +111,7 @@ function Contact() {
             <LinkedInIcon fontSize="large" className={classes.icon} />
           </IconButton>
           <Typography className={classes.text}>
-            linkedIn.com/brendaty
+            linkedin.com/in/brendaty
           </Typography>
         </Grid>
       </Grid>

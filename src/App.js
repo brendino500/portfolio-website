@@ -1,7 +1,6 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import HomeParallax from './components/homeParallax/HomeParallax'
-
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import HomeParallax from "./components/homeParallax/HomeParallax";
 
 function App() {
   return (
@@ -12,7 +11,7 @@ function App() {
         </Switch>
       </main>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

@@ -7,6 +7,7 @@ import Skills from "../Skills";
 import Projects from "../projects/Projects";
 import Experience from "../experience/Experience";
 import Contact from "../Contact";
+import Navbar from "../Navbar";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
 import jest_icon from "../../assets/jest_icon.png";
