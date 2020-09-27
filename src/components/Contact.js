@@ -1,70 +1,118 @@
-import React from 'react'
+import React from "react";
 
-import EmailIcon from '@material-ui/icons/Email'
-import LinkedInIcon from '@material-ui/icons/LinkedIn'
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { makeStyles } from '@material-ui/core/styles'
-import { Container, Typography } from '@material-ui/core'
+import EmailIcon from "@material-ui/icons/Email";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import { makeStyles } from "@material-ui/core/styles";
+import { Container, Typography, IconButton, Grid } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
   container: {
-    maxWidth: 1000
+    maxWidth: 1000,
   },
   title: {
     flexGrow: 1,
-    fontFamily: 'Neuton',
-    fontSize: '42px',
-    letterSpacing: '10px',
-    color: '#d3c9c0',
-    textAlign: 'center',
-    marginBottom: 25
+    fontFamily: "Neuton",
+    fontSize: "42px",
+    letterSpacing: "10px",
+    color: "#d3c9c0",
+    textAlign: "center",
+    marginBottom: 25,
   },
   subtitle: {
     fontSize: 25,
-    textAlign: 'center',
-    fontFamily: 'Libre Baskerville',
-    color: '#d3c9c0',
+    textAlign: "center",
+    fontFamily: "Libre Baskerville",
+    color: "#d3c9c0",
     letterSpacing: 2,
     marginTop: 10,
-    marginBottom:10
+    marginBottom: 10,
   },
   text: {
     flexGrow: 1,
-    fontFamily: 'Work Sans',
-    color: '#d3c9c0',
+    fontFamily: "Work Sans",
+    color: "#d3c9c0",
     fontSize: 20,
-    letterSpacing: 2
+    letterSpacing: 2,
   },
   icon: {
-    padding: 10
-  }
-}))
+    padding: 10,
+    color: "#d3c9c0",
+  },
+}));
 
 function Contact() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <Container className={classes.container}>
       <Typography className={classes.subtitle}>
         <s>STALK ME...</s>
       </Typography>
-      <Typography className={classes.title}>
-        CONTACT
-      </Typography>
-      <Typography className={classes.text}>
-        <EmailIcon fontSize="large" className={classes.icon}/> brenda.ty@live.com
-      </Typography>
-      <Typography className={classes.text}>
-        <GitHubIcon fontSize="large" className={classes.icon}/> github.com/brendino500 
-      </Typography>
-      <Typography className={classes.text}>
-        <LinkedInIcon fontSize="large" className={classes.icon}/> linkedIn.com/brendaty 
-      </Typography>
+      <Typography className={classes.title}>CONTACT</Typography>
+
+      <Grid
+        container
+        direction="column"
+        justify="space-evenly"
+        alignItems="flex-start"
+      >
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="center"
+        >
+          <IconButton
+            href="mailto:brenda.ty@live.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <EmailIcon fontSize="large" className={classes.icon} />
+          </IconButton>
+          <Typography className={classes.text}>brenda.ty@live.com</Typography>
+        </Grid>
+
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="center"
+        >
+          <IconButton
+            href="https://github.com/brendino500"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <GitHubIcon fontSize="large" className={classes.icon} />
+          </IconButton>
+          <Typography className={classes.text}>
+            github.com/brendino500
+          </Typography>
+        </Grid>
+        <Grid
+          container
+          direction="row"
+          justify="flex-start"
+          alignItems="center"
+        >
+          <IconButton
+            href="https://www.linkedin.com/in/brendaty/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <LinkedInIcon fontSize="large" className={classes.icon} />
+          </IconButton>
+          <Typography className={classes.text}>
+            linkedIn.com/brendaty
+          </Typography>
+        </Grid>
+      </Grid>
     </Container>
-  )
+  );
 }
 
-export default Contact
+export default Contact;

@@ -69,14 +69,14 @@ function APPerture() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <GitHubIcon fontSize="large" />
+            <GitHubIcon fontSize="large" className="github-link" />
           </IconButton>
           <IconButton
             href="https://weather-bike-tube.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LinkIcon fontSize="large" />
+            <LinkIcon fontSize="large" className="github-link" />
           </IconButton>
         </Grid>
         <Grid>

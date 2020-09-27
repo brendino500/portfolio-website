@@ -320,14 +320,7 @@ export default function HomeParallax() {
           ></i>
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={2}
-          speed={4}
-          // style={{
-          //   pointerEvents: "none",
-          //   backgroundSize: "30%",
-          // }}
-        >
+        <ParallaxLayer offset={2} speed={4}>
           <Projects />
         </ParallaxLayer>
 
@@ -353,7 +346,7 @@ export default function HomeParallax() {
           <About />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={5} speed={4.5} style={{ pointerEvents: "none" }}>
+        <ParallaxLayer offset={5} speed={4.5}>
           <Contact />
         </ParallaxLayer>
 
