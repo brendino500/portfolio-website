@@ -7,7 +7,6 @@ import {
   Card,
   CardContent,
   IconButton,
-  Icon,
 } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -65,24 +64,20 @@ function APPerture() {
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-          <a
+          <IconButton
             href="https://github.com/brendino500/sei-project-2"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconButton>
-              <GitHubIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
-          <a
+            <GitHubIcon fontSize="large" />
+          </IconButton>
+          <IconButton
             href="https://weather-bike-tube.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconButton>
-              <LinkIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
+            <LinkIcon fontSize="large" />
+          </IconButton>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>

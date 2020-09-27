@@ -61,20 +61,16 @@ function APPerture() {
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-          <a
+          <IconButton
             href="https://github.com/Zarathustrah/SEI-Project-3"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconButton>
-              <GitHubIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer">
-            <IconButton>
-              <LinkIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
+            <GitHubIcon className="github-link" fontSize="large" />
+          </IconButton>
+          <IconButton href="#" target="_blank" rel="noopener noreferrer">
+            <LinkIcon className="github-link" fontSize="large" />
+          </IconButton>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>

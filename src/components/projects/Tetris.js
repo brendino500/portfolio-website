@@ -68,24 +68,20 @@ function Tetris() {
       </CardContent>
       <Grid container justify="space-between">
         <Grid>
-          <a
+          <IconButton
             href="https://github.com/brendino500/sei-project-1"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconButton>
-              <GitHubIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
-          <a
+            <GitHubIcon className="github-link" fontSize="large" />
+          </IconButton>
+          <IconButton
             href="https://brendino500.github.io/sei-project-1/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IconButton>
-              <LinkIcon className="github-link" fontSize="large" />
-            </IconButton>
-          </a>
+            <LinkIcon className="github-link" fontSize="large" />
+          </IconButton>
         </Grid>
         <Grid>
           <i className="devicon-javascript-plain project-icon"></i>
