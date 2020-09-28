@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import materialUI from "../assets/materialUI.png";
 import hoverEffect from "hover-effect";
 
 import { makeStyles } from "@material-ui/core/styles";
@@ -42,16 +41,16 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function APPerture() {
+function Tetris() {
   const classes = useStyles();
 
   useEffect(() => {
     new hoverEffect({
-      parent: document.querySelector("#apperture-project"),
+      parent: document.querySelector("#tetris"),
       intensity: 0.3,
-      image1: "https://i.ibb.co/mvYsY2Y/apperture-home.png",
-      image2: "https://i.ibb.co/SJrrDH5/apperture-screenshot1.png",
-      displacementImage: "https://i.ibb.co/jGFsy1r/8.jpg",
+      image1: "https://i.ibb.co/LZcsFxy/tetris2.png",
+      image2: "https://i.ibb.co/sHP8ZrB/tetris1.png",
+      displacementImage: "https://i.ibb.co/mJvt6yd/13.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
     });
@@ -73,37 +72,38 @@ function APPerture() {
             alignItems="flex-start"
           >
             <CardContent>
-              <Typography className={classes.title}>APPerture</Typography>
+              <Typography className={classes.title}>Tetris</Typography>
               <Typography className={classes.subtitle}>
-                Paired Project • 7 Days
+                Solo Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
-                Instagram x Unsplash
-              </Typography>
-              <Typography className={classes.text}>
-                For this project, we really wanted to push ourselves with
-                Material UI (we really had to prove our styling was better than
-                in our Reactathon project... lol!) and learning Material UI was
-                such a rewarding experience. We also implemented some sexy
-                parallax.
+                This is my first ever deployed project using only HTML, CSS and
+                JavaScript. This was built in a week. I'm pretty sure it's not
+                buggy (...lol) and the music is worth a listen!
               </Typography>
               <br />
               <Typography className={classes.text}>
-                We made our own Python Django API using REST Framework and
-                Postgres Database. Users can register, sign in, create a
-                profile, follow other users and upload their own photos.
+                As Tetris is such a well known game, I wanted to recreate as
+                much of the original game functionalities as possible. I wanted
+                to implement a mini grid to see the next tetromino (yes, the
+                shapes are called tetrominos!), the 'fast down' movement and the
+                original SEGA scoring system.
               </Typography>
             </CardContent>
             <Grid container justify="space-between">
               <Grid>
                 <IconButton
-                  href="https://github.com/brendino500/APPerture"
+                  href="https://github.com/brendino500/sei-project-1"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <GitHubIcon className="github-link" fontSize="large" />
                 </IconButton>
-                <IconButton href="#" target="_blank" rel="noopener noreferrer">
+                <IconButton
+                  href="https://brendino500.github.io/sei-project-1/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <LinkIcon className="github-link" fontSize="large" />
                 </IconButton>
               </Grid>
@@ -111,27 +111,15 @@ function APPerture() {
                 <i className="devicon-javascript-plain project-icon"></i>
                 <i className="devicon-html5-plain project-icon"></i>
                 <i className="devicon-css3-plain project-icon"></i>
-                <i className="devicon-sass-original project-icon"></i>
-                <i className="devicon-python-plain project-icon"></i>
-                <i className="devicon-django-plain project-icon"></i>
-                <i className="devicon-postgresql-plain project-icon"></i>
-                <i className="devicon-npm-original-wordmark project-icon"></i>
-                <i className="devicon-react-original project-icon"></i>
-                <i className="devicon-nodejs-plain project-icon"></i>
-                <img
-                  src={materialUI}
-                  alt="materialui"
-                  className="materialIcon"
-                />
               </Grid>
             </Grid>
           </Grid>
         </div>
 
-        <div id="apperture-project"></div>
+        <div id="tetris"></div>
       </Grid>
     </Card>
   );
 }
 
-export default APPerture;
+export default Tetris;
