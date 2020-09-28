@@ -1,4 +1,5 @@
-import React from "react";
+import React, {useEffect} from "react";
+import hoverEffect from "hover-effect";
 
 import { makeStyles } from "@material-ui/core/styles";
 import {
@@ -45,17 +46,37 @@ const useStyles = makeStyles((theme) => ({
 function APPerture() {
   const classes = useStyles();
 
+  useEffect(()=>{
+
+    new hoverEffect({
+      parent: document.querySelector("#nalu"),
+      intensity: 0.3,
+      image1: null,
+      image2: "https://i.ibb.co/tYH0Xyv/nalu-screenshot.png",
+      displacementImage: "https://i.ibb.co/GVmF2y5/4.png",
+      speedIn: 1.5,
+      speedOut: 1.5,
+    })
+    },[])
+
+
+
   return (
     <Card className={classes.root}>
       <CardContent>
-        <Typography className={classes.title}>Nalu</Typography>
+        <div id="nalu">
+          <Typography
+            className={classes.title}
+          >
+            Nalu
+          </Typography>
+        </div>
         <Typography className={classes.subtitle}>
           Group Project • 7 Days
         </Typography>
         <Typography className={classes.text}>
-          'Nalu' is a social website for the surfing community. Users can add a
-          surf location, rate and comment on other users surf locations. For
-          each surf location, we pulled from two weather APIs- one for the local
+          'Nalu' is a social website for the surfing community. Users can add a surf location as well as rate and comment on other users surf locations. For
+          each surf spot, we pulled from two weather APIs- one for the local
           weather and one for the marine weather.
         </Typography>
       </CardContent>

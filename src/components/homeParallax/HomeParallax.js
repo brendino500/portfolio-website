@@ -352,7 +352,7 @@ export default function HomeParallax() {
         </ParallaxLayer>
 
         <ParallaxLayer
-          offset={4.25}
+          offset={4.35}
           speed={2}
           style={{ pointerEvents: "none" }}
         >
@@ -360,16 +360,17 @@ export default function HomeParallax() {
             src={photo_for_website}
             alt="profile"
             className="profile-photo"
-            style={{ display: "block", marginLeft: "10%" }}
+            style={{ display: "block", marginLeft: "5%" }}
           />
         </ParallaxLayer>
       </Parallax>
 
-      <IconButton className={classes.margin}>
+      <IconButton 
+        className={classes.margin} 
+        onClick={() => parallax.scrollTo(0)}>
         <ArrowUpwardIcon
           fontSize="large"
           aria-label="sticky-up"
-          onClick={() => parallax.scrollTo(0)}
         />
       </IconButton>
     </>

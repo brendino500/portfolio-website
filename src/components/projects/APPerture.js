@@ -57,7 +57,7 @@ function APPerture() {
         <Typography className={classes.text}>
           For this project, we really wanted to push ourselves with Material UI
           (we really had to prove our styling was better than in our Reactathon
-          project...) and learning Material UI was such a rewarding experience.
+          project... lol!) and learning Material UI was such a rewarding experience.
           We also implemented some sexy parallax.
         </Typography>
         <br />

@@ -6,11 +6,11 @@ import { Typography, ThemeProvider, Container, Grid } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
   },
-  container: {
-    maxWidth: 1000
-  },
+  // container: {
+  //   maxWidth: 1000
+  // },
   title: {
     flexGrow: 1,
     fontFamily: 'Neuton',
@@ -58,7 +58,7 @@ function About() {
 
   return (
     <ThemeProvider theme={ColorTheme}>
-      <Container className={classes.container}>
+      <Container maxWidth="md">
         <Typography className={classes.title}>
           WHO AM I?
         </Typography>

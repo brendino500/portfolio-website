@@ -62,8 +62,7 @@ function Tetris() {
           As Tetris is such a well known game, I wanted to recreate as much of
           the original game functionalities as possible. I wanted to implement a
           mini grid to see the next tetromino (yes, the shapes are called
-          tetrominos!), the 'fast down' movement and the original scoring
-          system.
+          tetrominos!), the 'fast down' movement and the original SEGA scoring system.
         </Typography>
       </CardContent>
       <Grid container justify="space-between">
