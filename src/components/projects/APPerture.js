@@ -7,7 +7,7 @@ import {
   Typography,
   Card,
   CardContent,
-  IconButton,
+  IconButton
 } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
