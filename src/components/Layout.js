@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
     // maxWidth: 800,
     backgroundColor: "#394651",
     padding: 20,
+    margin: 10,
   },
   title: {
     fontSize: 50,
@@ -42,6 +43,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
+    maxWidth: 600,
   },
   content: {
     flex: "1 0 auto",
@@ -71,9 +73,53 @@ function APPerture() {
         justify="space-between"
         alignItems="center"
       >
-        <CardContent>
-          <Typography className={classes.title}>Nalu</Typography>
-        </CardContent>
+        <div>
+          <Grid
+            container
+            direction="column"
+            justify="flex-start"
+            alignItems="flex-start"
+          >
+            <CardContent>
+              <Typography className={classes.title}>Nalu</Typography>
+              <Typography className={classes.subtitle}>
+                Group Project • 7 Days
+              </Typography>
+              <Typography className={classes.text}>
+                'Nalu' is a social website for the surfing community. Users can
+                add a surf location as well as rate and comment on other users
+                surf locations. For each surf spot, we pulled from two weather
+                APIs- one for the local weather and one for the marine weather.
+              </Typography>
+            </CardContent>
+            <Grid container justify="space-between">
+              <Grid>
+                <IconButton
+                  href="https://github.com/Zarathustrah/SEI-Project-3"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GitHubIcon className="github-link" fontSize="large" />
+                </IconButton>
+                <IconButton href="#" target="_blank" rel="noopener noreferrer">
+                  <LinkIcon className="github-link" fontSize="large" />
+                </IconButton>
+              </Grid>
+              <Grid>
+                <i className="devicon-javascript-plain project-icon"></i>
+                <i className="devicon-html5-plain project-icon"></i>
+                <i className="devicon-css3-plain project-icon"></i>
+                <i className="devicon-sass-original project-icon"></i>
+                <i className="devicon-mongodb-plain-wordmark project-icon"></i>
+                <i className="devicon-express-original project-icon"></i>
+                <i className="devicon-npm-original-wordmark project-icon"></i>
+                <i className="devicon-react-original project-icon"></i>
+                <i className="devicon-nodejs-plain project-icon"></i>
+              </Grid>
+            </Grid>
+          </Grid>
+        </div>
+
         <div id="nalu"></div>
       </Grid>
     </Card>
