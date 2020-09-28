@@ -3,7 +3,7 @@ import Tetris from "./Tetris";
 import APPerture from "./APPerture";
 import Nalu from "./Nalu";
 import Reactathon from "./Reactathon";
-import hoverEffect from "hover-effect";
+import Layout from "../Layout";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Container, Typography, Grid, Box } from "@material-ui/core";
@@ -43,6 +43,7 @@ function Projects() {
       <Box>
         <Grid>
           <Typography className={classes.title}>PROJECTS</Typography>
+          <Layout />
           <br />
           <APPerture />
           <br />
