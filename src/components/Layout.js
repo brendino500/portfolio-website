@@ -9,15 +9,16 @@ import {
   Card,
   CardContent,
   IconButton,
+  CardMedia,
 } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    flexGrow: 1,
-    minWidth: 300,
-    maxWidth: 800,
+    // flexGrow: 1,
+    // minWidth: 300,
+    // maxWidth: 800,
     backgroundColor: "#394651",
     padding: 20,
   },
@@ -42,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     letterSpacing: 1,
   },
+  content: {
+    flex: "1 0 auto",
+  },
 }));
 
 function APPerture() {
@@ -61,94 +65,17 @@ function APPerture() {
 
   return (
     <Card className={classes.root}>
-      <CardContent>
-        <Grid
-          container
-          direction="row"
-          justify="space-between"
-          alignItems="flex-start"
-        >
-          <Grid
-            container
-            direction="row"
-            justify="space-between"
-            alignItems="flex-start"
-          >
-            <Grid
-              container
-              direction="column"
-              justify="flex-start"
-              alignItems="flex-start"
-            >
-              <CardContent>
-                <Typography className={classes.title}>APPerture</Typography>
-                <Typography className={classes.subtitle}>
-                  Paired Project • 7 Days
-                </Typography>
-                <Typography className={classes.text}>
-                  Instagram x Unsplash
-                </Typography>
-                <Typography className={classes.text}>
-                  For this project, we really wanted to push ourselves with
-                  Material UI (we really had to prove our styling was better
-                  than in our Reactathon project... lol!) and learning Material
-                  UI was such a rewarding experience. We also implemented some
-                  sexy parallax.
-                </Typography>
-                <br />
-                <Typography className={classes.text}>
-                  We made our own Python Django API using REST Framework and
-                  Postgres Database. Users can register, sign in, create a
-                  profile, follow other users and upload their own photos.
-                </Typography>
-              </CardContent>
-              <Grid container justify="space-between">
-                <Grid>
-                  <IconButton
-                    href="https://github.com/brendino500/APPerture"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitHubIcon className="github-link" fontSize="large" />
-                  </IconButton>
-                  <IconButton
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <LinkIcon className="github-link" fontSize="large" />
-                  </IconButton>
-                </Grid>
-                <Grid>
-                  <i className="devicon-javascript-plain project-icon"></i>
-                  <i className="devicon-html5-plain project-icon"></i>
-                  <i className="devicon-css3-plain project-icon"></i>
-                  <i className="devicon-sass-original project-icon"></i>
-                  <i className="devicon-python-plain project-icon"></i>
-                  <i className="devicon-django-plain project-icon"></i>
-                  <i className="devicon-postgresql-plain project-icon"></i>
-                  <i className="devicon-npm-original-wordmark project-icon"></i>
-                  <i className="devicon-react-original project-icon"></i>
-                  <i className="devicon-nodejs-plain project-icon"></i>
-                  <img
-                    src={materialUI}
-                    alt="materialui"
-                    className="materialIcon"
-                  />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid
-              container
-              direction="column"
-              justify="center"
-              alignItems="center"
-            >
-              <div id="nalu"></div>
-            </Grid>
-          </Grid>
-        </Grid>
-      </CardContent>
+      <Grid
+        container
+        direction="row"
+        justify="space-between"
+        alignItems="center"
+      >
+        <CardContent>
+          <Typography className={classes.title}>Nalu</Typography>
+        </CardContent>
+        <div id="nalu"></div>
+      </Grid>
     </Card>
   );
 }
