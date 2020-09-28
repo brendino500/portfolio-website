@@ -9,16 +9,12 @@ import {
   Card,
   CardContent,
   IconButton,
-  CardMedia,
 } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    // flexGrow: 1,
-    // minWidth: 300,
-    // maxWidth: 800,
     backgroundColor: "#394651",
     padding: 20,
   },

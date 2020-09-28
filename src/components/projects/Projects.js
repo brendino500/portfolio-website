@@ -43,7 +43,6 @@ function Projects() {
       <Box>
         <Grid>
           <Typography className={classes.title}>PROJECTS</Typography>
-          <Layout />
           <br />
           <APPerture />
           <br />
