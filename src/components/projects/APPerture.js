@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
+    maxWidth: 600,
   },
 }));
 
@@ -134,24 +135,3 @@ function APPerture() {
 }
 
 export default APPerture;
-
-{
-  /* <Card className={classes.root}>
-  <Grid container direction="row" justify="flex-start" alignItems="center">
-    <Grid
-      container
-      direction="column"
-      justify="flex-start"
-      alignItems="flex-start"
-    >
-      <CardContent></CardContent>
-    </Grid>
-    <Grid
-      container
-      direction="column"
-      justify="flex-start"
-      alignItems="flex-start"
-    ></Grid>
-  </Grid>
-</Card>; */
-}

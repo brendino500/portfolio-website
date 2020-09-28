@@ -47,11 +47,11 @@ function APPerture() {
 
   useEffect(() => {
     new hoverEffect({
-      parent: document.querySelector("#nalu"),
+      parent: document.querySelector("#apperture-project"),
       intensity: 0.3,
-      image1: "https://i.ibb.co/ccfsnPW/nalu-screenshot.png",
-      image2: "https://i.ibb.co/y0fgrmk/Screenshot-2020-09-28-at-14-20-21.png",
-      displacementImage: "https://i.ibb.co/306vvr1/7.jpg",
+      image1: "https://i.ibb.co/mvYsY2Y/apperture-home.png",
+      image2: "https://i.ibb.co/SJrrDH5/apperture-screenshot1.png",
+      displacementImage: "https://i.ibb.co/jGFsy1r/8.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
     });
@@ -73,21 +73,31 @@ function APPerture() {
             alignItems="flex-start"
           >
             <CardContent>
-              <Typography className={classes.title}>Nalu</Typography>
+              <Typography className={classes.title}>APPerture</Typography>
               <Typography className={classes.subtitle}>
-                Group Project • 7 Days
+                Paired Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
-                'Nalu' is a social website for the surfing community. Users can
-                add a surf location as well as rate and comment on other users
-                surf locations. For each surf spot, we pulled from two weather
-                APIs- one for the local weather and one for the marine weather.
+                Instagram x Unsplash
+              </Typography>
+              <Typography className={classes.text}>
+                For this project, we really wanted to push ourselves with
+                Material UI (we really had to prove our styling was better than
+                in our Reactathon project... lol!) and learning Material UI was
+                such a rewarding experience. We also implemented some sexy
+                parallax.
+              </Typography>
+              <br />
+              <Typography className={classes.text}>
+                We made our own Python Django API using REST Framework and
+                Postgres Database. Users can register, sign in, create a
+                profile, follow other users and upload their own photos.
               </Typography>
             </CardContent>
             <Grid container justify="space-between">
               <Grid>
                 <IconButton
-                  href="https://github.com/Zarathustrah/SEI-Project-3"
+                  href="https://github.com/brendino500/APPerture"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -102,17 +112,23 @@ function APPerture() {
                 <i className="devicon-html5-plain project-icon"></i>
                 <i className="devicon-css3-plain project-icon"></i>
                 <i className="devicon-sass-original project-icon"></i>
-                <i className="devicon-mongodb-plain-wordmark project-icon"></i>
-                <i className="devicon-express-original project-icon"></i>
+                <i className="devicon-python-plain project-icon"></i>
+                <i className="devicon-django-plain project-icon"></i>
+                <i className="devicon-postgresql-plain project-icon"></i>
                 <i className="devicon-npm-original-wordmark project-icon"></i>
                 <i className="devicon-react-original project-icon"></i>
                 <i className="devicon-nodejs-plain project-icon"></i>
+                <img
+                  src={materialUI}
+                  alt="materialui"
+                  className="materialIcon"
+                />
               </Grid>
             </Grid>
           </Grid>
         </div>
 
-        <div id="nalu"></div>
+        <div id="apperture-project"></div>
       </Grid>
     </Card>
   );
