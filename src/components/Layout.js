@@ -40,9 +40,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 1,
     maxWidth: 600,
   },
-  content: {
-    flex: "1 0 auto",
-  },
 }));
 
 function APPerture() {
