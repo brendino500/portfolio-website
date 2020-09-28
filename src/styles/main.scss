@@ -5,19 +5,23 @@
 // #00928E
 // #44535f - paper color
 
+$background-color: #323e47;
+$font-family-main: "Neuton", serif;
+$font-family-secondary: "Work Sans", sans-serif;
+$font-family-third: "Libre Baskerville", serif;
 
-
-$background-color: #323E47;
-$font-family-main: 'Neuton', serif;
-$font-family-secondary: 'Work Sans', sans-serif;
-$font-family-third: 'Libre Baskerville', serif;
-
-
-main, body {
+main,
+body {
   background-color: $background-color;
   font-family: $font-family-main;
 }
 
-@import './icons'; 
-@import './tetris';
-@import './about';
+#nalu {
+  position: relative;
+  height: 40vh;
+  width: 75vh;
+}
+
+@import "./icons";
+@import "./tetris";
+@import "./about";
