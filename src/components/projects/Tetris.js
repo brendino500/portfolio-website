@@ -50,7 +50,7 @@ function Tetris() {
       intensity: 0.3,
       image1: "https://i.ibb.co/LZcsFxy/tetris2.png",
       image2: "https://i.ibb.co/sHP8ZrB/tetris1.png",
-      displacementImage: "https://i.ibb.co/mJvt6yd/13.jpg",
+      displacementImage: "https://i.ibb.co/8YhT8P9/6.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
     });
