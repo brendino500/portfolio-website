@@ -38,7 +38,25 @@ const useStyles = makeStyles((theme) => ({
 function MancUni() {
   const classes = useStyles();
 
-  return <h1>Manc Uni</h1>;
+  return (
+    <Card className={classes.root}>
+      <CardContent>
+        <Typography className={classes.title}>
+          Manchester University. MusB
+        </Typography>
+        <Typography className={classes.subtitle}>2010 ~ 2013</Typography>
+        <Typography className={classes.text}>
+          In my three years studying at Manchester University, I specialised in
+          classical piano performance. Throughout the year I would play in
+          various solo and ensemble performances.
+          {<br />}
+          {<br />}
+          As well as performance I studied harmony, ethnomusicology, aesthetics
+          and music and politics in the 19th century.
+        </Typography>
+      </CardContent>
+    </Card>
+  );
 }
 
 export default MancUni;
