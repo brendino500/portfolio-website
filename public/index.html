@@ -2,9 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="src/assets/logo.png" />
+    <link rel="icon" href="https://i.ibb.co/zRNCKKV/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&family=Neuton&family=Work+Sans&display=swap"
       rel="stylesheet"
@@ -151,20 +153,15 @@
     <title>React App</title>
   </head>
   <body>
-    <!-- <div class="nalu"></div> -->
-
     <script src="three.min.js"></script>
     <script src="TweenMax.min.js"></script>
 
     <script src="dist/hover.umd.js"></script>
-    <!-- <script>
-      var myAnimation = new hoverEffect({
-        parent: document.querySelector(".nalu"),
-        intensity: 0.3,
-        nalu: "../src/assets/nalu_screenshot.png",
-        displacementImage: "images/myDistorsionImage.png",
-      });
-    </script> -->
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

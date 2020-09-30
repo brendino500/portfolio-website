@@ -54,6 +54,7 @@ function APPerture() {
       displacementImage: "https://i.ibb.co/jGFsy1r/8.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
+      imagesRatio: 350 / 400,
     });
   }, []);
 

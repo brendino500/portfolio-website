@@ -56,6 +56,7 @@ function Nalu() {
       displacementImage: "https://i.ibb.co/306vvr1/7.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
+      imagesRatio: 350 / 400,
     });
   }, []);
 

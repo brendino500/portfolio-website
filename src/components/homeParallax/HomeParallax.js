@@ -101,7 +101,7 @@ export default function HomeParallax() {
         </AppBar>
       </div>
 
-      <Parallax pages={5} ref={(ref) => (parallax = ref)}>
+      <Parallax pages={6} ref={(ref) => (parallax = ref)}>
         <ParallaxLayer
           offset={0.3}
           speed={1.6}
@@ -320,7 +320,9 @@ export default function HomeParallax() {
           ></i>
         </ParallaxLayer>
 
-        <ParallaxLayer offset={2} speed={4}>
+        <div data-aos="fade-down"></div>
+
+        <ParallaxLayer offset={2} speed={3}>
           <Projects />
         </ParallaxLayer>
 

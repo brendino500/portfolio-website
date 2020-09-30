@@ -53,6 +53,7 @@ function Reactathon() {
       displacementImage: "https://i.ibb.co/6yGCdRr/4.png",
       speedIn: 1.5,
       speedOut: 1.5,
+      imagesRatio: 350 / 400,
     });
   }, []);
 

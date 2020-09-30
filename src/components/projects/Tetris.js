@@ -53,6 +53,7 @@ function Tetris() {
       displacementImage: "https://i.ibb.co/8YhT8P9/6.jpg",
       speedIn: 1.5,
       speedOut: 1.5,
+      imagesRatio: 350 / 400,
     });
   }, []);
 
