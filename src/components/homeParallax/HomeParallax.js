@@ -7,7 +7,6 @@ import Skills from "../Skills";
 import Projects from "../projects/Projects";
 import Experience from "../experience/Experience";
 import Contact from "../Contact";
-import Navbar from "../Navbar";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
 import jest_icon from "../../assets/jest_icon.png";
@@ -102,7 +101,7 @@ export default function HomeParallax() {
         </AppBar>
       </div>
 
-      <Parallax pages={6} ref={(ref) => (parallax = ref)}>
+      <Parallax pages={5} ref={(ref) => (parallax = ref)}>
         <ParallaxLayer
           offset={0.3}
           speed={1.6}
@@ -365,13 +364,11 @@ export default function HomeParallax() {
         </ParallaxLayer>
       </Parallax>
 
-      <IconButton 
-        className={classes.margin} 
-        onClick={() => parallax.scrollTo(0)}>
-        <ArrowUpwardIcon
-          fontSize="large"
-          aria-label="sticky-up"
-        />
+      <IconButton
+        className={classes.margin}
+        onClick={() => parallax.scrollTo(0)}
+      >
+        <ArrowUpwardIcon fontSize="large" aria-label="sticky-up" />
       </IconButton>
     </>
   );
