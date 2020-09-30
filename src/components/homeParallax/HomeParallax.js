@@ -10,12 +10,17 @@ import Contact from "../Contact";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
 import jest_icon from "../../assets/jest_icon.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import { IconButton, Button, Toolbar, AppBar } from "@material-ui/core";
 
 let parallax = null;
+
+AOS.init();
 
 const useStyles = makeStyles((theme) => ({
   margin: {
@@ -28,27 +33,32 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontfamily: "Neuton",
     color: "#d3c9c0",
-    fontSize: "15px",
+    fontSize: 15,
   },
   title: {
     flexGrow: 1,
     fontFamily: "Neuton",
     color: "#d3c9c0",
-    fontSize: "25px",
-    letterSpacing: "4px",
+    fontSize: 25,
+    letterSpacing: 4,
   },
   projectTitle: {
     flexGrow: 1,
     fontFamily: "Neuton",
     color: "#d3c9c0",
-    fontSize: "40px",
-    letterSpacing: "12px",
+    fontSize: 40,
+    letterSpacing: 12,
   },
   button: {
     fontFamily: "Neuton",
-    fontSize: "17px",
+    fontSize: 17,
     color: "#d3c9c0",
-    letterSpacing: "4px",
+    letterSpacing: 4,
+  },
+  arrows: {
+    color: "#d3c9c0",
+    fontSize: 50,
+    textAlign: "center",
   },
 }));
 
@@ -322,13 +332,32 @@ export default function HomeParallax() {
 
         <div data-aos="fade-down"></div>
 
-        <ParallaxLayer offset={2} speed={3}>
+        <ParallaxLayer offset={1.99} speed={1}>
+          <div data-aos="fade-down">
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+          </div>
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={2} speed={2}>
           <Projects />
         </ParallaxLayer>
 
         <ParallaxLayer
           offset={3}
-          speed={5}
+          speed={3}
           style={{
             pointerEvents: "none",
             backgroundSize: "30%",
@@ -337,19 +366,8 @@ export default function HomeParallax() {
           <Experience />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={4}
-          speed={4}
-          style={{
-            pointerEvents: "none",
-            maxHeight: "30%",
-          }}
-        >
+        <ParallaxLayer offset={4} speed={2.5}>
           <About />
-        </ParallaxLayer>
-
-        <ParallaxLayer offset={5} speed={4.5}>
-          <Contact />
         </ParallaxLayer>
 
         <ParallaxLayer
@@ -363,6 +381,10 @@ export default function HomeParallax() {
             className="profile-photo"
             style={{ display: "block", marginLeft: "5%" }}
           />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5} speed={4.5}>
+          <Contact />
         </ParallaxLayer>
       </Parallax>
 

@@ -48,7 +48,7 @@ function MancUni() {
         <Typography className={classes.text}>
           In my three years studying at Manchester University, I specialised in
           classical piano performance. Throughout the year I would play in
-          various solo and ensemble performances.
+          various solo and ensemble recitals.
           {<br />}
           {<br />}
           As well as performance I studied harmony, ethnomusicology, aesthetics
