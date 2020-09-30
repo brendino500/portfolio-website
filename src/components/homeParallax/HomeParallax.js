@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Parallax, ParallaxLayer } from "react-spring/renderprops-addons";
 
 import About from "../About";
@@ -16,7 +16,18 @@ import "aos/dist/aos.css";
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-import { IconButton, Button, Toolbar, AppBar } from "@material-ui/core";
+import MailIcon from "@material-ui/icons/Mail";
+import AccountCircle from "@material-ui/icons/AccountCircle";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import {
+  IconButton,
+  Button,
+  Toolbar,
+  AppBar,
+  Menu,
+  MenuItem,
+  Badge,
+} from "@material-ui/core";
 
 let parallax = null;
 
@@ -60,10 +71,101 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 50,
     textAlign: "center",
   },
+  sectionDesktop: {
+    display: "none",
+    [theme.breakpoints.up("md")]: {
+      width: "20ch",
+    },
+  },
+  sectionMobile: {
+    display: "flex",
+    [theme.breakpoints.up("md")]: {
+      display: "none",
+    },
+  },
 }));
 
 export default function HomeParallax() {
   const classes = useStyles();
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
+
+  const isMenuOpen = Boolean(anchorEl);
+  const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
+
+  const handleProfileMenuOpen = (e) => {
+    setAnchorEl(e.currentTarget);
+  };
+
+  const handleMobileMenuClose = () => {
+    setMobileMoreAnchorEl(null);
+  };
+
+  const handleMenuClose = () => {
+    setAnchorEl(null);
+    handleMobileMenuClose();
+  };
+
+  const handleMobileMenuOpen = (e) => {
+    setMobileMoreAnchorEl(e.currentTarget);
+  };
+
+  const menuId = "primary-menu";
+  const renderMenu = (
+    <Menu
+      anchorEl={anchorEl}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      id={menuId}
+      keepMounted
+      transformOrigin={{ vertical: "top", horizontal: "right" }}
+      open={isMenuOpen}
+      onClose={handleMenuClose}
+    >
+      <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+      <MenuItem onClick={handleMenuClose}>My Account</MenuItem>
+    </Menu>
+  );
+
+  const mobileMenuId = "primary-menu-mobile";
+  const renderMobileMenu = (
+    <Menu
+      anchorEl={mobileMoreAnchorEl}
+      anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      id={mobileMenuId}
+      keepMounted
+      transformOrigin={{ vertical: "top", horizontal: "right" }}
+      open={isMobileMenuOpen}
+      onClose={handleMobileMenuClose}
+    >
+      <MenuItem>
+        <IconButton aria-label="show 4 new mails" color="inherit">
+          <Badge badgeContent={4} color="secondary">
+            <MailIcon />
+          </Badge>
+        </IconButton>
+        <p>Messages</p>
+      </MenuItem>
+      <MenuItem>
+        <IconButton aria-label="show 11 new notifications" color="inherit">
+          <Badge badgeContent={11} color="secondary">
+            <NotificationsIcon />
+          </Badge>
+        </IconButton>
+        <p>Notifications</p>
+      </MenuItem>
+      <MenuItem onClick={handleProfileMenuOpen}>
+        <IconButton
+          aria-label="account of current user"
+          aria-controls="primary-search-account-menu"
+          aria-haspopup="true"
+          color="inherit"
+        >
+          <AccountCircle />
+        </IconButton>
+        <p>Profile</p>
+      </MenuItem>
+    </Menu>
+  );
 
   return (
     <>
@@ -75,6 +177,7 @@ export default function HomeParallax() {
             boxShadow: "none",
           }}
         >
+          {/* <div className={classes.sectionDesktop}> */}
           <Toolbar>
             <span
               className={classes.title}
@@ -108,6 +211,7 @@ export default function HomeParallax() {
               Stalk
             </Button>
           </Toolbar>
+          {/* </div> */}
         </AppBar>
       </div>
 
@@ -355,14 +459,7 @@ export default function HomeParallax() {
           <Projects />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={3}
-          speed={3}
-          style={{
-            pointerEvents: "none",
-            backgroundSize: "30%",
-          }}
-        >
+        <ParallaxLayer offset={3.2} speed={3}>
           <Experience />
         </ParallaxLayer>
 
@@ -370,11 +467,7 @@ export default function HomeParallax() {
           <About />
         </ParallaxLayer>
 
-        <ParallaxLayer
-          offset={4.35}
-          speed={2}
-          style={{ pointerEvents: "none" }}
-        >
+        <ParallaxLayer offset={4.4} speed={2} style={{ pointerEvents: "none" }}>
           <img
             src={photo_for_website}
             alt="profile"
@@ -394,6 +487,7 @@ export default function HomeParallax() {
       >
         <ArrowUpwardIcon fontSize="large" aria-label="sticky-up" />
       </IconButton>
+      {/* </Menu> */}
     </>
   );
 }
