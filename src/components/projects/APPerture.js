@@ -104,7 +104,7 @@ function APPerture() {
                 >
                   <GitHubIcon className="github-link" fontSize="large" />
                 </IconButton>
-                <IconButton href="#" target="_blank" rel="noopener noreferrer">
+                <IconButton href="http://apperture-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
                   <LinkIcon className="github-link" fontSize="large" />
                 </IconButton>
               </Grid>
@@ -129,7 +129,10 @@ function APPerture() {
           </Grid>
         </div>
 
-        <div id="apperture-project"></div>
+        <a  href="http://apperture-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+          <div id="apperture-project"></div>
+        </a>
+
       </Grid>
     </Card>
   );
