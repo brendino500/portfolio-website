@@ -84,6 +84,9 @@ const useStyles = makeStyles((theme) => ({
       display: "none",
     },
   },
+  mobileMenu: {
+    backgroundColor: "#394651",
+  },
 }));
 
 export default function HomeParallax() {
@@ -114,6 +117,7 @@ export default function HomeParallax() {
   const menuId = "primary-menu";
   const renderMenu = (
     <Menu
+      className={classes.mobileMenu}
       anchorEl={anchorEl}
       anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={menuId}
@@ -138,33 +142,18 @@ export default function HomeParallax() {
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
     >
-      {/* <MenuItem>
-        <IconButton aria-label="show 4 new mails" color="inherit">
-          <Badge badgeContent={4} color="secondary">
-            <MailIcon />
-          </Badge>
-        </IconButton>
-        <p>Messages</p>
-      </MenuItem> */}
       <MenuItem>
-        <IconButton aria-label="show 11 new notifications" color="inherit">
-          <Badge badgeContent={11} color="secondary">
-            <NotificationsIcon />
-          </Badge>
-        </IconButton>
-        <p>Notifications</p>
+        <p className={classes.button}>PROJECTS</p>
       </MenuItem>
-      {/* <MenuItem onClick={handleProfileMenuOpen}>
-        <IconButton
-          aria-label="account of current user"
-          aria-controls="primary-search-account-menu"
-          aria-haspopup="true"
-          color="inherit"
-        >
-          <AccountCircle />
-        </IconButton>
-        <p>Profile</p>
-      </MenuItem> */}
+      <MenuItem>
+        <p className={classes.button}>EXPERIENCE</p>
+      </MenuItem>
+      <MenuItem>
+        <p className={classes.button}>ABOUT</p>
+      </MenuItem>
+      <MenuItem>
+        <p className={classes.button}>STALK</p>
+      </MenuItem>
     </Menu>
   );
 
