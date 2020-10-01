@@ -15,6 +15,7 @@ import "aos/dist/aos.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+import MoreIcon from "@material-ui/icons/MoreVert";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 import MailIcon from "@material-ui/icons/Mail";
 import AccountCircle from "@material-ui/icons/AccountCircle";
@@ -210,8 +211,22 @@ export default function HomeParallax() {
             >
               Stalk
             </Button>
+
+            <div className={classes.sectionMobile}>
+              <IconButton
+                aria-label="show more"
+                aria-controls={mobileMenuId}
+                aria-haspopup="true"
+                onClick={handleMobileMenuOpen}
+                color="inherit"
+              >
+                <MoreIcon />
+              </IconButton>
+            </div>
           </Toolbar>
           {/* </div> */}
+          {renderMobileMenu}
+          {renderMenu}
         </AppBar>
       </div>
 
