@@ -117,7 +117,13 @@ function Tetris() {
           </Grid>
         </div>
 
-        <div id="tetris"></div>
+        <a
+          href="https://brendino500.github.io/sei-project-1/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div id="tetris"></div>
+        </a>
       </Grid>
     </Card>
   );
