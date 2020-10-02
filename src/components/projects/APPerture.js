@@ -17,12 +17,21 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#394651",
     padding: 20,
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 300,
+    },
+    // [theme.breakpoints.down("md")]: {
+    //   maxWidth: 600,
+    // },
   },
   title: {
     fontSize: 50,
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 33,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -31,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 20,
+    },
   },
   text: {
     flexGrow: 1,
@@ -39,6 +51,28 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     letterSpacing: 1,
     maxWidth: 600,
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 16,
+      maxWidth: 280,
+    },
+  },
+  icons: {
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 16,
+    },
+  },
+  image: {
+    // display: "block",
+    // marginLeft: "auto",
+    // marginRight: "auto",
+    // width: "50%",
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: 290,
+    },
+    [theme.breakpoints.up("sm")]: {
+      display: "flex",
+    },
+    [theme.breakpoints.up("md")]: { display: "flex" },
   },
 }));
 
@@ -104,12 +138,20 @@ function APPerture() {
                 >
                   <GitHubIcon className="github-link" fontSize="large" />
                 </IconButton>
-                <IconButton href="http://apperture-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                <IconButton
+                  href="http://apperture-project.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <LinkIcon className="github-link" fontSize="large" />
                 </IconButton>
               </Grid>
               <Grid>
-                <i className="devicon-javascript-plain project-icon"></i>
+                <i
+                  className={
+                    ("devicon-javascript-plain project-icon", classes.icons)
+                  }
+                ></i>
                 <i className="devicon-html5-plain project-icon"></i>
                 <i className="devicon-css3-plain project-icon"></i>
                 <i className="devicon-sass-original project-icon"></i>
@@ -122,17 +164,20 @@ function APPerture() {
                 <img
                   src={materialUI}
                   alt="materialui"
-                  className="materialIcon"
+                  className={"materialIcon"}
                 />
               </Grid>
             </Grid>
           </Grid>
         </div>
 
-        <a  href="http://apperture-project.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <div id="apperture-project"></div>
+        <a
+          href="http://apperture-project.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div id="apperture-project" className={classes.image}></div>
         </a>
-
       </Grid>
     </Card>
   );
