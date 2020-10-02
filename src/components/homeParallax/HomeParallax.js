@@ -15,11 +15,8 @@ import "aos/dist/aos.css";
 
 import { makeStyles } from "@material-ui/core/styles";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
-import MoreIcon from "@material-ui/icons/MoreVert";
+import MenuIcon from "@material-ui/icons/Menu";
 import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
-import MailIcon from "@material-ui/icons/Mail";
-import AccountCircle from "@material-ui/icons/AccountCircle";
-import NotificationsIcon from "@material-ui/icons/Notifications";
 import {
   IconButton,
   Button,
@@ -35,6 +32,9 @@ let parallax = null;
 AOS.init();
 
 const useStyles = makeStyles((theme) => ({
+  grow: {
+    flexGrow: 1,
+  },
   margin: {
     margin: theme.spacing(1),
     color: "#d3c9c0",
@@ -75,7 +75,7 @@ const useStyles = makeStyles((theme) => ({
   sectionDesktop: {
     display: "none",
     [theme.breakpoints.up("md")]: {
-      width: "20ch",
+      display: "flex",
     },
   },
   sectionMobile: {
@@ -87,6 +87,9 @@ const useStyles = makeStyles((theme) => ({
   mobileMenu: {
     backgroundColor: "#394651",
   },
+  burgerIcon: {
+    color: "#d3c9c0",
+  },
 }));
 
 export default function HomeParallax() {
@@ -96,10 +99,6 @@ export default function HomeParallax() {
 
   const isMenuOpen = Boolean(anchorEl);
   const isMobileMenuOpen = Boolean(mobileMoreAnchorEl);
-
-  const handleProfileMenuOpen = (e) => {
-    setAnchorEl(e.currentTarget);
-  };
 
   const handleMobileMenuClose = () => {
     setMobileMoreAnchorEl(null);
@@ -117,7 +116,7 @@ export default function HomeParallax() {
   const menuId = "primary-menu";
   const renderMenu = (
     <Menu
-      className={classes.mobileMenu}
+      // className={classes.mobileMenu}
       anchorEl={anchorEl}
       anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={menuId}
@@ -125,10 +124,7 @@ export default function HomeParallax() {
       transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMenuOpen}
       onClose={handleMenuClose}
-    >
-      {/* <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
-      <MenuItem onClick={handleMenuClose}>My Account</MenuItem> */}
-    </Menu>
+    ></Menu>
   );
 
   const mobileMenuId = "primary-menu-mobile";
@@ -143,16 +139,48 @@ export default function HomeParallax() {
       onClose={handleMobileMenuClose}
     >
       <MenuItem>
-        <p className={classes.button}>PROJECTS</p>
+        <p
+          className={classes.button}
+          onClick={() => {
+            handleMobileMenuClose();
+            parallax.scrollTo(2);
+          }}
+        >
+          PROJECTS
+        </p>
       </MenuItem>
       <MenuItem>
-        <p className={classes.button}>EXPERIENCE</p>
+        <p
+          className={classes.button}
+          onClick={() => {
+            handleMobileMenuClose();
+            parallax.scrollTo(3);
+          }}
+        >
+          EXPERIENCE
+        </p>
       </MenuItem>
       <MenuItem>
-        <p className={classes.button}>ABOUT</p>
+        <p
+          className={classes.button}
+          onClick={() => {
+            handleMobileMenuClose();
+            parallax.scrollTo(4);
+          }}
+        >
+          ABOUT
+        </p>
       </MenuItem>
       <MenuItem>
-        <p className={classes.button}>STALK</p>
+        <p
+          className={classes.button}
+          onClick={() => {
+            handleMobileMenuClose();
+            parallax.scrollTo(5);
+          }}
+        >
+          STALK
+        </p>
       </MenuItem>
     </Menu>
   );
@@ -167,7 +195,6 @@ export default function HomeParallax() {
             boxShadow: "none",
           }}
         >
-          {/* <div className={classes.sectionDesktop}> */}
           <Toolbar>
             <span
               className={classes.title}
@@ -176,30 +203,33 @@ export default function HomeParallax() {
               BRENDA TY
             </span>
 
-            <Button
-              className={classes.button}
-              onClick={() => parallax.scrollTo(2)}
-            >
-              Projects
-            </Button>
-            <Button
-              className={classes.button}
-              onClick={() => parallax.scrollTo(3)}
-            >
-              Experience
-            </Button>
-            <Button
-              className={classes.button}
-              onClick={() => parallax.scrollTo(4)}
-            >
-              About
-            </Button>
-            <Button
-              className={classes.button}
-              onClick={() => parallax.scrollTo(5)}
-            >
-              Stalk
-            </Button>
+            <div className={classes.grow} />
+            <div className={classes.sectionDesktop}>
+              <Button
+                className={classes.button}
+                onClick={() => parallax.scrollTo(2)}
+              >
+                Projects
+              </Button>
+              <Button
+                className={classes.button}
+                onClick={() => parallax.scrollTo(3)}
+              >
+                Experience
+              </Button>
+              <Button
+                className={classes.button}
+                onClick={() => parallax.scrollTo(4)}
+              >
+                About
+              </Button>
+              <Button
+                className={classes.button}
+                onClick={() => parallax.scrollTo(5)}
+              >
+                Stalk
+              </Button>
+            </div>
 
             <div className={classes.sectionMobile}>
               <IconButton
@@ -209,11 +239,10 @@ export default function HomeParallax() {
                 onClick={handleMobileMenuOpen}
                 color="inherit"
               >
-                <MoreIcon />
+                <MenuIcon className={classes.burgerIcon} />
               </IconButton>
             </div>
           </Toolbar>
-          {/* </div> */}
           {renderMobileMenu}
           {renderMenu}
         </AppBar>
