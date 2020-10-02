@@ -24,7 +24,6 @@ import {
   AppBar,
   Menu,
   MenuItem,
-  Badge,
 } from "@material-ui/core";
 
 let parallax = null;
@@ -85,7 +84,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   mobileMenu: {
-    backgroundColor: "#394651",
+    Paper: {
+      backgroundColor: "#d3c9c0",
+    },
   },
   burgerIcon: {
     color: "#d3c9c0",
@@ -137,6 +138,7 @@ export default function HomeParallax() {
       transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
+      // className={classes.mobileMenu}
     >
       <MenuItem>
         <p

@@ -25,6 +25,12 @@ body {
   width: 400px;
 }
 
+#primary-menu-mobile
+  > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded
+  > ul {
+  background-color: #44535f;
+}
+
 @import "./icons";
 @import "./tetris";
 @import "./about";
