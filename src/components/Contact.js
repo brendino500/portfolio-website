@@ -56,7 +56,6 @@ function Contact() {
         <s>STALK ME...</s>
       </Typography>
       <Typography className={classes.title}>CONTACT</Typography>
-
       <Grid
         container
         direction="column"

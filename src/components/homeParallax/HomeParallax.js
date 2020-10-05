@@ -7,6 +7,7 @@ import Skills from "../Skills";
 import Projects from "../projects/Projects";
 import Experience from "../experience/Experience";
 import Contact from "../Contact";
+import Footer from "../Footer";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
 import jest_icon from "../../assets/jest_icon.png";
@@ -90,6 +91,12 @@ const useStyles = makeStyles((theme) => ({
   },
   burgerIcon: {
     color: "#d3c9c0",
+  },
+  footer: {
+    fontfamily: "Libre Baskerville",
+    color: "#d3c9c0",
+    fontSize: 15,
+    marginLeft: "20%",
   },
 }));
 
@@ -513,6 +520,10 @@ export default function HomeParallax() {
 
         <ParallaxLayer offset={5} speed={4.5}>
           <Contact />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={5.8} speed={3}>
+          <Footer />
         </ParallaxLayer>
       </Parallax>
 

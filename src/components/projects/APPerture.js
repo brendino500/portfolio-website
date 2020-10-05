@@ -17,30 +17,12 @@ const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#394651",
     padding: 20,
-    [theme.breakpoints.down("xs")]: {
-      maxWidth: 300,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 580,
-    },
-    [theme.breakpoints.down("md")]: {
-      maxWidth: 930,
-    },
-    [theme.breakpoints.down("lg")]: {
-      maxWidth: 1200,
-    },
-    [theme.breakpoints.down("xl")]: {
-      maxWidth: 1400,
-    },
   },
   title: {
     fontSize: 50,
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 33,
-    },
   },
   subtitle: {
     fontSize: 25,
@@ -49,9 +31,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 20,
-    },
   },
   text: {
     flexGrow: 1,
@@ -60,41 +39,6 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     letterSpacing: 1,
     maxWidth: 600,
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 16,
-      maxWidth: 280,
-      display: "flex",
-    },
-    [theme.breakpoints.down("sm")]: {
-      display: "flex",
-      maxWidth: 580,
-    },
-    [theme.breakpoints.down("md")]: { display: "flex", maxWidth: 900 },
-
-    [theme.breakpoints.down("lg")]: { display: "flex" },
-    [theme.breakpoints.down("xl")]: { display: "flex" },
-  },
-  icons: {
-    [theme.breakpoints.down("xs")]: {
-      fontSize: 16,
-    },
-  },
-  image: {
-    container: {
-      direction: "row",
-      justify: "center",
-      alignItems: "center",
-    },
-    [theme.breakpoints.down("xs")]: {
-      display: "flex",
-      maxWidth: 335,
-    },
-    [theme.breakpoints.down("sm")]: {
-      display: "flex",
-    },
-    [theme.breakpoints.down("md")]: { display: "flex" },
-    [theme.breakpoints.down("lg")]: { display: "flex" },
-    [theme.breakpoints.down("xl")]: { display: "flex" },
   },
 }));
 
@@ -169,11 +113,7 @@ function APPerture() {
                 </IconButton>
               </Grid>
               <Grid>
-                <i
-                  className={
-                    ("devicon-javascript-plain project-icon", classes.icons)
-                  }
-                ></i>
+                <i className="devicon-javascript-plain project-icon"></i>
                 <i className="devicon-html5-plain project-icon"></i>
                 <i className="devicon-css3-plain project-icon"></i>
                 <i className="devicon-sass-original project-icon"></i>
@@ -186,7 +126,7 @@ function APPerture() {
                 <img
                   src={materialUI}
                   alt="materialui"
-                  className={"materialIcon"}
+                  className="materialIcon"
                 />
               </Grid>
             </Grid>
@@ -198,7 +138,7 @@ function APPerture() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div id="apperture-project" className={classes.image}></div>
+          <div id="apperture-project"></div>
         </a>
       </Grid>
     </Card>
