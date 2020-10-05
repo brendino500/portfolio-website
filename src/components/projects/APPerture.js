@@ -20,9 +20,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       maxWidth: 300,
     },
-    // [theme.breakpoints.down("md")]: {
-    //   maxWidth: 600,
-    // },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: 580,
+    },
+    [theme.breakpoints.down("md")]: {
+      maxWidth: 930,
+    },
+    [theme.breakpoints.down("lg")]: {
+      maxWidth: 1200,
+    },
+    [theme.breakpoints.down("xl")]: {
+      maxWidth: 1400,
+    },
   },
   title: {
     fontSize: 50,
@@ -54,7 +63,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("xs")]: {
       fontSize: 16,
       maxWidth: 280,
+      display: "flex",
     },
+    [theme.breakpoints.down("sm")]: {
+      display: "flex",
+      maxWidth: 580,
+    },
+    [theme.breakpoints.down("md")]: { display: "flex", maxWidth: 900 },
+
+    [theme.breakpoints.down("lg")]: { display: "flex" },
+    [theme.breakpoints.down("xl")]: { display: "flex" },
   },
   icons: {
     [theme.breakpoints.down("xs")]: {
@@ -62,17 +80,21 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    // display: "block",
-    // marginLeft: "auto",
-    // marginRight: "auto",
-    // width: "50%",
-    [theme.breakpoints.down("xs")]: {
-      maxWidth: 290,
+    container: {
+      direction: "row",
+      justify: "center",
+      alignItems: "center",
     },
-    [theme.breakpoints.up("sm")]: {
+    [theme.breakpoints.down("xs")]: {
+      display: "flex",
+      maxWidth: 335,
+    },
+    [theme.breakpoints.down("sm")]: {
       display: "flex",
     },
-    [theme.breakpoints.up("md")]: { display: "flex" },
+    [theme.breakpoints.down("md")]: { display: "flex" },
+    [theme.breakpoints.down("lg")]: { display: "flex" },
+    [theme.breakpoints.down("xl")]: { display: "flex" },
   },
 }));
 

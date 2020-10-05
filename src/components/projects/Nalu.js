@@ -39,9 +39,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 1,
     maxWidth: 600,
   },
-  content: {
-    flex: "1 0 auto",
-  },
 }));
 
 function Nalu() {
@@ -115,7 +112,9 @@ function Nalu() {
           </Grid>
         </div>
 
+        {/* <Grid container direction="row" justify="center" alignItems="center"> */}
         <div id="nalu"></div>
+        {/* </Grid> */}
       </Grid>
     </Card>
   );
