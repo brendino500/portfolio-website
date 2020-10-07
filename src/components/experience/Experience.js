@@ -51,8 +51,8 @@ function Experience() {
       <GridList cellHeight={500}>
         <GeneralAssembly />
         <Freelance />
-        <Craft />
-        <Department />
+        {/* <Craft />
+        <Department /> */}
         <MancUni />
       </GridList>
     </Container>

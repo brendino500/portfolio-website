@@ -113,7 +113,14 @@ function Nalu() {
         </div>
 
         {/* <Grid container direction="row" justify="center" alignItems="center"> */}
-        <div id="nalu"></div>
+        <a
+          href="https://naluwave.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div id="nalu"></div>
+        </a>
+
         {/* </Grid> */}
       </Grid>
     </Card>

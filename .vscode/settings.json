@@ -1,0 +1,19 @@
+{
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#359097",
+    "titleBar.activeBackground": "#359097",
+    "titleBar.inactiveBackground": "#359097",
+    "titleBar.inactiveForeground": "#FFF",
+    "titleBar.activeForeground": "#FFF"
+  },
+  "window.title": "P O R T F O L I O",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true
+}

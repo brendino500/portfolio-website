@@ -1,52 +1,51 @@
-import React from 'react'
+import React from "react";
 
-import { Typography, Card, CardContent } from '@material-ui/core'
-import { makeStyles } from '@material-ui/core/styles'
+import { Typography, Card, CardContent } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
-    backgroundColor: '#394651',
+    backgroundColor: "#394651",
     width: 500,
     height: 450,
     padding: 30,
-    margin: 8
+    margin: 8,
   },
   title: {
     fontSize: 35,
-    fontFamily: 'Neuton',
-    color: '#d3c9c0',
-    letterSpacing: 5
+    fontFamily: "Neuton",
+    color: "#d3c9c0",
+    letterSpacing: 5,
   },
   subtitle: {
     fontSize: 20,
-    fontFamily: 'Libre Baskerville',
-    color: '#d3c9c0',
+    fontFamily: "Libre Baskerville",
+    color: "#d3c9c0",
     letterSpacing: 2,
     marginTop: 10,
-    marginBottom: 20
+    marginBottom: 20,
   },
   text: {
     flexGrow: 1,
-    fontFamily: 'Work Sans',
-    color: '#d3c9c0',
+    fontFamily: "Work Sans",
+    color: "#d3c9c0",
     fontSize: 18,
-    letterSpacing: 1
+    letterSpacing: 1,
   },
   smallerText: {
     flexGrow: 1,
-    fontFamily: 'Libre Baskerville',
-    color: '#d3c9c0',
+    fontFamily: "Libre Baskerville",
+    color: "#d3c9c0",
     fontSize: 15,
-    letterSpacing: 1
-  }
-}))
+    letterSpacing: 1,
+  },
+}));
 
 function Freelance() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
-
     <Card className={classes.root}>
       <CardContent>
         <Typography className={classes.title}>
@@ -56,7 +55,12 @@ function Freelance() {
           July 2016 ~ February 2020
         </Typography>
         <Typography className={classes.text}>
-          I've been published in the Telegraph and Caffeine Magazine multiple times. I focus on digital photography (but my heart lies in analogue), mainly shooting portraiture and taking photos for coffee shops social media. My past clients include Kaffeine, Rosslyn, The Attendant, V69 Coffee, Midas Coffee and The Roasting Party.
+          I've been published in the Telegraph and Caffeine Magazine multiple
+          times. I focus on digital photography (but my heart lies in analogue).
+          I have been commissioned by companies and individuals, mainly shooting
+          portraiture and taking photos for coffee shops social media. My past
+          clients include Kaffeine, Rosslyn, The Attendant, V69 Coffee, Midas
+          Coffee and The Roasting Party.
           {<br />}
           {<br />}
         </Typography>
@@ -67,7 +71,7 @@ function Freelance() {
         </Typography>
       </CardContent>
     </Card>
-  )
+  );
 }
 
-export default Freelance
+export default Freelance;
