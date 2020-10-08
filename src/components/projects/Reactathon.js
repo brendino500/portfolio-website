@@ -14,14 +14,20 @@ import GitHubIcon from "@material-ui/icons/GitHub";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    flexGrow: 1,
     backgroundColor: "#394651",
     padding: 20,
+    width: 400,
+    margin: 8,
   },
   title: {
     fontSize: 50,
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 30,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -30,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 18,
+    },
   },
   text: {
     flexGrow: 1,
@@ -37,7 +46,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
-    maxWidth: 600,
+    // maxWidth: 600,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 15,
+    },
+  },
+  icons: {
+    [theme.breakpoints.down("md")]: {
+      fontSize: "medium",
+    },
   },
 }));
 
@@ -93,6 +110,7 @@ function Reactathon() {
                   href="https://github.com/brendino500/sei-project-2"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className={classes.icons}
                 >
                   <GitHubIcon fontSize="large" className="github-link" />
                 </IconButton>

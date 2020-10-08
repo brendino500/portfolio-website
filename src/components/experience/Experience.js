@@ -24,22 +24,6 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "center",
     marginBottom: 25,
   },
-  subtitle: {
-    fontSize: 25,
-    fontFamily: "Libre Baskerville",
-    color: "#d3c9c0",
-    letterSpacing: 2,
-    marginTop: 10,
-    marginBottom: 10,
-  },
-  text: {
-    flexGrow: 1,
-    fontFamily: "Work Sans",
-    color: "#d3c9c0",
-    fontSize: 18,
-    letterSpacing: 1,
-  },
-  grid: {},
 }));
 
 function Experience() {
