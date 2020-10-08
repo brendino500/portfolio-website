@@ -136,19 +136,18 @@ function APPerture() {
             </Grid>
           </Grid>
         </div>
-        {/* 
+
         <a
           href="http://apperture-project.herokuapp.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div id="apperture-project"></div>
-        </a> */}
-        <CardMedia
-          className={classes.cover}
-          image
-          id="apperture-project"
-        ></CardMedia>
+          <CardMedia
+            className={classes.cover}
+            image
+            id="apperture-project"
+          ></CardMedia>
+        </a>
       </Grid>
     </Card>
   );
