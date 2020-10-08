@@ -26,6 +26,7 @@ import {
   Menu,
   MenuItem,
 } from "@material-ui/core";
+import Skeleton from "@material-ui/lab/Skeleton";
 
 let parallax = null;
 
@@ -484,6 +485,7 @@ export default function HomeParallax() {
               className={classes.arrows}
               style={{ display: "block", marginLeft: "50%" }}
             />
+
             <br />
             <KeyboardArrowDownIcon
               className={classes.arrows}
@@ -501,7 +503,7 @@ export default function HomeParallax() {
           <Projects />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3.2} speed={3}>
+        <ParallaxLayer offset={3} speed={3}>
           <Experience />
         </ParallaxLayer>
 

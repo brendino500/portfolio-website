@@ -93,7 +93,11 @@ function Nalu() {
                 >
                   <GitHubIcon className="github-link" fontSize="large" />
                 </IconButton>
-                <IconButton href="#" target="_blank" rel="noopener noreferrer">
+                <IconButton
+                  href="https://naluwave.herokuapp.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <LinkIcon className="github-link" fontSize="large" />
                 </IconButton>
               </Grid>

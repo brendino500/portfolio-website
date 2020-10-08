@@ -39,6 +39,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     letterSpacing: 1,
   },
+  grid: {},
 }));
 
 function Experience() {
@@ -51,8 +52,8 @@ function Experience() {
       <GridList cellHeight={500}>
         <GeneralAssembly />
         <Freelance />
-        {/* <Craft />
-        <Department /> */}
+        <Craft />
+        {/* <Department /> */}
         <MancUni />
       </GridList>
     </Container>

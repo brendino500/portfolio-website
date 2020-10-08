@@ -38,7 +38,7 @@ function Projects() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="lg">
+    <Container maxWidth="xl">
       <Box>
         <Grid>
           <Typography className={classes.title}>PROJECTS</Typography>

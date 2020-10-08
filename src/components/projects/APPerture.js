@@ -9,6 +9,7 @@ import {
   Card,
   CardContent,
   IconButton,
+  CardMedia,
 } from "@material-ui/core";
 import LinkIcon from "@material-ui/icons/Link";
 import GitHubIcon from "@material-ui/icons/GitHub";
@@ -39,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 18,
     letterSpacing: 1,
     maxWidth: 600,
+  },
+  cover: {
+    width: 200,
   },
 }));
 
@@ -132,14 +136,19 @@ function APPerture() {
             </Grid>
           </Grid>
         </div>
-
+        {/* 
         <a
           href="http://apperture-project.herokuapp.com/"
           target="_blank"
           rel="noopener noreferrer"
         >
           <div id="apperture-project"></div>
-        </a>
+        </a> */}
+        <CardMedia
+          className={classes.cover}
+          image
+          id="apperture-project"
+        ></CardMedia>
       </Grid>
     </Card>
   );
