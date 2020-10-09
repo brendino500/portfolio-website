@@ -40,6 +40,19 @@ body {
   }
 }
 
+@media only screen and (max-width: 600px) {
+  #nalu,
+  #apperture-project,
+  #weather-tfl,
+  #tetris {
+    margin-top: 10px;
+    position: sticky;
+    width: 30vh;
+    height: 25vh;
+    margin-left: -45px;
+  }
+}
+
 #primary-menu-mobile
   > div.MuiPaper-root.MuiMenu-paper.MuiPopover-paper.MuiPaper-elevation8.MuiPaper-rounded
   > ul {
