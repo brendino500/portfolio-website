@@ -111,6 +111,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: "140%",
       paddingLeft: 50,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: "45%",
+      width: 175,
+      paddingLeft: "30%",
+    },
     [theme.breakpoints.between("md", "lg")]: {
       width: 150,
       marginLeft: 20,

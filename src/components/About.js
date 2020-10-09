@@ -19,6 +19,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 28,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 35,
+    },
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: 35,
     },
@@ -33,6 +36,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 20,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 22,
+    },
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: 20,
     },
@@ -43,11 +49,11 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 20,
     letterSpacing: 2,
-    [theme.breakpoints.down("md")]: {
-      fontSize: 15,
-    },
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 16,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 18,
     },
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: 14,
@@ -64,6 +70,9 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
       marginLeft: "10%",
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 18,
+    },
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: 18,
     },
@@ -78,6 +87,11 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 13,
       marginLeft: "10%",
+    },
+
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 15,
+      marginLeft: "20%",
     },
     [theme.breakpoints.between("md", "lg")]: {
       fontSize: 15,
