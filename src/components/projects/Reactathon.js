@@ -95,9 +95,10 @@ function Reactathon() {
                 Paired Project • 48 Hours
               </Typography>
               <Typography className={classes.text}>
-                Out of the whole of General Assembly, this was, by far, the{" "}
-                <i>most fun project!</i> I was paired with a crazy French man
-                and we've had the most intense coding relationship since.
+                Out of the whole of the General Assembly course, this was, by
+                far, the <i>most fun project!</i> I was paired with a crazy
+                French man and we've had the most intense coding relationship
+                since.
                 <br />
                 <br />
                 We wanted to create an app with geolocation (if the user
