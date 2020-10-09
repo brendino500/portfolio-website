@@ -8,16 +8,28 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "#394651",
     width: 400,
-    // height: 450,
     padding: 30,
     margin: 8,
+    [theme.breakpoints.between("sm", "md")]: {
+      width: 250,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      width: 400,
+    },
   },
   title: {
     fontSize: 35,
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 25,
+      marginTop: 0,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 25,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 30,
     },
   },
@@ -28,7 +40,13 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 20,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 18,
     },
   },
@@ -38,7 +56,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 12,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 15,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 15,
     },
   },
