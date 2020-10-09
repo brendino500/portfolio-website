@@ -2,11 +2,11 @@ import React from "react";
 import GeneralAssembly from "./GeneralAssembly";
 import Freelance from "./Freelance";
 import Craft from "./Craft";
-import Department from "./Department";
+import MancUni from "./MancUni";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Container, GridList } from "@material-ui/core";
-import MancUni from "./MancUni";
+import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -30,17 +30,36 @@ function Experience() {
   const classes = useStyles();
 
   return (
-    <Container maxWidth="xl">
-      <Typography className={classes.title}>EXPERIENCE</Typography>
-      <br />
-      <GridList cellHeight={500}>
-        <GeneralAssembly />
-        <Freelance />
-        <Craft />
-        {/* <Department /> */}
-        <MancUni />
-      </GridList>
-    </Container>
+    <>
+      <Container maxWidth="xl">
+        <Typography className={classes.title}>EXPERIENCE</Typography>
+        <br />
+        <GridList cellHeight={500}>
+          <GeneralAssembly />
+          <Freelance />
+          <Craft />
+          <MancUni />
+        </GridList>
+      </Container>
+
+      <div data-aos="fade-down">
+        <KeyboardArrowDownIcon
+          className={classes.arrows}
+          style={{ display: "block", marginLeft: "50%" }}
+        />
+
+        <br />
+        <KeyboardArrowDownIcon
+          className={classes.arrows}
+          style={{ display: "block", marginLeft: "50%" }}
+        />
+        <br />
+        <KeyboardArrowDownIcon
+          className={classes.arrows}
+          style={{ display: "block", marginLeft: "50%" }}
+        />
+      </div>
+    </>
   );
 }
 

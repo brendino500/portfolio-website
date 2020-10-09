@@ -480,17 +480,20 @@ export default function HomeParallax() {
           <div data-aos="fade-down">
             <KeyboardArrowDownIcon
               className={classes.arrows}
+              onClick={() => parallax.scrollTo(2)}
               style={{ display: "block", marginLeft: "50%" }}
             />
 
             <br />
             <KeyboardArrowDownIcon
               className={classes.arrows}
+              onClick={() => parallax.scrollTo(2)}
               style={{ display: "block", marginLeft: "50%" }}
             />
             <br />
             <KeyboardArrowDownIcon
               className={classes.arrows}
+              onClick={() => parallax.scrollTo(2)}
               style={{ display: "block", marginLeft: "50%" }}
             />
           </div>
@@ -504,17 +507,81 @@ export default function HomeParallax() {
           <Experience />
         </ParallaxLayer>
 
+        <ParallaxLayer offset={3.99} speed={1}>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <div data-aos="fade-down">
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(4)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(4)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(4)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+          </div>
+        </ParallaxLayer>
+
         <ParallaxLayer offset={4} speed={2.5}>
           <About />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.4} speed={2} style={{ pointerEvents: "none" }}>
+        <ParallaxLayer
+          offset={4.45}
+          speed={2}
+          style={{ pointerEvents: "none" }}
+        >
           <img
             src={photo_for_website}
             alt="profile"
             className="profile-photo"
             style={{ display: "block", marginLeft: "5%" }}
           />
+        </ParallaxLayer>
+
+        <ParallaxLayer offset={4.99} speed={1}>
+          <div data-aos="fade-down">
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(5)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(5)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+            <br />
+            <KeyboardArrowDownIcon
+              className={classes.arrows}
+              onClick={() => parallax.scrollTo(5)}
+              style={{ display: "block", marginLeft: "50%" }}
+            />
+          </div>
         </ParallaxLayer>
 
         <ParallaxLayer offset={5} speed={4.5}>
@@ -532,7 +599,6 @@ export default function HomeParallax() {
       >
         <ArrowUpwardIcon fontSize="large" aria-label="sticky-up" />
       </IconButton>
-      {/* </Menu> */}
     </>
   );
 }
