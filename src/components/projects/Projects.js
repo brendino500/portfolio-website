@@ -27,6 +27,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     textAlign: "center",
     marginBottom: 25,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 30,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 38,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      fontSize: 40,
+    },
   },
 }));
 

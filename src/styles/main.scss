@@ -24,6 +24,20 @@ body {
   height: 40vh;
   width: 55vh;
   margin-right: 20px;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 960px) {
+  #nalu,
+  #apperture-project,
+  #weather-tfl,
+  #tetris {
+    margin-top: 10px;
+    position: sticky;
+    width: 40vh;
+    height: 30vh;
+  }
 }
 
 #primary-menu-mobile

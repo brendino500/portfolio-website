@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("sm", "md")]: {
       fontSize: 36,
     },
   },
@@ -38,8 +38,8 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
-    [theme.breakpoints.down("md")]: {
-      fontSize: 18,
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 22,
     },
   },
   text: {
@@ -48,13 +48,18 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
-    maxWidth: 600,
-    [theme.breakpoints.down("md")]: {
+    // maxWidth: 600,
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 15,
     },
   },
-  cover: {
-    width: 200,
+  image: {
+    [theme.breakpoints.between("sm", "md")]: {
+      marginLeft: "7%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      width: 200,
+    },
   },
 }));
 
@@ -156,8 +161,7 @@ function APPerture() {
           rel="noopener noreferrer"
         >
           <CardMedia
-            className={classes.cover}
-            image
+            className={classes.image}
             id="apperture-project"
           ></CardMedia>
         </a>
