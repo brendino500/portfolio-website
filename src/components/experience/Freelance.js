@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     letterSpacing: 5,
     [theme.breakpoints.down("md")]: {
-      fontSize: 25,
+      fontSize: 30,
     },
   },
   subtitle: {
@@ -67,12 +67,21 @@ function Freelance() {
           July 2016 ~ February 2020
         </Typography>
         <Typography className={classes.text}>
-          I've been published in the Telegraph and Caffeine Magazine multiple
-          times. I focus on digital photography (but my heart lies in analogue).
-          I have been commissioned by companies and individuals, mainly shooting
-          portraiture and taking photos for coffee shops social media. My past
-          clients include Kaffeine, Rosslyn, The Attendant, V69 Coffee, Midas
-          Coffee and The Roasting Party.
+          I am <i>completely self taught</i> in photography. My interest began
+          when I was 16 because I was jealous of the photography A level class
+          developing their own photos in the schools lightroom.
+          {<br />}
+          {<br />}
+          I've been <i>published in the Telegraph and Caffeine Magazine</i>{" "}
+          multiple times. I focus on digital photography (but my heart lies in
+          analogue). I have been{" "}
+          <i>commissioned by companies and individuals, </i>
+          mainly shooting portraiture and taking photos for coffee shops social
+          media.
+          {<br />}
+          {<br />}
+          My past clients include Kaffeine, Rosslyn, The Attendant, V69 Coffee,
+          Midas Coffee and The Roasting Party.
           {<br />}
           {<br />}
         </Typography>

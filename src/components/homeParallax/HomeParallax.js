@@ -26,7 +26,6 @@ import {
   Menu,
   MenuItem,
 } from "@material-ui/core";
-import Skeleton from "@material-ui/lab/Skeleton";
 
 let parallax = null;
 
@@ -125,7 +124,6 @@ export default function HomeParallax() {
   const menuId = "primary-menu";
   const renderMenu = (
     <Menu
-      // className={classes.mobileMenu}
       anchorEl={anchorEl}
       anchorOrigin={{ vertical: "top", horizontal: "right" }}
       id={menuId}
@@ -146,7 +144,6 @@ export default function HomeParallax() {
       transformOrigin={{ vertical: "top", horizontal: "right" }}
       open={isMobileMenuOpen}
       onClose={handleMobileMenuClose}
-      // className={classes.mobileMenu}
     >
       <MenuItem>
         <p
@@ -503,7 +500,7 @@ export default function HomeParallax() {
           <Projects />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={3} speed={3}>
+        <ParallaxLayer offset={3.15} speed={4}>
           <Experience />
         </ParallaxLayer>
 

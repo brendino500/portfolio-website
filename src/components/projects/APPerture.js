@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     letterSpacing: 5,
     [theme.breakpoints.down("md")]: {
-      fontSize: 30,
+      fontSize: 36,
     },
   },
   subtitle: {
@@ -56,6 +56,10 @@ const useStyles = makeStyles((theme) => ({
   cover: {
     width: 200,
   },
+  // bold: {
+  //   fontFamily:
+  // }
+  // },
 }));
 
 function APPerture() {
@@ -98,11 +102,12 @@ function APPerture() {
                 Instagram x Unsplash
               </Typography>
               <Typography className={classes.text}>
-                For this project, we really wanted to push ourselves with
-                Material UI (we really had to prove our styling was better than
-                in our Reactathon project... lol!) and learning Material UI was
-                such a rewarding experience. We also implemented some sexy
-                parallax.
+                For this project, we really wanted to{" "}
+                <i>push ourselves with Material UI</i> (we definitely had to
+                prove our styling was better than in our Reactathon project...
+                lol!) and{" "}
+                <i>learning Material UI was such a rewarding experience.</i>
+                We also implemented some <i>sexy parallax.</i>
               </Typography>
               <br />
               <Typography className={classes.text}>

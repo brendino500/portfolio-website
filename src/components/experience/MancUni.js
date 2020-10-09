@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     letterSpacing: 5,
     [theme.breakpoints.down("md")]: {
-      fontSize: 25,
+      fontSize: 30,
     },
   },
   subtitle: {

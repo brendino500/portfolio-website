@@ -8,9 +8,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  // container: {
-  //   maxWidth: 1000
-  // },
   title: {
     flexGrow: 1,
     fontFamily: "Neuton",
@@ -38,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     letterSpacing: 2,
     [theme.breakpoints.down("md")]: {
-      fontSize: 18,
+      fontSize: 15,
     },
   },
   listTitle: {
@@ -60,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginLeft: "20%",
     [theme.breakpoints.down("md")]: {
-      fontSize: 18,
+      fontSize: 15,
     },
   },
 }));

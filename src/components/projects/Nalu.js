@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     letterSpacing: 5,
     [theme.breakpoints.down("md")]: {
-      fontSize: 30,
+      fontSize: 36,
     },
   },
   subtitle: {
@@ -90,10 +90,17 @@ function Nalu() {
                 Group Project • 7 Days
               </Typography>
               <Typography className={classes.text}>
-                'Nalu' is a social website for the surfing community. Users can
-                add a surf location as well as rate and comment on other users
-                surf locations. For each surf spot, we pulled from two weather
-                APIs- one for the local weather and one for the marine weather.
+                'Nalu' is a <i>social website</i> for the surfing community.
+                Users can add a surf location as well as rate and comment on
+                other users surf locations. For each surf spot, we{" "}
+                <i>pulled from two weather APIs</i>- one for the local weather
+                and one for the marine weather.
+                <br />
+                <br />
+                During this project, I gained{" "}
+                <i>experience using Git with multiple other collaborators</i>.
+                It was also a{" "}
+                <i>HUGE learning curve debugging other developers code.</i>
               </Typography>
             </CardContent>
             <Grid container justify="space-between">

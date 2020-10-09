@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     letterSpacing: 5,
     [theme.breakpoints.down("md")]: {
-      fontSize: 25,
+      fontSize: 30,
     },
   },
   subtitle: {
@@ -55,16 +55,21 @@ function GeneralAssembly() {
           June 2020 ~ September 2020
         </Typography>
         <Typography className={classes.text}>
-          This was a 12 week intense coding course that specifically focuses on
-          teaching the knowledge and skills necessary to successfully start a
-          new career in tech.
+          This was a 12-week intense coding course that recreated many aspects
+          of a developers{" "}
+          <i>
+            typical daily routine including morning stand ups, pair programming
+            and accountability for self- managed deadlines.
+          </i>
           {<br />}
           {<br />}
-          All technologies and soft skills that I have developed during this
-          time were selected based on up to date hiring trends.
+          The skills that I have learnt through four main projects include:{" "}
+          <i>
+            planning and wireframes, leading projects, time management and self
+            study
+          </i>
           {<br />}
-          {<br />}I gained skilled working in groups and pairs as well as
-          leading projects.
+          {<br />}
         </Typography>
       </CardContent>
     </Card>
