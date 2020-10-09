@@ -16,6 +16,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     textAlign: "center",
     marginBottom: 25,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 28,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -24,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 20,
     },
   },
@@ -37,6 +40,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       fontSize: 15,
     },
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 16,
+    },
   },
   listTitle: {
     flexGrow: 1,
@@ -45,7 +51,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     letterSpacing: 2,
     marginLeft: "20%",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 18,
     },
   },
@@ -56,8 +62,8 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 20,
     letterSpacing: 2,
     marginLeft: "20%",
-    [theme.breakpoints.down("md")]: {
-      fontSize: 15,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 13,
     },
   },
 }));
