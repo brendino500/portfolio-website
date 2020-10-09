@@ -97,10 +97,15 @@ function Nalu() {
                 and one for the marine weather.
                 <br />
                 <br />
-                During this project, I gained{" "}
-                <i>experience using Git with multiple other collaborators</i>.
+                This was the first project{" "}
+                <i>
+                  collaborating with three other developers and simultaneously
+                  using Git.{" "}
+                </i>
                 It was also a{" "}
-                <i>HUGE learning curve debugging other developers code.</i>
+                <i>HUGE learning curve debugging other developers code.</i> That
+                was incredibly difficult at first, but it was the best lesson I
+                took from the whole project.
               </Typography>
             </CardContent>
             <Grid container justify="space-between">

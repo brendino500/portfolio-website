@@ -95,13 +95,16 @@ function Reactathon() {
                 Paired Project • 48 Hours
               </Typography>
               <Typography className={classes.text}>
-                Out of the whole of General Assembly, this was, by far, the most
-                fun project! I was paried with a crazy French man and we've had
-                the most intense coding relationship since. We wanted to create
-                an app with geolocation (if the user accepted) could create a
-                homepage of the local time and weather. The other pages were
-                linked to the current London Tube line services, the TfL Bike
-                Points as well as the Air Quality Index in London.
+                Out of the whole of General Assembly, this was, by far, the{" "}
+                <i>most fun project!</i> I was paried with a crazy French man
+                and we've had the most intense coding relationship since.
+                <br />
+                <br />
+                We wanted to create an app with geolocation (if the user
+                accepted) which would gather the local weather and time for
+                their current location. The other pages were linked to the
+                current London Tube line services, the TfL Bike Points as well
+                as the Air Quality Index in London.
               </Typography>
             </CardContent>
             <Grid container justify="space-between">

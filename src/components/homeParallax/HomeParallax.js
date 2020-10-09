@@ -63,7 +63,7 @@ const useStyles = makeStyles((theme) => ({
   },
   button: {
     fontFamily: "Neuton",
-    fontSize: 17,
+    fontSize: 14,
     color: "#d3c9c0",
     letterSpacing: 4,
   },
