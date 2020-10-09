@@ -10,6 +10,18 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     marginLeft: "20%",
     letterSpacing: 2,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 10,
+      marginLeft: "10%",
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 10,
+      marginLeft: "5%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      fontSize: 15,
+      marginLeft: "12%",
+    },
   },
 }));
 

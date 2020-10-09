@@ -117,8 +117,9 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "30%",
     },
     [theme.breakpoints.between("md", "lg")]: {
-      width: 150,
-      marginLeft: 20,
+      width: 175,
+      paddingLeft: "1%",
+      marginTop: "-1%",
     },
   },
 }));
