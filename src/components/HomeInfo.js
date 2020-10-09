@@ -11,22 +11,11 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     fontFamily: "Neuton",
     color: "#d3c9c0",
-    fontSize: "45px",
-    letterSpacing: "2px",
-  },
-  text: {
-    flexGrow: 1,
-    fontFamily: "Neuton",
-    color: "#d3c9c0",
-    fontSize: "30px",
-    letterSpacing: "2px",
-  },
-  text2: {
-    flexGrow: 1,
-    fontFamily: "Neuton",
-    color: "#d3c9c0",
-    fontSize: "20px",
-    letterSpacing: "2px",
+    fontSize: 45,
+    letterSpacing: 2,
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 30,
+    },
   },
 }));
 
@@ -40,12 +29,6 @@ function HomeInfo() {
       <Typography className={classes.title}>
         Frontend developer • Plant hoarder
       </Typography>
-      {/* <Typography className={classes.text}>
-        Piano player
-      </Typography>
-      <Typography className={classes.text2}>
-        Lifetime student
-      </Typography> */}
     </Container>
   );
 }

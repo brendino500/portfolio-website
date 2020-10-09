@@ -21,7 +21,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     textAlign: "center",
     marginBottom: 25,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 28,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 30,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 35,
     },
   },
@@ -33,7 +39,13 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 20,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 22,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 24,
     },
   },
@@ -43,7 +55,13 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 20,
     letterSpacing: 2,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 16,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 18,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       fontSize: 18,
     },
   },
@@ -53,7 +71,13 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: {
     marginTop: "10%",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      marginTop: "20%",
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: "20%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
       marginTop: "5%",
     },
   },
