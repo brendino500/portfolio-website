@@ -56,12 +56,15 @@ function Craft() {
           June 2018 ~ May 2020
         </Typography>
         <Typography className={classes.text}>
-          Selecting seasonal green beans from different suppliers by cupping
-          samples and holding cuppings with the cafe team. I roasted single
-          origin espresso and filter for the cafe and two sister restaurants.
+          I was in charge of the full operations of the roastery which involved
+          selecting seasonal green beans from different suppliers by cupping
+          samples with the café team. I roasted single origin espresso and
+          filter for four cafés and restaurants. As well as roasting, I trained
+          new and current staff the craft of espresso and milk as well as{" "}
+          <i>effective work flow</i> behind the bar.
           {<br />}
-          {<br />}I also QC each roast by production cupping to develop and
-          analyse the roasts further.
+          {<br />}I also <i>quality controlled</i> each roast by production
+          cupping to develop and analyse the roasts further.
         </Typography>
       </CardContent>
     </Card>

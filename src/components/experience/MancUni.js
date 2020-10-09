@@ -62,6 +62,8 @@ function MancUni() {
           {<br />}
           As well as performance I studied harmony, ethnomusicology, aesthetics
           and music and politics in the 19th century.
+          {<br />}
+          {<br />}I am now a <i>slightly</i> better piano player.
         </Typography>
       </CardContent>
     </Card>
