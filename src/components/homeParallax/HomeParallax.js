@@ -98,6 +98,24 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 15,
     marginLeft: "20%",
   },
+  arrowsAfterAbout: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      marginTop: "80%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      marginTop: "20%",
+    },
+  },
+  profilePhoto: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      marginTop: "140%",
+      paddingLeft: 50,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      width: 150,
+      marginLeft: 20,
+    },
+  },
 }));
 
 export default function HomeParallax() {
@@ -556,12 +574,16 @@ export default function HomeParallax() {
           <img
             src={photo_for_website}
             alt="profile"
-            className="profile-photo"
+            className={("profile-photo", classes.profilePhoto)}
             style={{ display: "block", marginLeft: "5%" }}
           />
         </ParallaxLayer>
 
-        <ParallaxLayer offset={4.99} speed={1}>
+        <ParallaxLayer
+          offset={4.99}
+          speed={1}
+          className={classes.arrowsAfterAbout}
+        >
           <div data-aos="fade-down">
             <KeyboardArrowDownIcon
               className={classes.arrows}
