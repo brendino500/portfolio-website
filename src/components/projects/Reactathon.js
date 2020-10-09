@@ -25,7 +25,10 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Neuton",
     color: "#d3c9c0",
     letterSpacing: 5,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 28,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
       fontSize: 36,
     },
   },
@@ -36,8 +39,11 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
-    [theme.breakpoints.down("md")]: {
-      fontSize: 18,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 20,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 22,
     },
   },
   text: {
@@ -46,14 +52,29 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
-    // maxWidth: 600,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 11,
+      width: 275,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
       fontSize: 15,
     },
   },
-  icons: {
-    [theme.breakpoints.down("md")]: {
-      fontSize: "medium",
+  image: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      paddingLeft: "-2%",
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginLeft: "7%",
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      width: 200,
+    },
+  },
+  profileLinks: {
+    color: "#d3c9c0",
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 20,
     },
   },
 }));
@@ -116,14 +137,20 @@ function Reactathon() {
                   rel="noopener noreferrer"
                   className={classes.icons}
                 >
-                  <GitHubIcon fontSize="large" className="github-link" />
+                  <GitHubIcon
+                    fontSize="large"
+                    className={("github-link", classes.profileLinks)}
+                  />
                 </IconButton>
                 <IconButton
                   href="https://weather-bike-tube.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <LinkIcon fontSize="large" className="github-link" />
+                  <LinkIcon
+                    fontSize="large"
+                    className={("github-link", classes.profileLinks)}
+                  />
                 </IconButton>
               </Grid>
               <Grid>

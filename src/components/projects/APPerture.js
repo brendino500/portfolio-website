@@ -54,7 +54,6 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 18,
     letterSpacing: 1,
-    // maxWidth: 600,
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 11,
       width: 275,
