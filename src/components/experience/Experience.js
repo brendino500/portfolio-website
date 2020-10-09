@@ -6,15 +6,9 @@ import MancUni from "./MancUni";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Container, GridList } from "@material-ui/core";
-import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
+// import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  tiles: {
-    margin: 5,
-  },
   title: {
     flexGrow: 1,
     fontFamily: "Neuton",
@@ -23,15 +17,15 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     textAlign: "center",
     marginBottom: 25,
-  },
-  [theme.breakpoints.between("xs", "sm")]: {
-    fontSize: 30,
-  },
-  [theme.breakpoints.between("sm", "md")]: {
-    fontSize: 38,
-  },
-  [theme.breakpoints.between("md", "lg")]: {
-    fontSize: 40,
+    [theme.breakpoints.between("xs", "sm")]: {
+      fontSize: 30,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      fontSize: 38,
+    },
+    [theme.breakpoints.between("md", "lg")]: {
+      fontSize: 40,
+    },
   },
 }));
 
