@@ -18,8 +18,8 @@ function Footer() {
 
   return (
     <Typography className={classes.footer}>
-      This site was made using: React-Spring, Robin Dela's Hover Effect, React
-      Hooks and Material UI.
+      I made this website all by myself using: React-Spring, Robin Dela's Hover
+      Effect, React Hooks and Material UI.
     </Typography>
   );
 }
