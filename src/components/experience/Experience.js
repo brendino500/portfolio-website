@@ -30,36 +30,16 @@ function Experience() {
   const classes = useStyles();
 
   return (
-    <>
-      <Container maxWidth="xl">
-        <Typography className={classes.title}>EXPERIENCE</Typography>
-        <br />
-        <GridList cellHeight={500}>
-          <GeneralAssembly />
-          <Freelance />
-          <Craft />
-          <MancUni />
-        </GridList>
-      </Container>
-
-      <div data-aos="fade-down">
-        <KeyboardArrowDownIcon
-          className={classes.arrows}
-          style={{ display: "block", marginLeft: "50%" }}
-        />
-
-        <br />
-        <KeyboardArrowDownIcon
-          className={classes.arrows}
-          style={{ display: "block", marginLeft: "50%" }}
-        />
-        <br />
-        <KeyboardArrowDownIcon
-          className={classes.arrows}
-          style={{ display: "block", marginLeft: "50%" }}
-        />
-      </div>
-    </>
+    <Container maxWidth="xl">
+      <Typography className={classes.title}>EXPERIENCE</Typography>
+      <br />
+      <GridList cellHeight={500}>
+        <GeneralAssembly />
+        <Freelance />
+        <Craft />
+        <MancUni />
+      </GridList>
+    </Container>
   );
 }
 
