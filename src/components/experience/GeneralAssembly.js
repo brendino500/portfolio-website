@@ -59,14 +59,14 @@ function GeneralAssembly() {
           of a developers{" "}
           <i>
             typical daily routine including morning stand ups, pair programming
-            and accountability for self- managed deadlines.
+            and accountability for self-managed deadlines.
           </i>
           {<br />}
           {<br />}
           The skills that I have learnt through four main projects include:{" "}
           <i>
             planning and wireframes, leading projects, time management and self
-            study
+            study.
           </i>
           {<br />}
           {<br />}

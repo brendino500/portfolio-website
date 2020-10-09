@@ -56,10 +56,6 @@ const useStyles = makeStyles((theme) => ({
   cover: {
     width: 200,
   },
-  // bold: {
-  //   fontFamily:
-  // }
-  // },
 }));
 
 function APPerture() {
@@ -106,8 +102,8 @@ function APPerture() {
                 <i>push ourselves with Material UI</i> (we definitely had to
                 prove our styling was better than in our Reactathon project...
                 lol!) and{" "}
-                <i>learning Material UI was such a rewarding experience.</i>
-                We also implemented some <i>sexy parallax.</i>
+                <i>learning Material UI was such a rewarding experience.</i> We
+                also implemented some <i>sexy parallax.</i>
               </Typography>
               <br />
               <Typography className={classes.text}>

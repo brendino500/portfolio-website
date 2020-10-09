@@ -96,7 +96,7 @@ function Reactathon() {
               </Typography>
               <Typography className={classes.text}>
                 Out of the whole of General Assembly, this was, by far, the{" "}
-                <i>most fun project!</i> I was paried with a crazy French man
+                <i>most fun project!</i> I was paired with a crazy French man
                 and we've had the most intense coding relationship since.
                 <br />
                 <br />
