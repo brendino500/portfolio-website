@@ -304,11 +304,11 @@ export default function HomeParallax() {
 
         <ParallaxLayer offset={1.2} speed={4} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-sass-original"
+            className="devicon-sass-original skills-icons"
             style={{ display: "block", marginLeft: "35%" }}
           ></i>
           <i
-            className="devicon-javascript-plain"
+            className="devicon-javascript-plain skills-icons"
             style={{ display: "block", marginLeft: "55%" }}
           ></i>
         </ParallaxLayer>
@@ -319,18 +319,18 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-react-original"
+            className="devicon-react-original skills-icons"
             style={{ display: "block", marginLeft: "65%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={2} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-html5-plain"
+            className="devicon-html5-plain skills-icons"
             style={{ display: "block", marginLeft: "15%" }}
           ></i>
           <i
-            className="devicon-mongodb-plain"
+            className="devicon-mongodb-plain skills-icons"
             style={{ display: "block", marginLeft: "65%" }}
           ></i>
         </ParallaxLayer>
@@ -341,14 +341,14 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-git-plain"
+            className="devicon-git-plain skills-icons"
             style={{ display: "block", marginLeft: "45%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.5} speed={3} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-github-plain"
+            className="devicon-github-plain skills-icons"
             style={{ display: "block", marginLeft: "45%" }}
           ></i>
         </ParallaxLayer>
@@ -359,7 +359,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-python-plain"
+            className="devicon-python-plain skills-icons"
             style={{ display: "block", marginLeft: "75%" }}
           ></i>
         </ParallaxLayer>
@@ -369,7 +369,7 @@ export default function HomeParallax() {
             src={materialUI}
             alt="materialui"
             style={{ display: "block", marginLeft: "3%" }}
-            className="materialui"
+            className="materialui skills-icons"
           />
         </ParallaxLayer>
 
@@ -378,7 +378,7 @@ export default function HomeParallax() {
             src={jest_icon}
             alt="jestIcon"
             style={{ display: "block", marginLeft: "3%" }}
-            className="jestIcon"
+            className="jestIcon skills-icons"
           />
         </ParallaxLayer>
 
@@ -388,7 +388,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-django-plain"
+            className="devicon-django-plain skills-icons"
             style={{ display: "block", marginLeft: "90%" }}
           ></i>
         </ParallaxLayer>
@@ -399,21 +399,21 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-css3-plain"
+            className="devicon-css3-plain skills-icons"
             style={{ display: "block", marginLeft: "10%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.5} speed={1} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-intellij-plain"
+            className="devicon-intellij-plain skills-icons"
             style={{ display: "block", marginLeft: "10%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={3} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-trello-plain"
+            className="devicon-trello-plain skills-icons"
             style={{ display: "block", marginLeft: "80%" }}
           ></i>
         </ParallaxLayer>
@@ -424,7 +424,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-java-plain"
+            className="devicon-java-plain skills-icons"
             style={{ display: "block", marginLeft: "80%" }}
           ></i>
         </ParallaxLayer>
@@ -435,7 +435,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-nodejs-plain"
+            className="devicon-nodejs-plain skills-icons"
             style={{ display: "block", marginLeft: "60%" }}
           ></i>
         </ParallaxLayer>
@@ -446,7 +446,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-postgresql-plain"
+            className="devicon-postgresql-plain skills-icons"
             style={{ display: "block", marginLeft: "30%" }}
           ></i>
         </ParallaxLayer>
@@ -457,7 +457,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-slack-plain"
+            className="devicon-slack-plain skills-icons"
             style={{ display: "block", marginLeft: "20%" }}
           ></i>
         </ParallaxLayer>
@@ -468,21 +468,21 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-visualstudio-plain"
+            className="devicon-visualstudio-plain skills-icons"
             style={{ display: "block", marginLeft: "90%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.6} speed={7} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-typescript-plain"
+            className="devicon-typescript-plain skills-icons"
             style={{ display: "block", marginLeft: "34%" }}
           ></i>
         </ParallaxLayer>
 
         <ParallaxLayer offset={1.2} speed={5} style={{ pointerEvents: "none" }}>
           <i
-            className="devicon-npm-original-wordmark"
+            className="devicon-npm-original-wordmark skills-icons"
             style={{ display: "block", marginLeft: "22%" }}
           ></i>
         </ParallaxLayer>
@@ -493,7 +493,7 @@ export default function HomeParallax() {
           style={{ pointerEvents: "none" }}
         >
           <i
-            className="devicon-express-original"
+            className="devicon-express-original skills-icons"
             style={{ display: "block", marginLeft: "57%" }}
           ></i>
         </ParallaxLayer>
