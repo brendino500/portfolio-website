@@ -16,11 +16,14 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     fontFamily: "Neuton",
-    fontSize: "42px",
-    letterSpacing: "10px",
+    fontSize: 42,
+    letterSpacing: 10,
     color: "#d3c9c0",
     textAlign: "center",
     marginBottom: 25,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 35,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -30,6 +33,9 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 2,
     marginTop: 10,
     marginBottom: 10,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 24,
+    },
   },
   text: {
     flexGrow: 1,
@@ -37,6 +43,9 @@ const useStyles = makeStyles((theme) => ({
     color: "#d3c9c0",
     fontSize: 20,
     letterSpacing: 2,
+    [theme.breakpoints.down("md")]: {
+      fontSize: 18,
+    },
   },
   icon: {
     padding: 10,
@@ -44,6 +53,9 @@ const useStyles = makeStyles((theme) => ({
   },
   grid: {
     marginTop: "10%",
+    [theme.breakpoints.down("md")]: {
+      marginTop: "5%",
+    },
   },
 }));
 
