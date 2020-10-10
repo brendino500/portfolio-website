@@ -56,7 +56,6 @@ const useStyles = makeStyles((theme) => ({
     letterSpacing: 1,
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 11,
-      width: 275,
     },
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 15,
