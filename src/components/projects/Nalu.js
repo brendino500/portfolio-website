@@ -61,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     [theme.breakpoints.between("xs", "sm")]: {
-      paddingLeft: "-2%",
+      paddingLeft: "-6%",
     },
     [theme.breakpoints.between("sm", "md")]: {
       marginLeft: "7%",
@@ -171,7 +171,6 @@ function Nalu() {
           </Grid>
         </div>
 
-        {/* <Grid container direction="row" justify="center" alignItems="center"> */}
         <a
           href="https://naluwave.herokuapp.com/"
           target="_blank"
@@ -179,8 +178,6 @@ function Nalu() {
         >
           <div id="nalu"></div>
         </a>
-
-        {/* </Grid> */}
       </Grid>
     </Card>
   );

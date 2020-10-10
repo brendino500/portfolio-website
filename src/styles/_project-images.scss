@@ -17,8 +17,8 @@
   #tetris {
     margin-top: 10px;
     position: sticky;
-    width: 30vh;
-    height: 25vh;
+    width: 25vh;
+    height: 20vh;
     margin-left: -45px;
   }
 }
@@ -45,5 +45,16 @@
     width: 20vh;
     height: 16vh;
     margin-left: -8px;
+  }
+}
+
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  #nalu,
+  #apperture-project,
+  #weather-tfl,
+  #tetris {
+    width: 23vh;
+    height: 19vh;
+    margin-left: -22px;
   }
 }
