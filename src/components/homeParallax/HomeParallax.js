@@ -130,7 +130,12 @@ const useStyles = makeStyles((theme) => ({
   },
   experienceLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
-      marginTop: 500,
+      marginTop: 700,
+    },
+  },
+  aboutLayer: {
+    [theme.breakpoints.between("xs", "sm")]: {
+      marginTop: 400,
     },
   },
 }));
@@ -585,7 +590,7 @@ export default function HomeParallax() {
           </ParallaxLayer>
         </Hidden>
 
-        <ParallaxLayer offset={4} speed={2.5}>
+        <ParallaxLayer offset={4} speed={2.5} className={classes.aboutLayer}>
           <About />
         </ParallaxLayer>
 
