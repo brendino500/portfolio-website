@@ -130,12 +130,12 @@ const useStyles = makeStyles((theme) => ({
   },
   experienceLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
-      marginTop: 1000,
+      marginTop: 1300,
     },
   },
   aboutLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
-      marginTop: 600,
+      marginTop: 900,
     },
   },
 }));
