@@ -8,6 +8,7 @@ import Projects from "../projects/Projects";
 import Experience from "../experience/Experience";
 import Contact from "../Contact";
 import Footer from "../Footer";
+import SkillsDetails from "../SkillsDetails";
 import photo_for_website from "../../assets/photo_for_website.jpg";
 import materialUI from "../../assets/materialUI.png";
 import jest_icon from "../../assets/jest_icon.png";
@@ -374,7 +375,6 @@ export default function HomeParallax() {
             style={{ display: "block", marginLeft: "45%" }}
           ></i>
         </ParallaxLayer>
-
         <ParallaxLayer
           offset={1.3}
           speed={3.5}
@@ -520,9 +520,19 @@ export default function HomeParallax() {
           ></i>
         </ParallaxLayer>
 
+        <ParallaxLayer
+          offset={1.99}
+          speed={2}
+          style={{
+            pointerEvents: "none",
+            backgroundSize: "10%",
+          }}
+        >
+          <SkillsDetails />
+        </ParallaxLayer>
         <div data-aos="fade-down"></div>
 
-        <ParallaxLayer offset={1.99} speed={1}>
+        {/* <ParallaxLayer offset={1.99} speed={1}>
           <div data-aos="fade-down">
             <KeyboardArrowDownIcon
               className={classes.arrows}
@@ -543,7 +553,7 @@ export default function HomeParallax() {
               style={{ display: "block", marginLeft: "50%" }}
             />
           </div>
-        </ParallaxLayer>
+        </ParallaxLayer> */}
 
         <ParallaxLayer offset={2} speed={2} className={classes.projectLayer}>
           <Projects />
