@@ -31,6 +31,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 36,
     },
+    [theme.breakpoints.between("lg", "xl")]: {
+      fontSize: 45,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 45,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -45,6 +51,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 22,
     },
+    [theme.breakpoints.between("lg", "xl")]: {
+      fontSize: 25,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 25,
+    },
   },
   text: {
     flexGrow: 1,
@@ -58,6 +70,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 15,
     },
+    [theme.breakpoints.between("lg", "xl")]: {
+      fontSize: 18,
+    },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 18,
+    },
   },
   image: {
     [theme.breakpoints.between("xs", "sm")]: {
@@ -69,6 +87,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("md", "lg")]: {
       width: 200,
     },
+    [theme.breakpoints.up("xl")]: {},
   },
   profileLinks: {
     color: "#d3c9c0",

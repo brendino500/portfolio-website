@@ -123,6 +123,11 @@ const useStyles = makeStyles((theme) => ({
       paddingLeft: "1%",
       marginTop: "-1%",
     },
+    [theme.breakpoints.up("xl")]: {
+      width: 200,
+      paddingLeft: "5%",
+      marginTop: "-5%",
+    },
   },
   projectLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
