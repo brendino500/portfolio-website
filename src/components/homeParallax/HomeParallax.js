@@ -597,7 +597,7 @@ export default function HomeParallax() {
 
         <ParallaxLayer
           offset={4.45}
-          speed={4}
+          speed={3}
           style={{ pointerEvents: "none" }}
         >
           <img
