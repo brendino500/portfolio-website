@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
   },
   profilePhoto: {
     [theme.breakpoints.between("xs", "sm")]: {
-      marginTop: 1800,
+      marginTop: 1700,
       paddingLeft: 50,
       width: 150,
     },
