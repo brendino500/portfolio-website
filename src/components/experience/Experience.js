@@ -6,7 +6,6 @@ import MancUni from "./MancUni";
 
 import { makeStyles } from "@material-ui/core/styles";
 import { Typography, Container, GridList } from "@material-ui/core";
-// import KeyboardArrowDownIcon from "@material-ui/icons/KeyboardArrowDown";
 
 const useStyles = makeStyles((theme) => ({
   title: {

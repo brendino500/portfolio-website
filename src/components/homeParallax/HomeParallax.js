@@ -150,7 +150,7 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 50,
     },
     [theme.breakpoints.between("md", "lg")]: {
-      marginTop: 800,
+      marginTop: 100,
     },
   },
 }));

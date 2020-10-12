@@ -35,7 +35,7 @@
   }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 780px) {
+@media only screen and (min-width: 780px) and (max-width: 1024px) {
   #nalu,
   #apperture-project,
   #weather-tfl,
@@ -48,7 +48,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) and (min-width: 300px) {
+@media only screen and (min-width: 300px) and (max-width: 400px) {
   #nalu,
   #apperture-project,
   #weather-tfl,
@@ -59,7 +59,7 @@
   }
 }
 
-@media only screen and (max-width: 2500px) and (min-width: 1920px) {
+@media only screen and (min-width: 1920px) and (max-width: 2700px) {
   #nalu,
   #apperture-project,
   #weather-tfl,
