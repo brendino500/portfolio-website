@@ -134,15 +134,24 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       marginTop: -300,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: -1100,
+    },
   },
   experienceLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
       marginTop: 1300,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: 500,
+    },
   },
   aboutLayer: {
     [theme.breakpoints.between("xs", "sm")]: {
       marginTop: 900,
+    },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: 500,
     },
   },
   skillsDetailsLayer: {

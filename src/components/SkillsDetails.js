@@ -59,6 +59,12 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: 4,
       marginBottom: 20,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 22,
+      textAlign: "center",
+      letterSpacing: 4,
+      marginBottom: 20,
+    },
   },
   text: {
     flexGrow: 1,
@@ -75,16 +81,22 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 12,
       letterSpacing: 2,
     },
+    [theme.breakpoints.up("xl")]: {
+      fontSize: 15,
+    },
   },
   iconAndText: {
     display: "flex",
     alignItems: "center",
     padding: 5,
-  },
-  icons: {
-    color: "#d3c9c0",
-    fontSize: 30,
-    textAlign: "center",
+    [theme.breakpoints.up("xl")]: {
+      margin: 10,
+    },
+    icons: {
+      color: "#d3c9c0",
+      fontSize: 30,
+      textAlign: "center",
+    },
   },
 }));
 
