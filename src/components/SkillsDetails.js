@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       margin: 5,
     },
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: 40,
+    },
     [theme.breakpoints.between("md", "lg")]: {
       margin: 10,
       maxWidth: 600,
@@ -46,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
       textAlign: "center",
     },
     [theme.breakpoints.between("sm", "md")]: {
-      fontSize: 18,
+      fontSize: 24,
       textAlign: "center",
       letterSpacing: 2,
     },

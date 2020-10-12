@@ -146,6 +146,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   skillsDetailsLayer: {
+    [theme.breakpoints.between("sm", "md")]: {
+      marginTop: 50,
+    },
     [theme.breakpoints.between("md", "lg")]: {
       marginTop: 800,
     },
