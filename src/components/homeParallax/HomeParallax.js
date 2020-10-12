@@ -109,7 +109,7 @@ const useStyles = makeStyles((theme) => ({
   },
   profilePhoto: {
     [theme.breakpoints.between("xs", "sm")]: {
-      marginTop: 1400,
+      marginTop: 1300,
       paddingLeft: 50,
       width: 150,
     },
@@ -597,7 +597,7 @@ export default function HomeParallax() {
 
         <ParallaxLayer
           offset={4.45}
-          speed={2}
+          speed={4}
           style={{ pointerEvents: "none" }}
         >
           <img
