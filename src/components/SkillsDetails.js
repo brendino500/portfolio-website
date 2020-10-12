@@ -21,6 +21,18 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.between("xs", "sm")]: {
       margin: 5,
     },
+    [theme.breakpoints.between("md", "lg")]: {
+      margin: 10,
+      maxWidth: 600,
+      marginTop: 30,
+    },
+  },
+  grid: {
+    [theme.breakpoints.between("md", "lg")]: {
+      direction: "column",
+      justify: "center",
+      alignItems: "center",
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -39,9 +51,10 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: 2,
     },
     [theme.breakpoints.between("md", "lg")]: {
-      fontSize: 18,
+      fontSize: 22,
       textAlign: "center",
-      letterSpacing: 2,
+      letterSpacing: 4,
+      marginBottom: 20,
     },
   },
   text: {
@@ -49,7 +62,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "Work Sans",
     color: "#d3c9c0",
     fontSize: 18,
-    letterSpacing: 1,
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 11,
     },
@@ -57,17 +69,19 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 15,
     },
     [theme.breakpoints.between("md", "lg")]: {
-      fontSize: 10,
+      fontSize: 12,
       letterSpacing: 2,
     },
   },
   iconAndText: {
     display: "flex",
     alignItems: "center",
-    // direction: "column",
-    // justify: "space-between",
-    // alignItems: "center",
     padding: 5,
+  },
+  icons: {
+    color: "#d3c9c0",
+    fontSize: 30,
+    textAlign: "center",
   },
 }));
 
@@ -76,12 +90,13 @@ function SkillsDetails() {
 
   return (
     <ThemeProvider theme={ColorTheme}>
-      <Container maxWidth="lg">
+      <Container maxWidth="sm">
         <Grid
           container
-          direction="row"
-          justify="space-evenly"
-          alignItems="center"
+          // direction="row"
+          // justify="space-evenly"
+          // alignItems="center"
+          className={classes.grid}
         >
           <Card className={classes.root}>
             <CardContent>

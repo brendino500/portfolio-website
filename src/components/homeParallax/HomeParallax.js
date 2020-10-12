@@ -145,6 +145,11 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 900,
     },
   },
+  skillsDetailsLayer: {
+    [theme.breakpoints.between("md", "lg")]: {
+      marginTop: 800,
+    },
+  },
 }));
 
 export default function HomeParallax() {
@@ -523,6 +528,7 @@ export default function HomeParallax() {
         <ParallaxLayer
           offset={1.99}
           speed={2}
+          className={classes.skillsDetailsLayer}
           style={{
             pointerEvents: "none",
             backgroundSize: "10%",
