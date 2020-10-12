@@ -42,10 +42,18 @@
 
 .skills-details-icon {
   font-size: 30px;
+  text-align: center;
 }
 
 .materialIconSkillsDetails {
-  width: 30px;
+  width: 28px;
+  display: block;
+}
+
+@media only screen and (max-width: 400px) {
+  .material-skills {
+    margin-left: 25%;
+  }
 }
 
 // PROJECT ICONS

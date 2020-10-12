@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
     backgroundColor: "#394651",
     margin: 10,
+    [theme.breakpoints.between("xs", "sm")]: {
+      margin: 5,
+    },
   },
   subtitle: {
     fontSize: 25,
@@ -28,6 +31,7 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     [theme.breakpoints.between("xs", "sm")]: {
       fontSize: 20,
+      textAlign: "center",
     },
     [theme.breakpoints.between("sm", "md")]: {
       fontSize: 18,
@@ -58,9 +62,11 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   iconAndText: {
-    direction: "column",
-    justify: "space-between",
+    display: "flex",
     alignItems: "center",
+    // direction: "column",
+    // justify: "space-between",
+    // alignItems: "center",
     padding: 5,
   },
 }));
@@ -87,44 +93,56 @@ function SkillsDetails() {
                 alignItems="center"
               >
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-javascript-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>JavaScript</Typography>
+                  <i className="devicon-javascript-plain skills-details-icon">
+                    <Typography className={classes.text}>JavaScript</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-html5-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>HTML</Typography>
+                  <i className="devicon-html5-plain skills-details-icon">
+                    <Typography className={classes.text}>HTML</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-css3-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>CSS</Typography>
+                  <i className="devicon-css3-plain skills-details-icon">
+                    <Typography className={classes.text}>CSS</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-sass-original skills-details-icon"></i>
-                  <Typography className={classes.text}>SASS</Typography>
+                  <i className="devicon-sass-original skills-details-icon">
+                    <Typography className={classes.text}>SASS</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-react-original skills-details-icon"></i>
-                  <Typography className={classes.text}>React.js</Typography>
+                  <i className="devicon-react-original skills-details-icon">
+                    <Typography className={classes.text}>React.js</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-nodejs-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>Node.js</Typography>
+                  <i className="devicon-nodejs-plain skills-details-icon">
+                    <Typography className={classes.text}>Node.js</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <img
-                    src={materialUI}
-                    alt="materialui"
-                    className="materialIconSkillsDetails"
-                  />
-                  <Typography className={classes.text}>Material UI</Typography>
+                  <div className="materialIconsSkills">
+                    <img
+                      src={materialUI}
+                      alt="materialui"
+                      className="materialIconSkillsDetails  material-skills"
+                    />
+                    <Typography className={classes.text}>
+                      Material UI
+                    </Typography>
+                  </div>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-git-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>Git</Typography>
+                  <i className="devicon-git-plain skills-details-icon">
+                    <Typography className={classes.text}>Git</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-github-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>GitHub</Typography>
+                  <i className="devicon-github-plain skills-details-icon">
+                    <Typography className={classes.text}>GitHub</Typography>
+                  </i>
                 </Grid>
               </Grid>
             </CardContent>
@@ -140,16 +158,19 @@ function SkillsDetails() {
                 alignItems="center"
               >
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-mongodb-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>MongoDB</Typography>
+                  <i className="devicon-mongodb-plain skills-details-icon">
+                    <Typography className={classes.text}>MongoDB</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-express-original skills-details-icon"></i>
-                  <Typography className={classes.text}>Express</Typography>
+                  <i className="devicon-express-original skills-details-icon">
+                    <Typography className={classes.text}>Express</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-typescript-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>TypeScript</Typography>
+                  <i className="devicon-typescript-plain skills-details-icon">
+                    <Typography className={classes.text}>TypeScript</Typography>
+                  </i>
                 </Grid>
               </Grid>
             </CardContent>
@@ -165,28 +186,34 @@ function SkillsDetails() {
                 alignItems="center"
               >
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-java-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>Java</Typography>
+                  <i className="devicon-java-plain skills-details-icon">
+                    <Typography className={classes.text}>Java</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-python-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>Python</Typography>
+                  <i className="devicon-python-plain skills-details-icon">
+                    <Typography className={classes.text}>Python</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-django-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>Django</Typography>
+                  <i className="devicon-django-plain skills-details-icon">
+                    <Typography className={classes.text}>Django</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <i className="devicon-postgresql-plain skills-details-icon"></i>
-                  <Typography className={classes.text}>PostgreSQL</Typography>
+                  <i className="devicon-postgresql-plain skills-details-icon">
+                    <Typography className={classes.text}>PostgreSQL</Typography>
+                  </i>
                 </Grid>
                 <Grid className={classes.iconAndText}>
-                  <img
-                    src={jest_icon}
-                    alt="jestIcon"
-                    className="materialIconSkillsDetails"
-                  />
-                  <Typography className={classes.text}>Jest</Typography>
+                  <div className="materialIconsSkills">
+                    <img
+                      src={jest_icon}
+                      alt="jestIcon"
+                      className="materialIconSkillsDetails"
+                    />
+                    <Typography className={classes.text}>Jest</Typography>
+                  </div>
                 </Grid>
               </Grid>
             </CardContent>
