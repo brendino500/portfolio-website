@@ -250,7 +250,7 @@ export default function HomeParallax() {
             parallax.scrollTo(5);
           }}
         >
-          STALK
+          CONTACT
         </p>
       </MenuItem>
     </Menu>
@@ -298,7 +298,7 @@ export default function HomeParallax() {
                 className={classes.button}
                 onClick={() => parallax.scrollTo(5)}
               >
-                Stalk
+                Contact
               </Button>
             </div>
 

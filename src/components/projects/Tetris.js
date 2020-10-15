@@ -136,13 +136,13 @@ function Tetris() {
               <Typography className={classes.text}>
                 This is my first ever deployed project using only HTML, CSS and
                 JavaScript. This was built in a week. I'm pretty sure it's not
-                buggy (...lol) and the music is worth a listen!
+                buggy and the music is worth a listen!
               </Typography>
               <br />
               <Typography className={classes.text}>
                 As Tetris is such a well known game, I wanted to recreate as
-                much of the original game functionalities as possible. I wanted
-                to implement a mini grid to see the next tetromino (yes, the
+                much of the original game functionalities as possible. I
+                implemented a mini grid to see the next tetromino (yes, the
                 shapes are called tetrominos!), the 'fast down' movement and the
                 original SEGA scoring system.
               </Typography>

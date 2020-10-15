@@ -116,9 +116,9 @@ function Reactathon() {
               </Typography>
               <Typography className={classes.text}>
                 Out of the whole of the General Assembly course, this was, by
-                far, the <i>most fun project!</i> I was paired with a crazy
-                French man and we've had the most intense coding relationship
-                since.
+                far, the <i>most fun project!</i> I was paired with Julien
+                Xemard, and little did we know that would start our intense
+                coding relationship(<s>friendship?</s>)
                 <br />
                 <br />
                 We wanted to create an app with geolocation (if the user
