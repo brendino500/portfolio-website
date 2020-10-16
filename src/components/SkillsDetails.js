@@ -78,7 +78,7 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 15,
     },
     [theme.breakpoints.between("md", "lg")]: {
-      fontSize: 12,
+      fontSize: 20,
       letterSpacing: 2,
     },
     [theme.breakpoints.up("xl")]: {
@@ -105,7 +105,7 @@ function SkillsDetails() {
 
   return (
     <ThemeProvider theme={ColorTheme}>
-      <Container maxWidth="sm">
+      <Container maxWidth="lg">
         <Grid
           container
           // direction="row"
